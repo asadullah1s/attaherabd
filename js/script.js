@@ -7,10 +7,12 @@ const products = [{
     category: "Fashion",
     price: "$459",
     images: [
-        "products/product-1.jpeg",
-        "products/product-2.jpeg",
-        "products/product-3.jpeg",
-        "products/product-4.jpeg"
+        "images/products/product-1.jpeg",
+        "images/products/product-2.jpeg",
+        "images/products/product-3.jpeg",
+        "images/products/product-4.jpeg",
+        "images/products/product-5.jpeg",
+        "images/products/product-6.jpeg"
     ],
     description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
 }, {
@@ -19,10 +21,8 @@ const products = [{
     category: "Beauty",
     price: "$128",
     images: [
-        "products/product-5.jpeg",
-        "products/product-6.jpeg",
-        "products/product-7.jpeg",
-        "products/product-8.jpeg"
+        "images/products/product-7.jpeg",
+        "images/products/product-8.jpeg"
     ],
     description: "24K gold-infused face serum, brightening + firming luxury elixir."
 }, {
@@ -31,10 +31,10 @@ const products = [{
     category: "Home Decor",
     price: "$89",
     images: [
-        "products/product-9.jpeg",
-        "products/product-10.jpeg",
-        "products/product-11.jpeg",
-        "products/product-12.jpeg"
+        "images/products/product-9.jpeg",
+        "images/products/product-10.jpeg",
+        "images/products/product-11.jpeg",
+        "images/products/product-12.jpeg"
     ],
     description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
 }, {
@@ -43,10 +43,10 @@ const products = [{
     category: "Fashion",
     price: "$689",
     images: [
-        "products/product-13.jpeg",
-        "products/product-14.jpeg",
-        "products/product-15.jpeg",
-        "products/product-16.jpeg"
+        "images/products/product-13.jpeg",
+        "images/products/product-14.jpeg",
+        "images/products/product-15.jpeg",
+        "images/products/product-16.jpeg"
     ],
     description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
 }, {
@@ -55,10 +55,10 @@ const products = [{
     category: "Beauty",
     price: "$49",
     images: [
-        "products/product-17.jpeg",
-        "products/product-18.jpeg",
-        "products/product-19.jpeg",
-        "products/product-20.jpeg"
+        "images/products/product-17.jpeg",
+        "images/products/product-18.jpeg",
+        "images/products/product-19.jpeg",
+        "images/products/product-20.jpeg"
     ],
     description: "Luminous glow baked highlighter with reflective pearl pigments."
 }, {
@@ -67,10 +67,10 @@ const products = [{
     category: "Home Decor",
     price: "$149",
     images: [
-        "products/product-21.jpeg",
-        "products/product-22.jpeg",
-        "products/product-23.jpeg",
-        "products/product-24.jpeg"
+        "images/products/product-21.jpeg",
+        "images/products/product-22.jpeg",
+        "images/products/product-23.jpeg",
+        "images/products/product-24.jpeg"
     ],
     description: "Brass & glass, modern sculptural centerpiece."
 }, {
@@ -79,10 +79,10 @@ const products = [{
     category: "Fashion",
     price: "$329",
     images: [
-        "products/product-25.jpeg",
-        "products/product-26.jpeg",
-        "products/product-27.jpeg",
-        "products/product-28.jpeg"
+        "images/products/product-25.jpeg",
+        "images/products/product-26.jpeg",
+        "images/products/product-27.jpeg",
+        "images/products/product-28.jpeg"
     ],
     description: "Deep burgundy velvet, satin lapels, tailored elegance."
 }, {
@@ -91,10 +91,10 @@ const products = [{
     category: "Beauty",
     price: "$199",
     images: [
-        "products/product-29.jpeg",
-        "products/product-31.jpeg",
-        "products/product-32.jpeg",
-        "products/product-33.jpeg"
+        "images/products/product-29.jpeg",
+        "images/products/product-31.jpeg",
+        "images/products/product-32.jpeg",
+        "images/products/product-33.jpeg"
     ],
     description: "Luxurious peptide cream with crushed diamond dust."
 }];
