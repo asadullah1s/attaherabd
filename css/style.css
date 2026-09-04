@@ -358,7 +358,9 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     object-fit: cover;
     transition: transform 0.5s;
 }
-
+.card-title{
+   padding: 0 10px 0 10px;
+}
 .product-card:hover .card-img-top {
     transform: scale(1.03);
 }
