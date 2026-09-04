@@ -46,10 +46,12 @@ const products = [{
     category: "Fashion",
     price: "$689",
     images: [
-        "images/products/product-13.jpeg",
-        "images/products/product-14.jpeg",
-        "images/products/product-15.jpeg",
-        "images/products/product-16.jpeg"
+        "images/products/product-16.jpeg",
+        "images/products/product-17.jpeg",
+        "images/products/product-18.jpeg",
+        "images/products/product-19.jpeg",
+        "images/products/product-20.jpeg",
+        "images/products/product-21.jpeg"
     ],
     description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
 }, {
@@ -58,10 +60,10 @@ const products = [{
     category: "Beauty",
     price: "$49",
     images: [
-        "images/products/product-17.jpeg",
-        "images/products/product-18.jpeg",
-        "images/products/product-19.jpeg",
-        "images/products/product-20.jpeg"
+        "images/products/product-22.jpeg",
+        "images/products/product-23.jpeg",
+        "images/products/product-24.jpeg",
+        "images/products/product-25.jpeg"
     ],
     description: "Luminous glow baked highlighter with reflective pearl pigments."
 }, {
@@ -70,10 +72,9 @@ const products = [{
     category: "Home Decor",
     price: "$149",
     images: [
-        "images/products/product-21.jpeg",
-        "images/products/product-22.jpeg",
-        "images/products/product-23.jpeg",
-        "images/products/product-24.jpeg"
+        "images/products/product-26.jpeg",
+        "images/products/product-27.jpeg",
+        "images/products/product-28.jpeg"
     ],
     description: "Brass & glass, modern sculptural centerpiece."
 }, {
@@ -82,10 +83,11 @@ const products = [{
     category: "Fashion",
     price: "$329",
     images: [
-        "images/products/product-25.jpeg",
-        "images/products/product-26.jpeg",
-        "images/products/product-27.jpeg",
-        "images/products/product-28.jpeg"
+        "images/products/product-29.jpeg",
+        "images/products/product-30.jpeg",
+        "images/products/product-31.jpeg",
+        "images/products/product-32.jpeg",
+        "images/products/product-33.jpeg"
     ],
     description: "Deep burgundy velvet, satin lapels, tailored elegance."
 }, {
@@ -94,10 +96,11 @@ const products = [{
     category: "Beauty",
     price: "$199",
     images: [
-        "images/products/product-29.jpeg",
-        "images/products/product-31.jpeg",
-        "images/products/product-32.jpeg",
-        "images/products/product-33.jpeg"
+        "images/products/product-34.jpeg",
+        "images/products/product-35.jpeg",
+        "images/products/product-36.jpeg",
+        "images/products/product-37.jpeg",
+        "images/products/product-38.jpeg"
     ],
     description: "Luxurious peptide cream with crushed diamond dust."
 }];
