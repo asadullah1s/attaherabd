@@ -1,0 +1,378 @@
+/* =========================
+   PRODUCT DATA (with 4 images each)
+   ========================= */
+const products = [{
+    id: 1,
+    title: "Gold Silk Pleated Dress",
+    category: "Fashion",
+    price: "$459",
+    images: [
+        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop"
+    ],
+    description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
+}, {
+    id: 2,
+    title: "Radiant Rose Serum",
+    category: "Beauty",
+    price: "$128",
+    images: [
+        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop"
+    ],
+    description: "24K gold-infused face serum, brightening + firming luxury elixir."
+}, {
+    id: 3,
+    title: "Marble Gold Candle",
+    category: "Home Decor",
+    price: "$89",
+    images: [
+        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop"
+    ],
+    description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
+}, {
+    id: 4,
+    title: "Cashmere Wrap Coat",
+    category: "Fashion",
+    price: "$689",
+    images: [
+        "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop"
+    ],
+    description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
+}, {
+    id: 5,
+    title: "Gold Leaf Highlighter",
+    category: "Beauty",
+    price: "$49",
+    images: [
+        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop"
+    ],
+    description: "Luminous glow baked highlighter with reflective pearl pigments."
+}, {
+    id: 6,
+    title: "Geometric Vase Set",
+    category: "Home Decor",
+    price: "$149",
+    images: [
+        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop"
+    ],
+    description: "Brass & glass, modern sculptural centerpiece."
+}, {
+    id: 7,
+    title: "Velvet Blazer",
+    category: "Fashion",
+    price: "$329",
+    images: [
+        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop"
+    ],
+    description: "Deep burgundy velvet, satin lapels, tailored elegance."
+}, {
+    id: 8,
+    title: "Diamond Infused Moisturizer",
+    category: "Beauty",
+    price: "$199",
+    images: [
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop"
+    ],
+    description: "Luxurious peptide cream with crushed diamond dust."
+}];
+
+/* =========================
+   STATE
+   ========================= */
+let currentFilter = "all";
+let currentSearch = "";
+
+/* =========================
+   RENDER PRODUCT CARDS
+   ========================= */
+function renderProductCards(productsArray, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    if (productsArray.length === 0) {
+        container.innerHTML = `<div class="col-12 text-center py-5">No luxury items found</div>`;
+        return;
+    }
+    container.innerHTML = productsArray.map(p => `
+        <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
+            <div class="product-card h-100">
+                <img src="${p.images[0]}" class="card-img-top" alt="${p.title}" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="category-badge">${p.category}</span>
+                        <span class="price">${p.price}</span>
+                    </div>
+                    <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
+                    <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
+                    <div class="mt-auto d-flex justify-content-between gap-2">
+                        <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
+                        <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+/* =========================
+   FILTER PRODUCTS
+   ========================= */
+function filterProducts() {
+    let filtered = products.filter(p => {
+        const matchCat = currentFilter === "all" || p.category === currentFilter;
+        const matchSearch = currentSearch === "" ||
+            p.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+            p.category.toLowerCase().includes(currentSearch.toLowerCase());
+        return matchCat && matchSearch;
+    });
+    renderProductCards(filtered, "productContainer");
+}
+
+/* =========================
+   SPECIAL SECTIONS (Top Picks, Trending, Editor's Choice)
+   ========================= */
+function renderSpecialSections() {
+    const topPicks = products.filter(p => [1, 2, 3].includes(p.id));
+    const trending = products.filter(p => [4, 5, 6].includes(p.id));
+    const editors = products.filter(p => [7, 8].includes(p.id));
+    renderProductCards(topPicks, "topPicksContainer");
+    renderProductCards(trending, "trendingContainer");
+    renderProductCards(editors, "editorsChoiceContainer");
+}
+
+/* =========================
+   WHATSAPP HELPER
+   ========================= */
+function getWhatsAppLink(product) {
+    const phone = "1234567890"; // change to your number
+    const message = `Hello Tahira, I'm interested in:\n*${product.title}*\n${product.description}\nPrice: ${product.price}`;
+    return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+}
+
+/* =========================
+   FULLSCREEN MODAL WITH 4-IMAGE SLIDER
+   ========================= */
+const modalEl = document.getElementById("fullscreenModal");
+const carouselInner = document.getElementById("modalCarouselInner");
+const indicatorsContainer = document.getElementById("modalCarouselIndicators");
+let modalCarouselInstance = null;
+
+function openProductModal(productId) {
+    const prod = products.find(p => p.id == productId);
+    if (!prod) return;
+
+    // Build carousel slides
+    let slidesHtml = prod.images.map((img, idx) => `
+        <div class="carousel-item ${idx === 0 ? 'active' : ''}">
+            <img src="${img}" class="d-block w-100" style="height:100%; object-fit:cover;" alt="${prod.title} - image ${idx+1}">
+        </div>
+    `).join('');
+
+    let indicatorsHtml = prod.images.map((_, idx) => `
+        <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="${idx}" class="${idx === 0 ? 'active' : ''}" aria-label="Slide ${idx+1}"></button>
+    `).join('');
+
+    carouselInner.innerHTML = slidesHtml;
+    indicatorsContainer.innerHTML = indicatorsHtml;
+
+    // Set details
+    document.getElementById("modalCategory").innerText = prod.category;
+    document.getElementById("modalTitle").innerText = prod.title;
+    document.getElementById("modalDesc").innerText = prod.description;
+    document.getElementById("modalPrice").innerText = prod.price;
+
+    // Set Buy Now button
+    const buyBtn = document.getElementById("modalBuyNowBtn");
+    buyBtn.onclick = function() {
+        window.open(getWhatsAppLink(prod), '_blank');
+    };
+
+    // Show modal
+    modalEl.classList.add("active");
+    document.body.style.overflow = "hidden";
+
+    // Initialize carousel
+    if (modalCarouselInstance) {
+        modalCarouselInstance.dispose();
+    }
+    modalCarouselInstance = new bootstrap.Carousel(document.getElementById('modalCarousel'), {
+        interval: 5000,
+        pause: 'hover',
+        wrap: true
+    });
+
+    history.pushState(null, null, `#product-${prod.id}`);
+}
+
+function closeModal() {
+    modalEl.classList.remove("active");
+    document.body.style.overflow = "";
+    if (window.location.hash.startsWith("#product-")) {
+        history.pushState(null, null, " ");
+    }
+    if (modalCarouselInstance) {
+        modalCarouselInstance.dispose();
+        modalCarouselInstance = null;
+    }
+}
+
+/* =========================
+   HANDLE HASH ON LOAD / CHANGE
+   ========================= */
+function handleHash() {
+    const hash = window.location.hash;
+    if (hash.startsWith("#product-")) {
+        const id = parseInt(hash.split("-")[1]);
+        if (products.find(p => p.id === id)) openProductModal(id);
+    } else {
+        closeModal();
+    }
+}
+window.addEventListener("hashchange", handleHash);
+
+/* =========================
+   EVENT DELEGATION (clicks)
+   ========================= */
+document.addEventListener("click", (e) => {
+    // View Details
+    if (e.target.classList.contains("view-details") || e.target.closest(".view-details")) {
+        const btn = e.target.classList.contains("view-details") ? e.target : e.target.closest(".view-details");
+        const id = parseInt(btn.getAttribute("data-id"));
+        openProductModal(id);
+    }
+
+    // Buy Now (card)
+    if (e.target.classList.contains("buy-now-btn") || e.target.closest(".buy-now-btn")) {
+        const btn = e.target.classList.contains("buy-now-btn") ? e.target : e.target.closest(".buy-now-btn");
+        const id = parseInt(btn.getAttribute("data-id"));
+        const prod = products.find(p => p.id === id);
+        if (prod) {
+            window.open(getWhatsAppLink(prod), '_blank');
+        }
+    }
+
+    // Close modal (× or backdrop)
+    if (e.target.closest(".close-modal")) closeModal();
+    if (e.target === modalEl) closeModal();
+});
+
+/* =========================
+   CATEGORY FILTER LINKS (navbar + footer)
+   ========================= */
+document.querySelectorAll(".filter-category-link").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const cat = link.getAttribute("data-category");
+        if (cat) {
+            currentFilter = cat;
+            currentSearch = "";
+            document.getElementById("searchInput").value = "";
+            filterProducts();
+            document.querySelectorAll(".category-filter-btn").forEach(btn => btn.classList.remove("active-filter"));
+            const activeBtn = Array.from(document.querySelectorAll(".category-filter-btn")).find(b => b.getAttribute("data-filter") === cat);
+            if (activeBtn) activeBtn.classList.add("active-filter");
+            else document.querySelector(".category-filter-btn[data-filter='all']").classList.add("active-filter");
+            document.getElementById("products-grid").scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
+
+/* =========================
+   CATEGORY FILTER BUTTONS
+   ========================= */
+document.querySelectorAll(".category-filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        currentFilter = btn.getAttribute("data-filter");
+        currentSearch = document.getElementById("searchInput").value;
+        filterProducts();
+        document.querySelectorAll(".category-filter-btn").forEach(b => b.classList.remove("active-filter"));
+        btn.classList.add("active-filter");
+        document.querySelectorAll(".category-filter-btn").forEach(b => b.setAttribute("aria-pressed", "false"));
+        btn.setAttribute("aria-pressed", "true");
+    });
+});
+
+/* =========================
+   SEARCH INPUT
+   ========================= */
+document.getElementById("searchInput").addEventListener("input", (e) => {
+    currentSearch = e.target.value;
+    filterProducts();
+});
+
+/* =========================
+   NEWSLETTER
+   ========================= */
+document.getElementById("subscribeBtn").addEventListener("click", () => {
+    const email = document.getElementById("newsEmail").value;
+    const msg = document.getElementById("newsMsg");
+    if (email && email.includes('@')) {
+        msg.innerHTML = "✨ Thank you for subscribing. Your luxury journey begins.";
+    } else {
+        msg.innerHTML = "Please enter a valid email address.";
+    }
+    setTimeout(() => msg.innerHTML = "", 3500);
+});
+
+/* =========================
+   SCROLL PROGRESS + NAVBAR + BACK TO TOP
+   ========================= */
+window.addEventListener("scroll", () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById("scrollProgress").style.width = scrolled + "%";
+
+    const backBtn = document.getElementById("backToTop");
+    if (winScroll > 300) backBtn.classList.add("show");
+    else backBtn.classList.remove("show");
+
+    const navbar = document.getElementById("mainNav");
+    if (winScroll > 50) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+});
+
+document.getElementById("backToTop").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+/* =========================
+   INITIAL RENDER
+   ========================= */
+renderProductCards(products, "productContainer");
+renderSpecialSections();
+filterProducts();
+window.dispatchEvent(new Event("hashchange"));
+
+/* =========================
+   AOS INIT
+   ========================= */
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+});
+
+console.log('Tahira — Luxury Finds loaded.');
