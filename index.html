@@ -1,736 +1,1198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="ZAKIYA - Curated luxury fashion, premium beauty, and elegant home décor. Discover handpicked high-end products for a refined lifestyle.">
-  <meta name="keywords" content="luxury fashion, beauty products, home decor, premium affiliate, ZAKIYA">
-  <meta name="author" content="ZAKIYA">
-  <meta property="og:title" content="ZAKIYA | Fashion, Beauty & Home Decor">
-  <meta property="og:description" content="Discover carefully selected luxury fashion, beauty and home decor products curated by ZAKIYA.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://placehold.co/1200x630/F8F5EF/C9A34E?text=ZAKIYA+Luxury">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ZAKIYA | Luxury Finds">
-  <meta name="twitter:description" content="Premium selection of fashion, beauty & home decor.">
-  <title>ZAKIYA | Luxury Finds – Fashion, Beauty & Home Decor</title>
-  <!-- Bootstrap 5 CSS + Icons + Fonts -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- AOS CSS (Animate on Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Google Fonts: Elegant serif & sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #FAFAFA;
-      color: #111111;
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-    }
-    h1, h2, h3, h4, .logo-text, .luxury-font {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-    }
-    /* color variables */
-    :root {
-      --gold: #C9A34E;
-      --gold-light: #E6D2A2;
-      --black: #111111;
-      --soft-white: #FAFAFA;
-      --warm-ivory: #F8F5EF;
-      --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    }
-    /* custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #E6D2A2;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #C9A34E;
-      border-radius: 10px;
-    }
-    /* glassmorphism navbar */
-    .navbar {
-      background: transparent;
-      transition: all 0.3s ease;
-      padding: 1.2rem 0;
-    }
-    .navbar.scrolled {
-      background: rgba(17, 17, 17, 0.85);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      padding: 0.7rem 0;
-    }
-    .navbar-brand img {
-      filter: brightness(0) invert(1);
-      width: 40px;
-      height: auto;
-    }
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      margin: 0 0.5rem;
-      position: relative;
-      transition: var(--transition);
-    }
-    .navbar.scrolled .nav-link {
-      color: #FAFAFA !important;
-    }
-    .nav-link:hover {
-      color: var(--gold) !important;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--gold);
-      transition: 0.3s;
-    }
-    .nav-link:hover::after {
-      width: 100%;
-    }
-    /* HERO */
-    .hero {
-      min-height: 100vh;
-      background: linear-gradient(107deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-    .hero-content {
-      padding: 0 5%;
-      max-width: 800px;
-      animation: fadeUp 1s ease-out;
-    }
-    @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(30px);}
-      100% { opacity: 1; transform: translateY(0);}
-    }
-    .btn-luxury {
-      background: transparent;
-      border: 2px solid var(--gold);
-      color: white;
-      padding: 12px 36px;
-      font-weight: 600;
-      border-radius: 40px;
-      transition: var(--transition);
-      backdrop-filter: blur(4px);
-    }
-    .btn-luxury:hover {
-      background: var(--gold);
-      color: #111;
-      border-color: var(--gold);
-      box-shadow: 0 10px 25px rgba(201,163,78,0.3);
-      transform: translateY(-3px);
-    }
-    /* product grid */
-    .product-card {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: var(--transition);
-      border: 1px solid rgba(201,163,78,0.2);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .product-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 30px 40px -20px rgba(0,0,0,0.2);
-      border-color: var(--gold);
-      border-width: 1.5px;
-    }
-    .card-img-top {
-      height: 260px;
-      object-fit: cover;
-      transition: transform 0.5s;
-    }
-    .product-card:hover .card-img-top {
-      transform: scale(1.03);
-    }
-    .category-badge {
-      background: var(--warm-ivory);
-      color: var(--gold);
-      font-size: 0.7rem;
-      padding: 5px 12px;
-      border-radius: 40px;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-    .price {
-      font-weight: 700;
-      font-size: 1.4rem;
-      color: var(--gold);
-      font-family: 'Inter', sans-serif;
-    }
-    .btn-details, .btn-quick {
-      border-radius: 30px;
-      font-size: 0.8rem;
-      padding: 6px 16px;
-      transition: 0.2s;
-    }
-    .btn-details {
-      background: var(--black);
-      color: white;
-      border: none;
-    }
-    .btn-details:hover {
-      background: var(--gold);
-      color: black;
-    }
-    /* fullscreen modal */
-    .fullscreen-modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(17,17,17,0.96);
-      backdrop-filter: blur(8px);
-      z-index: 2000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      overflow-y: auto;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-    .fullscreen-modal.active {
-      display: flex;
-      opacity: 1;
-    }
-    .modal-content-lux {
-      background: var(--warm-ivory);
-      max-width: 1300px;
-      width: 90%;
-      border-radius: 32px;
-      overflow: hidden;
-      position: relative;
-      animation: modalZoom 0.5s;
-    }
-    @keyframes modalZoom {
-      from {transform: scale(0.95); opacity: 0;}
-      to {transform: scale(1); opacity: 1;}
-    }
-    .close-modal {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 2rem;
-      cursor: pointer;
-      color: #111;
-      z-index: 10;
-      transition: 0.2s;
-    }
-    .close-modal:hover {
-      color: var(--gold);
-    }
-    /* scroll progress */
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      background: var(--gold);
-      z-index: 9999;
-      transition: width 0.05s linear;
-    }
-    /* back to top */
-    .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: var(--gold);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-size: 1.5rem;
-      cursor: pointer;
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.3s;
-      z-index: 99;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .back-to-top.show {
-      opacity: 1;
-      visibility: visible;
-    }
-    /* floating whatsapp */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      left: 30px;
-      background: #25D366;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 28px;
-      z-index: 99;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: 0.2s;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.05);
-      background: #128C7E;
-    }
-    /* quick preview tooltip */
-    .quick-preview-card {
-      position: fixed;
-      background: white;
-      width: 280px;
-      padding: 1rem;
-      border-radius: 20px;
-      box-shadow: 0 20px 35px rgba(0,0,0,0.2);
-      z-index: 2100;
-      border-left: 4px solid var(--gold);
-      display: none;
-    }
-    .section-title {
-      font-size: 2.4rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title:after {
-      content: '';
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: var(--gold);
-    }
-    footer {
-      background: #111;
-      color: #ccc;
-    }
-    footer a {
-      text-decoration: none;
-      color: #ccc;
-      transition: 0.2s;
-    }
-    footer a:hover {
-      color: var(--gold);
-    }
-    .filter-active {
-      background: var(--gold) !important;
-      color: black !important;
-      border-color: var(--gold) !important;
-    }
-    .newsletter {
-      background: var(--black);
-      color: white;
-    }
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.8rem;
-      }
-      .section-title {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Tahira - Curated luxury fashion, premium beauty, and elegant home décor. Discover handpicked high-end products for a refined lifestyle." />
+    <meta name="keywords" content="luxury fashion, beauty products, home decor, premium affiliate, Tahira" />
+    <meta name="author" content="Tahira" />
+    <meta property="og:title" content="Tahira | Fashion, Beauty & Home Decor" />
+    <meta property="og:description" content="Discover carefully selected luxury fashion, beauty and home decor products curated by Tahira." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://placehold.co/1200x630/F8F5EF/C9A34E?text=Tahira+Luxury" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tahira | Luxury Finds" />
+    <meta name="twitter:description" content="Premium selection of fashion, beauty & home decor." />
+    <title>Tahira | Luxury Finds – Fashion, Beauty & Home Decor</title>
+
+    <!-- Bootstrap 5 CSS + Icons + Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- AOS CSS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Elegant serif & sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA;
+            color: #111111;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        .logo-text,
+        .luxury-font {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* ----- COLOR VARIABLES ----- */
+        :root {
+            --gold: #C9A34E;
+            --gold-light: #E6D2A2;
+            --black: #111111;
+            --soft-white: #FAFAFA;
+            --warm-ivory: #F8F5EF;
+            --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+
+        /* ----- CUSTOM SCROLLBAR ----- */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #E6D2A2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C9A34E;
+            border-radius: 10px;
+        }
+
+        /* ----- GLASSMORPHISM NAVBAR ----- */
+        .navbar {
+            background: transparent;
+            transition: all 0.3s ease;
+            padding: 1.2rem 0;
+        }
+        .navbar.scrolled {
+            background: rgba(17, 17, 17, 0.85);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 0.7rem 0;
+        }
+        .navbar-brand img {
+            filter: brightness(0) invert(1);
+            width: 40px;
+            height: auto;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            margin: 0 0.5rem;
+            position: relative;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        .navbar.scrolled .nav-link {
+            color: #FAFAFA !important;
+        }
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* ----- HERO ----- */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(107deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%),
+                url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .hero-content {
+            padding: 0 5%;
+            max-width: 800px;
+            animation: fadeUp 1s ease-out;
+        }
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .btn-luxury {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: white;
+            padding: 12px 36px;
+            font-weight: 600;
+            border-radius: 40px;
+            transition: var(--transition);
+            backdrop-filter: blur(4px);
+        }
+        .btn-luxury:hover {
+            background: var(--gold);
+            color: #111;
+            border-color: var(--gold);
+            box-shadow: 0 10px 25px rgba(201, 163, 78, 0.3);
+            transform: translateY(-3px);
+        }
+
+        /* ----- PRODUCT CARDS ----- */
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(201, 163, 78, 0.2);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.2);
+            border-color: var(--gold);
+            border-width: 1.5px;
+        }
+        .card-img-top {
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .product-card:hover .card-img-top {
+            transform: scale(1.03);
+        }
+        .category-badge {
+            background: var(--warm-ivory);
+            color: var(--gold);
+            font-size: 0.7rem;
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .price {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--gold);
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-details,
+        .btn-quick {
+            border-radius: 30px;
+            font-size: 0.8rem;
+            padding: 6px 16px;
+            transition: 0.2s;
+        }
+        .btn-details {
+            background: var(--black);
+            color: white;
+            border: none;
+        }
+        .btn-details:hover {
+            background: var(--gold);
+            color: black;
+        }
+
+        /* ----- FULLSCREEN MODAL ----- */
+        .fullscreen-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(17, 17, 17, 0.96);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .fullscreen-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        .modal-content-lux {
+            background: var(--warm-ivory);
+            max-width: 1300px;
+            width: 90%;
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+            animation: modalZoom 0.5s;
+        }
+        @keyframes modalZoom {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #111;
+            z-index: 10;
+            transition: 0.2s;
+        }
+        .close-modal:hover {
+            color: var(--gold);
+        }
+
+        /* ----- SCROLL PROGRESS & BACK TO TOP ----- */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: var(--gold);
+            z-index: 9999;
+            transition: width 0.05s linear;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gold);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ----- WHATSAPP FLOAT ----- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25D366;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            background: #128C7E;
+        }
+
+        /* ----- QUICK PREVIEW ----- */
+        .quick-preview-card {
+            position: fixed;
+            background: white;
+            width: 280px;
+            padding: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+            z-index: 2100;
+            border-left: 4px solid var(--gold);
+            display: none;
+        }
+
+        /* ----- SECTION TITLE ----- */
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        /* ----- FOOTER ----- */
+        footer {
+            background: #111;
+            color: #ccc;
+        }
+        footer a {
+            text-decoration: none;
+            color: #ccc;
+            transition: 0.2s;
+        }
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        /* ----- FILTERS ----- */
+        .filter-active {
+            background: var(--gold) !important;
+            color: black !important;
+            border-color: var(--gold) !important;
+        }
+
+        /* ----- NEWSLETTER ----- */
+        .newsletter {
+            background: var(--black);
+            color: white;
+        }
+
+        /* ================================================================
+                   RESPONSIVE TWEAKS
+                   ================================================================ */
+
+        /* --- Large screens (desktop) --- */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1320px;
+            }
+            .hero-content h1 {
+                font-size: 4.8rem;
+            }
+        }
+
+        /* --- Laptop / small desktop --- */
+        @media (max-width: 1199px) {
+            .hero-content h1 {
+                font-size: 3.8rem;
+            }
+            .card-img-top {
+                height: 220px;
+            }
+        }
+
+        /* --- Tablet --- */
+        @media (max-width: 991px) {
+            .navbar {
+                padding: 0.8rem 0;
+            }
+            .navbar .container {
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+            }
+            .hero-content h1 {
+                font-size: 3.2rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .card-img-top {
+                height: 200px;
+            }
+            .modal-content-lux .row {
+                flex-direction: column;
+            }
+            .modal-content-lux .col-lg-6 {
+                width: 100%;
+            }
+            #modalImage {
+                min-height: 280px !important;
+                max-height: 400px;
+            }
+            .modal-content-lux .p-5 {
+                padding: 2rem !important;
+            }
+            /* quick preview on tablet: hide or reposition */
+            .quick-preview-card {
+                width: 240px;
+            }
+        }
+
+        /* --- Mobile (phones) --- */
+        @media (max-width: 767px) {
+            .navbar-brand .fs-3 {
+                font-size: 1.5rem !important;
+            }
+            .hero {
+                min-height: 80vh;
+                background-position: 60% center;
+            }
+            .hero-content {
+                padding: 0 1.5rem;
+            }
+            .hero-content h1 {
+                font-size: 2.4rem;
+                line-height: 1.2;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .btn-luxury {
+                padding: 10px 24px;
+                font-size: 0.95rem;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .section-title:after {
+                width: 40px;
+                bottom: -8px;
+            }
+            .card-img-top {
+                height: 180px;
+            }
+            .product-card .card-body {
+                padding: 1rem;
+            }
+            .price {
+                font-size: 1.2rem;
+            }
+            .btn-details,
+            .btn-quick {
+                font-size: 0.7rem;
+                padding: 4px 12px;
+            }
+            .quick-preview-card {
+                width: 200px;
+                padding: 0.7rem;
+                font-size: 0.85rem;
+            }
+            .quick-preview-card img {
+                width: 60px !important;
+                height: 60px !important;
+            }
+            .whatsapp-float {
+                width: 44px;
+                height: 44px;
+                font-size: 22px;
+                bottom: 20px;
+                left: 20px;
+            }
+            .back-to-top {
+                width: 38px;
+                height: 38px;
+                font-size: 1.2rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            .fullscreen-modal .modal-content-lux {
+                width: 95%;
+                border-radius: 20px;
+            }
+            .close-modal {
+                top: 12px;
+                right: 18px;
+                font-size: 1.6rem;
+            }
+            #modalImage {
+                min-height: 200px !important;
+                max-height: 280px;
+            }
+            .modal-content-lux .p-5 {
+                padding: 1.5rem !important;
+            }
+            .modal-content-lux h2 {
+                font-size: 1.5rem !important;
+            }
+            .newsletter h2 {
+                font-size: 1.5rem !important;
+            }
+            .newsletter .d-flex {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .newsletter .d-flex input {
+                width: 100% !important;
+                margin-bottom: 0.5rem;
+            }
+            .newsletter .d-flex button {
+                width: 100% !important;
+            }
+            .filter-category-link {
+                font-size: 0.85rem;
+            }
+            .category-filter-btn {
+                font-size: 0.75rem;
+                padding: 4px 14px;
+            }
+            footer .row {
+                text-align: center;
+            }
+            footer .col-md-4 {
+                margin-bottom: 1.5rem;
+            }
+            /* adjust search bar */
+            .input-group .form-control {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* --- Small mobile (<= 400px) --- */
+        @media (max-width: 400px) {
+            .hero-content h1 {
+                font-size: 1.9rem;
+            }
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+            .btn-luxury {
+                padding: 8px 18px;
+                font-size: 0.85rem;
+            }
+            .section-title {
+                font-size: 1.4rem;
+            }
+            .card-img-top {
+                height: 150px;
+            }
+            .product-card .card-body {
+                padding: 0.8rem;
+            }
+            .price {
+                font-size: 1rem;
+            }
+            .category-badge {
+                font-size: 0.6rem;
+                padding: 3px 8px;
+            }
+            .btn-details,
+            .btn-quick {
+                font-size: 0.65rem;
+                padding: 3px 10px;
+            }
+            .navbar-brand .fs-3 {
+                font-size: 1.3rem !important;
+            }
+            .nav-link {
+                font-size: 0.85rem;
+                margin: 0 0.2rem;
+            }
+            .fullscreen-modal .modal-content-lux {
+                border-radius: 14px;
+            }
+            #modalImage {
+                min-height: 160px !important;
+                max-height: 220px;
+            }
+            .modal-content-lux .p-5 {
+                padding: 1rem !important;
+            }
+            .modal-content-lux h2 {
+                font-size: 1.2rem !important;
+            }
+            .modal-content-lux .price {
+                font-size: 1.1rem;
+            }
+            .whatsapp-float {
+                width: 38px;
+                height: 38px;
+                font-size: 18px;
+                bottom: 14px;
+                left: 14px;
+            }
+            .back-to-top {
+                width: 34px;
+                height: 34px;
+                font-size: 1rem;
+                bottom: 14px;
+                right: 14px;
+            }
+            .quick-preview-card {
+                width: 170px;
+                padding: 0.5rem;
+                font-size: 0.75rem;
+            }
+            .quick-preview-card img {
+                width: 50px !important;
+                height: 50px !important;
+            }
+            .quick-preview-card .price {
+                font-size: 0.9rem !important;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Scroll progress & back to top -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="back-to-top" id="backToTop"><i class="bi bi-arrow-up-short"></i></div>
-  <div class="whatsapp-float" id="whatsappFloat"><i class="bi bi-whatsapp"></i></div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <span class="fs-3 fw-bold text-white luxury-font" style="letter-spacing:2px;">ZAKIYA</span>
-      </a>
-      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link filter-category-link" data-category="Fashion" href="#">Fashion</a></li>
-          <li class="nav-item"><a class="nav-link filter-category-link" data-category="Beauty" href="#">Beauty</a></li>
-          <li class="nav-item"><a class="nav-link filter-category-link" data-category="Home Decor" href="#">Home Decor</a></li>
-          <li class="nav-item"><a class="nav-link" href="#featured-products">Featured Products</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- ===== SCROLL PROGRESS & BACK TO TOP ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="back-to-top" id="backToTop"><i class="bi bi-arrow-up-short"></i></div>
+    <div class="whatsapp-float" id="whatsappFloat"><i class="bi bi-whatsapp"></i></div>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container hero-content" data-aos="fade-up">
-      <h1 class="display-2 fw-bold text-white luxury-font">Luxury Finds For Your Lifestyle</h1>
-      <p class="fs-4 text-white mt-3 opacity-75">Discover carefully selected fashion, beauty, and home décor products.</p>
-      <a href="#products-grid" class="btn btn-luxury mt-4 shop-now-btn">Shop Now <i class="bi bi-arrow-right-short"></i></a>
-    </div>
-  </section>
-
-  <!-- Search + Filter Bar -->
-  <div class="container mt-5 pt-4">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-10">
-        <div class="input-group shadow-sm border-0">
-          <span class="input-group-text bg-white border-0"><i class="bi bi-search text-gold" style="color:var(--gold);"></i></span>
-          <input type="text" id="searchInput" class="form-control border-0 py-2" placeholder="Search by product name or category..." style="background:#fff;">
-        </div>
-      </div>
-    </div>
-    <div class="row mt-3 justify-content-center">
-      <div class="col-auto">
-        <button class="btn btn-outline-dark rounded-pill category-filter-btn active-filter" data-filter="all">All</button>
-        <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Fashion">Fashion</button>
-        <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Beauty">Beauty</button>
-        <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Home Decor">Home Decor</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Products Grid (All luxe finds) -->
-  <div class="container my-5" id="products-grid">
-    <div class="section-title mb-4" data-aos="fade-right">Curated Selections</div>
-    <div class="row g-4" id="productContainer"></div>
-  </div>
-
-  <!-- Top Picks + Trending + Editor's Choice sections -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Top Picks</div></div>
-      <div class="row g-4" id="topPicksContainer"></div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Trending Products</div></div>
-      <div class="row g-4" id="trendingContainer"></div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Editor's Choice</div></div>
-      <div class="row g-4" id="editorsChoiceContainer"></div>
-    </div>
-  </div>
-
-  <!-- Newsletter -->
-  <div class="newsletter py-5 my-5" data-aos="fade-up">
-    <div class="container text-center">
-      <h2 class="display-6 fw-light luxury-font">Stay Updated With Luxury Finds</h2>
-      <p class="mb-4">Be the first to discover exclusive collections and insider access.</p>
-      <div class="row justify-content-center">
-        <div class="col-md-6 d-flex gap-2">
-          <input type="email" id="newsEmail" class="form-control rounded-pill" placeholder="Your email address">
-          <button class="btn btn-outline-light rounded-pill px-4" id="subscribeBtn">Subscribe</button>
-        </div>
-      </div>
-      <div id="newsMsg" class="mt-2 small text-gold"></div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="container my-5 py-4" data-aos="fade-up">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <span class="text-gold small tracking-wide">HERITAGE</span>
-        <h2 class="display-5 luxury-font fw-semibold">The ZAKIYA Edit</h2>
-        <p class="mt-3 lead">ZAKIYA is born from a passion for timeless elegance and curated excellence. We bridge discerning individuals with the world’s most luxurious fashion, clean beauty, and artisan home décor. Every product reflects a commitment to quality, sustainability, and extraordinary design. Elevate your everyday with pieces that tell a story of craftsmanship.</p>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format" class="img-fluid rounded-4 shadow-lg" alt="Luxury interior" loading="lazy">
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="pt-5 pb-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h3 class="luxury-font text-gold">ZAKIYA</h3>
-          <p class="small mt-2">Curated luxury for the modern connoisseur.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products-grid">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Categories</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="filter-category-link" data-category="Fashion">Fashion</a></li>
-            <li><a href="#" class="filter-category-link" data-category="Beauty">Beauty</a></li>
-            <li><a href="#" class="filter-category-link" data-category="Home Decor">Home Decor</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr class="bg-secondary">
-      <div class="text-center small">© 2025 ZAKIYA — All rights reserved. As an Amazon Associate we earn from qualifying purchases.</div>
-    </div>
-  </footer>
-
-  <!-- Fullscreen Modal Structure -->
-  <div id="fullscreenModal" class="fullscreen-modal">
-    <div class="modal-content-lux">
-      <div class="close-modal">&times;</div>
-      <div class="row g-0">
-        <div class="col-lg-6 p-0">
-          <img id="modalImage" src="" alt="Product" style="width:100%; height:100%; object-fit:cover; min-height:400px;">
-        </div>
-        <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-          <span id="modalCategory" class="category-badge w-auto mb-3"></span>
-          <h2 id="modalTitle" class="luxury-font display-6"></h2>
-          <p id="modalDesc" class="mt-3"></p>
-          <div id="modalPrice" class="price mb-4"></div>
-          <a id="modalAffiliateLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-3 w-100">View On Amazon <i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Quick preview popup container -->
-  <div id="quickPreviewContainer" class="quick-preview-card"></div>
-
-  <!-- PRODUCT DATA (easy to manage) -->
-  <script>
-    // ======================== PRODUCT ARRAY (EDIT HERE) ========================
-    const products = [
-      { id: 1, title: "Gold Silk Pleated Dress", category: "Fashion", price: "$459", image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&auto=format", affiliateLink: "https://amazon.com/demo/affiliate-dress?tag=zakiya-20", description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance." },
-      { id: 2, title: "Radiant Rose Serum", category: "Beauty", price: "$128", image: "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=500&auto=format", affiliateLink: "https://amazon.com/demo/serum?tag=zakiya-20", description: "24K gold-infused face serum, brightening + firming luxury elixir." },
-      { id: 3, title: "Marble Gold Candle", category: "Home Decor", price: "$89", image: "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=500&auto=format", affiliateLink: "https://amazon.com/demo/candle?tag=zakiya-20", description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time." },
-      { id: 4, title: "Cashmere Wrap Coat", category: "Fashion", price: "$689", image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=500&auto=format", affiliateLink: "https://amazon.com/demo/cashmere?tag=zakiya-20", description: "Pure Mongolian cashmere, dual-face design, oversized silhouette." },
-      { id: 5, title: "Gold Leaf Highlighter", category: "Beauty", price: "$49", image: "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=500&auto=format", affiliateLink: "https://amazon.com/demo/highlighter?tag=zakiya-20", description: "Luminous glow baked highlighter with reflective pearl pigments." },
-      { id: 6, title: "Geometric Vase Set", category: "Home Decor", price: "$149", image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=500&auto=format", affiliateLink: "https://amazon.com/demo/vase?tag=zakiya-20", description: "Brass & glass, modern sculptural centerpiece." },
-      { id: 7, title: "Velvet Blazer", category: "Fashion", price: "$329", image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&auto=format", affiliateLink: "https://amazon.com/demo/blazer?tag=zakiya-20", description: "Deep burgundy velvet, satin lapels, tailored elegance." },
-      { id: 8, title: "Diamond Infused Moisturizer", category: "Beauty", price: "$199", image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format", affiliateLink: "https://amazon.com/demo/moisturizer?tag=zakiya-20", description: "Luxurious peptide cream with crushed diamond dust." }
-    ];
-    // --------------------------------------------------------------------------
-    
-    let currentFilter = "all";
-    let currentSearch = "";
-    
-    function renderProductCards(productsArray, containerId) {
-      const container = document.getElementById(containerId);
-      if(!container) return;
-      if(productsArray.length === 0) { container.innerHTML = `<div class="col-12 text-center py-5">No luxury items found</div>`; return; }
-      container.innerHTML = productsArray.map(p => `
-        <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
-          <div class="product-card h-100">
-            <img src="${p.image}" class="card-img-top" alt="${p.title}" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center"><span class="category-badge">${p.category}</span><span class="price">${p.price}</span></div>
-              <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
-              <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
-              <div class="mt-auto d-flex justify-content-between gap-2">
-                <button class="btn btn-details view-details" data-id="${p.id}">View Details</button>
-                <button class="btn btn-outline-secondary rounded-pill quick-preview-btn" data-id="${p.id}">Quick Preview</button>
-              </div>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="fs-3 fw-bold text-white luxury-font" style="letter-spacing:2px;">Tahira</span>
+            </a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Fashion" href="#">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Beauty" href="#">Beauty</a></li>
+                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Home Decor" href="#">Home Decor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products-grid">Featured Products</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-      `).join('');
-    }
-    
-    function filterProducts() {
-      let filtered = products.filter(p => {
-        const matchCat = currentFilter === "all" || p.category === currentFilter;
-        const matchSearch = currentSearch === "" || p.title.toLowerCase().includes(currentSearch.toLowerCase()) || p.category.toLowerCase().includes(currentSearch.toLowerCase());
-        return matchCat && matchSearch;
-      });
-      renderProductCards(filtered, "productContainer");
-    }
-    
-    function renderSpecialSections() {
-      // Top picks: ids 1,2,3  | Trending: 4,5,6 | Editors: 7,8
-      const topPicks = products.filter(p => [1,2,3].includes(p.id));
-      const trending = products.filter(p => [4,5,6].includes(p.id));
-      const editors = products.filter(p => [7,8].includes(p.id));
-      renderProductCards(topPicks, "topPicksContainer");
-      renderProductCards(trending, "trendingContainer");
-      renderProductCards(editors, "editorsChoiceContainer");
-    }
-    
-    // Fullscreen modal logic
-    let currentModalProduct = null;
-    const modalEl = document.getElementById("fullscreenModal");
-    function openProductModal(productId) {
-      const prod = products.find(p => p.id == productId);
-      if(!prod) return;
-      currentModalProduct = prod;
-      document.getElementById("modalImage").src = prod.image;
-      document.getElementById("modalCategory").innerText = prod.category;
-      document.getElementById("modalTitle").innerText = prod.title;
-      document.getElementById("modalDesc").innerText = prod.description;
-      document.getElementById("modalPrice").innerText = prod.price;
-      const linkBtn = document.getElementById("modalAffiliateLink");
-      linkBtn.href = prod.affiliateLink;
-      modalEl.classList.add("active");
-      document.body.style.overflow = "hidden";
-      history.pushState(null, null, `#product-${prod.id}`);
-    }
-    function closeModal() {
-      modalEl.classList.remove("active");
-      document.body.style.overflow = "";
-      if(window.location.hash.startsWith("#product-")) {
-        history.pushState(null, null, " ");
-      }
-    }
-    // hash listener
-    function handleHash() {
-      const hash = window.location.hash;
-      if(hash.startsWith("#product-")) {
-        const id = parseInt(hash.split("-")[1]);
-        if(products.find(p=>p.id===id)) openProductModal(id);
-      } else closeModal();
-    }
-    window.addEventListener("hashchange", handleHash);
-    
-    // Quick preview logic
-    const previewDiv = document.getElementById("quickPreviewContainer");
-    let activePreview = null;
-    function showQuickPreview(productId, event) {
-      const product = products.find(p=>p.id==productId);
-      if(!product) return;
-      previewDiv.innerHTML = `
-        <div class="d-flex gap-3">
-          <img src="${product.image}" style="width:80px; height:80px; object-fit:cover; border-radius:12px;">
-          <div><h6 class="mb-1">${product.title}</h6><span class="category-badge">${product.category}</span><div class="price mt-1">${product.price}</div><small>${product.description.substring(0,50)}</small></div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="display-2 fw-bold text-white luxury-font">Luxury Finds For Your Lifestyle</h1>
+            <p class="fs-4 text-white mt-3 opacity-75">Discover carefully selected fashion, beauty, and home décor products.</p>
+            <a href="#products-grid" class="btn btn-luxury mt-4 shop-now-btn">Shop Now <i class="bi bi-arrow-right-short"></i></a>
         </div>
-      `;
-      const rect = event.target.getBoundingClientRect();
-      previewDiv.style.display = "block";
-      previewDiv.style.top = `${rect.top - 100}px`;
-      previewDiv.style.left = `${rect.left + 20}px`;
-      setTimeout(() => {
-        document.addEventListener("click", function closePreview(e) {
-          if(!previewDiv.contains(e.target) && !e.target.classList.contains("quick-preview-btn")) {
-            previewDiv.style.display = "none";
-            document.removeEventListener("click", closePreview);
-          }
-        });
-      }, 0);
-    }
-    
-    // Global event delegation
-    document.addEventListener("click", (e) => {
-      if(e.target.classList.contains("view-details") || e.target.closest(".view-details")) {
-        const btn = e.target.classList.contains("view-details") ? e.target : e.target.closest(".view-details");
-        const id = parseInt(btn.getAttribute("data-id"));
-        openProductModal(id);
-      }
-      if(e.target.classList.contains("quick-preview-btn")) {
-        e.stopPropagation();
-        const id = parseInt(e.target.getAttribute("data-id"));
-        showQuickPreview(id, e);
-      }
-      if(e.target.closest(".close-modal")) closeModal();
-      if(e.target === modalEl) closeModal();
-    });
-    // category filter links
-    document.querySelectorAll(".filter-category-link").forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const cat = link.getAttribute("data-category");
-        if(cat) {
-          currentFilter = cat;
-          currentSearch = "";
-          document.getElementById("searchInput").value = "";
-          filterProducts();
-          document.querySelectorAll(".category-filter-btn").forEach(btn => btn.classList.remove("active-filter"));
-          const activeBtn = Array.from(document.querySelectorAll(".category-filter-btn")).find(b=>b.getAttribute("data-filter")===cat);
-          if(activeBtn) activeBtn.classList.add("active-filter");
-          else document.querySelector(".category-filter-btn[data-filter='all']").classList.add("active-filter");
+    </section>
+
+    <!-- ===== SEARCH + FILTER BAR ===== -->
+    <div class="container mt-5 pt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-10">
+                <div class="input-group shadow-sm border-0">
+                    <span class="input-group-text bg-white border-0"><i class="bi bi-search text-gold" style="color:var(--gold);"></i></span>
+                    <input type="text" id="searchInput" class="form-control border-0 py-2" placeholder="Search by product name or category..." style="background:#fff;" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-center">
+            <div class="col-auto">
+                <button class="btn btn-outline-dark rounded-pill category-filter-btn active-filter" data-filter="all">All</button>
+                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Fashion">Fashion</button>
+                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Beauty">Beauty</button>
+                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Home Decor">Home Decor</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PRODUCTS GRID ===== -->
+    <div class="container my-5" id="products-grid">
+        <div class="section-title mb-4" data-aos="fade-right">Curated Selections</div>
+        <div class="row g-4" id="productContainer"></div>
+    </div>
+
+    <!-- ===== TOP PICKS + TRENDING + EDITOR'S CHOICE ===== -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Top Picks</div></div>
+            <div class="row g-4" id="topPicksContainer"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Trending Products</div></div>
+            <div class="row g-4" id="trendingContainer"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Editor's Choice</div></div>
+            <div class="row g-4" id="editorsChoiceContainer"></div>
+        </div>
+    </div>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <div class="newsletter py-5 my-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="display-6 fw-light luxury-font">Stay Updated With Luxury Finds</h2>
+            <p class="mb-4">Be the first to discover exclusive collections and insider access.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 d-flex gap-2 flex-wrap flex-sm-nowrap">
+                    <input type="email" id="newsEmail" class="form-control rounded-pill" placeholder="Your email address" />
+                    <button class="btn btn-outline-light rounded-pill px-4" id="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+            <div id="newsMsg" class="mt-2 small text-gold"></div>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <div class="container my-5 py-4" data-aos="fade-up">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <span class="text-gold small tracking-wide">HERITAGE</span>
+                <h2 class="display-5 luxury-font fw-semibold">The Tahira Edit</h2>
+                <p class="mt-3 lead">Tahira is born from a passion for timeless elegance and curated excellence. We bridge discerning individuals with the world's most luxurious fashion, clean beauty, and artisan home décor. Every product reflects a commitment to quality, sustainability, and extraordinary design. Elevate your everyday with pieces that tell a story of craftsmanship.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format" class="img-fluid rounded-4 shadow-lg" alt="Luxury interior" loading="lazy" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="luxury-font text-gold" style="color:var(--gold);">Tahira</h3>
+                    <p class="small mt-2">Curated luxury for the modern connoisseur.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products-grid">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="filter-category-link" data-category="Fashion">Fashion</a></li>
+                        <li><a href="#" class="filter-category-link" data-category="Beauty">Beauty</a></li>
+                        <li><a href="#" class="filter-category-link" data-category="Home Decor">Home Decor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary" />
+            <div class="text-center small">© 2025 Tahira — All rights reserved. As an Amazon Associate we earn from qualifying purchases.</div>
+        </div>
+    </footer>
+
+    <!-- ===== FULLSCREEN MODAL ===== -->
+    <div id="fullscreenModal" class="fullscreen-modal">
+        <div class="modal-content-lux">
+            <div class="close-modal">&times;</div>
+            <div class="row g-0">
+                <div class="col-lg-6 p-0">
+                    <img id="modalImage" src="" alt="Product" style="width:100%; height:100%; object-fit:cover; min-height:400px;" />
+                </div>
+                <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+                    <span id="modalCategory" class="category-badge w-auto mb-3"></span>
+                    <h2 id="modalTitle" class="luxury-font display-6"></h2>
+                    <p id="modalDesc" class="mt-3"></p>
+                    <div id="modalPrice" class="price mb-4"></div>
+                    <a id="modalAffiliateLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-3 w-100">View On Amazon <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== QUICK PREVIEW POPUP ===== -->
+    <div id="quickPreviewContainer" class="quick-preview-card"></div>
+
+
+    <!-- ============================================================== -->
+    <!-- ===== JAVASCRIPT ===== -->
+    <!-- ============================================================== -->
+
+    <script>
+        // ================================================================
+        //  PRODUCT DATA  (edit this array to add/remove/change products)
+        // ================================================================
+        const products = [{
+            id: 1,
+            title: "Gold Silk Pleated Dress",
+            category: "Fashion",
+            price: "$459",
+            image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/affiliate-dress?tag=tahira-20",
+            description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
+        }, {
+            id: 2,
+            title: "Radiant Rose Serum",
+            category: "Beauty",
+            price: "$128",
+            image: "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/serum?tag=tahira-20",
+            description: "24K gold-infused face serum, brightening + firming luxury elixir."
+        }, {
+            id: 3,
+            title: "Marble Gold Candle",
+            category: "Home Decor",
+            price: "$89",
+            image: "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/candle?tag=tahira-20",
+            description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
+        }, {
+            id: 4,
+            title: "Cashmere Wrap Coat",
+            category: "Fashion",
+            price: "$689",
+            image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/cashmere?tag=tahira-20",
+            description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
+        }, {
+            id: 5,
+            title: "Gold Leaf Highlighter",
+            category: "Beauty",
+            price: "$49",
+            image: "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/highlighter?tag=tahira-20",
+            description: "Luminous glow baked highlighter with reflective pearl pigments."
+        }, {
+            id: 6,
+            title: "Geometric Vase Set",
+            category: "Home Decor",
+            price: "$149",
+            image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/vase?tag=tahira-20",
+            description: "Brass & glass, modern sculptural centerpiece."
+        }, {
+            id: 7,
+            title: "Velvet Blazer",
+            category: "Fashion",
+            price: "$329",
+            image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/blazer?tag=tahira-20",
+            description: "Deep burgundy velvet, satin lapels, tailored elegance."
+        }, {
+            id: 8,
+            title: "Diamond Infused Moisturizer",
+            category: "Beauty",
+            price: "$199",
+            image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format",
+            affiliateLink: "https://amazon.com/demo/moisturizer?tag=tahira-20",
+            description: "Luxurious peptide cream with crushed diamond dust."
+        }];
+        // ================================================================
+
+
+        // ----- state -----
+        let currentFilter = "all";
+        let currentSearch = "";
+
+
+        // ----- render product cards into a container -----
+        function renderProductCards(productsArray, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            if (productsArray.length === 0) {
+                container.innerHTML =
+                    `<div class="col-12 text-center py-5"><p class="text-muted">No luxury items found</p></div>`;
+                return;
+            }
+            container.innerHTML = productsArray.map(p => `
+                <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
+                    <div class="product-card h-100">
+                        <img src="${p.image}" class="card-img-top" alt="${p.title}" loading="lazy" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">${p.category}</span>
+                                <span class="price">${p.price}</span>
+                            </div>
+                            <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
+                            <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <button class="btn btn-details view-details" data-id="${p.id}">View Details</button>
+                                <button class="btn btn-outline-secondary rounded-pill quick-preview-btn" data-id="${p.id}">Quick Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
         }
-      });
-    });
-    document.querySelectorAll(".category-filter-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        currentFilter = btn.getAttribute("data-filter");
-        currentSearch = document.getElementById("searchInput").value;
+
+
+        // ----- filter products -----
+        function filterProducts() {
+            let filtered = products.filter(p => {
+                const matchCat = currentFilter === "all" || p.category === currentFilter;
+                const matchSearch = currentSearch === "" ||
+                    p.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    p.category.toLowerCase().includes(currentSearch.toLowerCase());
+                return matchCat && matchSearch;
+            });
+            renderProductCards(filtered, "productContainer");
+        }
+
+
+        // ----- render special sections (Top Picks, Trending, Editor's Choice) -----
+        function renderSpecialSections() {
+            const topPicks = products.filter(p => [1, 2, 3].includes(p.id));
+            const trending = products.filter(p => [4, 5, 6].includes(p.id));
+            const editors = products.filter(p => [7, 8].includes(p.id));
+            renderProductCards(topPicks, "topPicksContainer");
+            renderProductCards(trending, "trendingContainer");
+            renderProductCards(editors, "editorsChoiceContainer");
+        }
+
+
+        // ================================================================
+        //  FULLSCREEN MODAL
+        // ================================================================
+        const modalEl = document.getElementById("fullscreenModal");
+
+        function openProductModal(productId) {
+            const prod = products.find(p => p.id == productId);
+            if (!prod) return;
+            document.getElementById("modalImage").src = prod.image;
+            document.getElementById("modalCategory").innerText = prod.category;
+            document.getElementById("modalTitle").innerText = prod.title;
+            document.getElementById("modalDesc").innerText = prod.description;
+            document.getElementById("modalPrice").innerText = prod.price;
+            document.getElementById("modalAffiliateLink").href = prod.affiliateLink;
+            modalEl.classList.add("active");
+            document.body.style.overflow = "hidden";
+            history.pushState(null, null, `#product-${prod.id}`);
+        }
+
+        function closeModal() {
+            modalEl.classList.remove("active");
+            document.body.style.overflow = "";
+            if (window.location.hash.startsWith("#product-")) {
+                history.pushState(null, null, " ");
+            }
+        }
+
+        // hash change listener
+        function handleHash() {
+            const hash = window.location.hash;
+            if (hash.startsWith("#product-")) {
+                const id = parseInt(hash.split("-")[1]);
+                if (products.find(p => p.id === id)) openProductModal(id);
+            } else {
+                closeModal();
+            }
+        }
+        window.addEventListener("hashchange", handleHash);
+
+
+        // ================================================================
+        //  QUICK PREVIEW
+        // ================================================================
+        const previewDiv = document.getElementById("quickPreviewContainer");
+
+        function showQuickPreview(productId, event) {
+            const product = products.find(p => p.id == productId);
+            if (!product) return;
+            previewDiv.innerHTML = `
+                <div class="d-flex gap-3">
+                    <img src="${product.image}" style="width:80px; height:80px; object-fit:cover; border-radius:12px;" alt="${product.title}" />
+                    <div>
+                        <h6 class="mb-1">${product.title}</h6>
+                        <span class="category-badge">${product.category}</span>
+                        <div class="price mt-1">${product.price}</div>
+                        <small>${product.description.substring(0,50)}</small>
+                    </div>
+                </div>
+            `;
+            const rect = event.target.getBoundingClientRect();
+            // position near the clicked button, but keep it on screen
+            let top = rect.top - 100;
+            let left = rect.left + 20;
+            // clamp to viewport
+            if (top < 10) top = 10;
+            if (left + 280 > window.innerWidth) left = window.innerWidth - 290;
+            if (left < 10) left = 10;
+
+            previewDiv.style.display = "block";
+            previewDiv.style.top = `${top}px`;
+            previewDiv.style.left = `${left}px`;
+
+            // close on click outside
+            setTimeout(() => {
+                document.addEventListener("click", function closePreview(e) {
+                    if (!previewDiv.contains(e.target) && !e.target.classList.contains("quick-preview-btn")) {
+                        previewDiv.style.display = "none";
+                        document.removeEventListener("click", closePreview);
+                    }
+                });
+            }, 0);
+        }
+
+
+        // ================================================================
+        //  EVENT DELEGATION
+        // ================================================================
+        document.addEventListener("click", (e) => {
+            // View Details
+            if (e.target.classList.contains("view-details") || e.target.closest(".view-details")) {
+                const btn = e.target.classList.contains("view-details") ? e.target : e.target.closest(".view-details");
+                const id = parseInt(btn.getAttribute("data-id"));
+                openProductModal(id);
+            }
+            // Quick Preview
+            if (e.target.classList.contains("quick-preview-btn")) {
+                e.stopPropagation();
+                const id = parseInt(e.target.getAttribute("data-id"));
+                showQuickPreview(id, e);
+            }
+            // Close modal
+            if (e.target.closest(".close-modal")) closeModal();
+            if (e.target === modalEl) closeModal();
+        });
+
+
+        // ----- category filter links (navbar & footer) -----
+        document.querySelectorAll(".filter-category-link").forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const cat = link.getAttribute("data-category");
+                if (cat) {
+                    currentFilter = cat;
+                    currentSearch = "";
+                    document.getElementById("searchInput").value = "";
+                    filterProducts();
+                    document.querySelectorAll(".category-filter-btn").forEach(btn => btn.classList.remove(
+                    "active-filter"));
+                    const activeBtn = Array.from(document.querySelectorAll(".category-filter-btn")).find(b => b
+                        .getAttribute("data-filter") === cat);
+                    if (activeBtn) activeBtn.classList.add("active-filter");
+                    else document.querySelector(".category-filter-btn[data-filter='all']").classList.add(
+                    "active-filter");
+                    // close mobile nav
+                    const navCollapse = document.getElementById("navbarNav");
+                    if (navCollapse.classList.contains("show")) {
+                        const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                        if (bsCollapse) bsCollapse.hide();
+                    }
+                }
+            });
+        });
+
+        // ----- category filter buttons -----
+        document.querySelectorAll(".category-filter-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                currentFilter = btn.getAttribute("data-filter");
+                currentSearch = document.getElementById("searchInput").value;
+                filterProducts();
+                document.querySelectorAll(".category-filter-btn").forEach(b => b.classList.remove("active-filter"));
+                btn.classList.add("active-filter");
+            });
+        });
+
+        // ----- search input -----
+        document.getElementById("searchInput").addEventListener("input", (e) => {
+            currentSearch = e.target.value;
+            filterProducts();
+        });
+
+        // ----- newsletter -----
+        document.getElementById("subscribeBtn").addEventListener("click", () => {
+            const email = document.getElementById("newsEmail").value;
+            const msg = document.getElementById("newsMsg");
+            if (email) {
+                msg.innerHTML = "✨ Thank you for subscribing. Your luxury journey begins.";
+            } else {
+                msg.innerHTML = "Please enter a valid email.";
+            }
+            setTimeout(() => msg.innerHTML = "", 3000);
+        });
+
+        // ----- Shop Now button scroll -----
+        document.querySelector(".shop-now-btn").addEventListener("click", (e) => {
+            e.preventDefault();
+            document.getElementById("products-grid").scrollIntoView({ behavior: "smooth" });
+        });
+
+
+        // ================================================================
+        //  SCROLL PROGRESS + BACK TO TOP + NAVBAR GLASS
+        // ================================================================
+        window.addEventListener("scroll", () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollProgress").style.width = scrolled + "%";
+
+            const backBtn = document.getElementById("backToTop");
+            if (winScroll > 300) backBtn.classList.add("show");
+            else backBtn.classList.remove("show");
+
+            const navbar = document.getElementById("mainNav");
+            if (winScroll > 50) navbar.classList.add("scrolled");
+            else navbar.classList.remove("scrolled");
+        });
+
+        document.getElementById("backToTop").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // ----- WhatsApp float -----
+        document.getElementById("whatsappFloat").addEventListener("click", () => {
+            window.open("https://wa.me/1234567890?text=Hello%20Tahira%20luxury%20collection", "_blank");
+        });
+
+
+        // ================================================================
+        //  INITIAL RENDER
+        // ================================================================
+        renderProductCards(products, "productContainer");
+        renderSpecialSections();
         filterProducts();
-        document.querySelectorAll(".category-filter-btn").forEach(b=>b.classList.remove("active-filter"));
-        btn.classList.add("active-filter");
-      });
-    });
-    document.getElementById("searchInput").addEventListener("input", (e) => {
-      currentSearch = e.target.value;
-      filterProducts();
-    });
-    document.getElementById("subscribeBtn").addEventListener("click", ()=>{
-      const email = document.getElementById("newsEmail").value;
-      if(email) document.getElementById("newsMsg").innerHTML = "✨ Thank you for subscribing. Your luxury journey begins.";
-      else document.getElementById("newsMsg").innerHTML = "Please enter a valid email.";
-      setTimeout(()=> document.getElementById("newsMsg").innerHTML="", 3000);
-    });
-    document.querySelector(".shop-now-btn").addEventListener("click", (e)=>{
-      e.preventDefault();
-      document.getElementById("products-grid").scrollIntoView({behavior:"smooth"});
-    });
-    // scroll progress
-    window.addEventListener("scroll", () => {
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      document.getElementById("scrollProgress").style.width = scrolled + "%";
-      const backBtn = document.getElementById("backToTop");
-      if(winScroll > 300) backBtn.classList.add("show"); else backBtn.classList.remove("show");
-      // navbar glass
-      const navbar = document.getElementById("mainNav");
-      if(winScroll > 50) navbar.classList.add("scrolled"); else navbar.classList.remove("scrolled");
-    });
-    document.getElementById("backToTop").addEventListener("click", ()=> window.scrollTo({top:0, behavior:"smooth"}));
-    document.getElementById("whatsappFloat").addEventListener("click", ()=> window.open("https://wa.me/1234567890?text=Hello%20ZAKIYA%20luxury%20collection", "_blank"));
-    
-    // initial render
-    renderProductCards(products, "productContainer");
-    renderSpecialSections();
-    filterProducts();
-    window.dispatchEvent(new Event("hashchange"));
-    
-    // AOS init
-    AOS.init({ duration: 800, once: true, offset: 100 });
-    
-    // loading animation remove after load
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Schema markup -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LuxuryBrand",
-      "name": "ZAKIYA",
-      "description": "Curated luxury fashion, beauty and home decor affiliate showcase.",
-      "url": "https://zakiya-luxury.com",
-      "logo": "https://placehold.co/400x100/C9A34E/111?text=ZAKIYA"
-    }
-  </script>
+        window.dispatchEvent(new Event("hashchange"));
+
+        // AOS init
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        // mark loaded
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+
+        // close quick preview on escape
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                closeModal();
+                previewDiv.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <!-- ===== SCHEMA MARKUP ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LuxuryBrand",
+            "name": "Tahira",
+            "description": "Curated luxury fashion, beauty and home decor affiliate showcase.",
+            "url": "https://tahira-luxury.com",
+            "logo": "https://placehold.co/400x100/C9A34E/111?text=Tahira"
+        }
+    </script>
+
 </body>
 </html>
