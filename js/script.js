@@ -132,7 +132,7 @@ function renderProductCards(productsArray, containerId) {
                     </div>
                     <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
                     <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
-                    <div class="mt-auto d-flex justify-content-between gap-2 p-2">
+                    <div class="mt-auto d-flex justify-content-between gap-2 p-3">
                         <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
                         <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">Buy Now</button>
                     </div>
