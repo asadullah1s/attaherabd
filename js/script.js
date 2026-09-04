@@ -22,7 +22,9 @@ const products = [{
     price: "$128",
     images: [
         "images/products/product-7.jpeg",
-        "images/products/product-8.jpeg"
+        "images/products/product-8.jpeg",
+        "images/products/product-9.jpeg",
+        "images/products/product-10.jpeg"
     ],
     description: "24K gold-infused face serum, brightening + firming luxury elixir."
 }, {
