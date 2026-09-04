@@ -3,7 +3,7 @@
    ========================= */
 const products = [{
     id: 1,
-    title: "Gold Silk Pleated Dress",
+    title: "Gold Silk Pleaed Dress",
     category: "Fashion",
     price: "$459",
     images: [
