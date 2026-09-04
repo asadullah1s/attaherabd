@@ -405,7 +405,7 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
 }
 
 .btn-buy-now {
-    background: #25D366;
+    background: var(--gold);
     color: white;
     border: none;
 }
