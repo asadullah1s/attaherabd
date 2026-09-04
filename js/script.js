@@ -33,10 +33,11 @@ const products = [{
     category: "Home Decor",
     price: "$89",
     images: [
-        "images/products/product-9.jpeg",
-        "images/products/product-10.jpeg",
         "images/products/product-11.jpeg",
-        "images/products/product-12.jpeg"
+        "images/products/product-12.jpeg",
+        "images/products/product-13.jpeg",
+        "images/products/product-14.jpeg",
+        "images/products/product-15.jpeg"
     ],
     description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
 }, {
