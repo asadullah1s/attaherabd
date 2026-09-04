@@ -7,10 +7,10 @@ const products = [{
     category: "Fashion",
     price: "$459",
     images: [
-        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop"
+        "products/product-1.jpeg",
+        "products/product-2.jpeg",
+        "products/product-3.jpeg",
+        "products/product-4.jpeg"
     ],
     description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
 }, {
@@ -19,10 +19,10 @@ const products = [{
     category: "Beauty",
     price: "$128",
     images: [
-        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop"
+        "products/product-5.jpeg",
+        "products/product-6.jpeg",
+        "products/product-7.jpeg",
+        "products/product-8.jpeg"
     ],
     description: "24K gold-infused face serum, brightening + firming luxury elixir."
 }, {
@@ -31,10 +31,10 @@ const products = [{
     category: "Home Decor",
     price: "$89",
     images: [
-        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop"
+        "products/product-9.jpeg",
+        "products/product-10.jpeg",
+        "products/product-11.jpeg",
+        "products/product-12.jpeg"
     ],
     description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
 }, {
@@ -43,10 +43,10 @@ const products = [{
     category: "Fashion",
     price: "$689",
     images: [
-        "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop"
+        "products/product-13.jpeg",
+        "products/product-14.jpeg",
+        "products/product-15.jpeg",
+        "products/product-16.jpeg"
     ],
     description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
 }, {
@@ -55,10 +55,10 @@ const products = [{
     category: "Beauty",
     price: "$49",
     images: [
-        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop"
+        "products/product-17.jpeg",
+        "products/product-18.jpeg",
+        "products/product-19.jpeg",
+        "products/product-20.jpeg"
     ],
     description: "Luminous glow baked highlighter with reflective pearl pigments."
 }, {
@@ -67,10 +67,10 @@ const products = [{
     category: "Home Decor",
     price: "$149",
     images: [
-        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=600&auto=format&fit=crop"
+        "products/product-21.jpeg",
+        "products/product-22.jpeg",
+        "products/product-23.jpeg",
+        "products/product-24.jpeg"
     ],
     description: "Brass & glass, modern sculptural centerpiece."
 }, {
@@ -79,10 +79,10 @@ const products = [{
     category: "Fashion",
     price: "$329",
     images: [
-        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop"
+        "products/product-25.jpeg",
+        "products/product-26.jpeg",
+        "products/product-27.jpeg",
+        "products/product-28.jpeg"
     ],
     description: "Deep burgundy velvet, satin lapels, tailored elegance."
 }, {
@@ -91,10 +91,10 @@ const products = [{
     category: "Beauty",
     price: "$199",
     images: [
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop"
+        "products/product-29.jpeg",
+        "products/product-31.jpeg",
+        "products/product-32.jpeg",
+        "products/product-33.jpeg"
     ],
     description: "Luxurious peptide cream with crushed diamond dust."
 }];
