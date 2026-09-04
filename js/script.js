@@ -172,7 +172,7 @@ function renderSpecialSections() {
    WHATSAPP HELPER
    ========================= */
 function getWhatsAppLink(product) {
-    const phone = "1234567890"; // change to your number
+    const phone = "+8801602066003"; // change to your number
     const message = `Hello Tahira, I'm interested in:\n*${product.title}*\n${product.description}\nPrice: ${product.price}`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
