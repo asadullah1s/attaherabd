@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Tahira - Curated luxury fashion, premium beauty, and elegant home décor. Discover handpicked high-end products for a refined lifestyle." />
-    <meta name="keywords" content="luxury fashion, beauty products, home decor, premium affiliate, Tahira" />
-    <meta name="author" content="Tahira" />
-    <meta property="og:title" content="Tahira | Fashion, Beauty & Home Decor" />
-    <meta property="og:description" content="Discover carefully selected luxury fashion, beauty and home decor products curated by Tahira." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://placehold.co/1200x630/F8F5EF/C9A34E?text=Tahira+Luxury" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tahira | Luxury Finds" />
-    <meta name="twitter:description" content="Premium selection of fashion, beauty & home decor." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Tahira - Curated luxury fashion, premium beauty, and elegant home décor. Discover handpicked high-end products for a refined lifestyle.">
+    <meta name="keywords" content="luxury fashion, beauty products, home decor, premium affiliate, Tahira">
+    <meta name="author" content="Tahira">
+    <meta property="og:title" content="Tahira | Fashion, Beauty & Home Decor">
+    <meta property="og:description" content="Discover carefully selected luxury fashion, beauty and home decor products curated by Tahira.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/F8F5EF/C9A34E?text=Tahira+Luxury">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tahira | Luxury Finds">
+    <meta name="twitter:description" content="Premium selection of fashion, beauty & home decor.">
     <title>Tahira | Luxury Finds – Fashion, Beauty & Home Decor</title>
 
     <!-- Bootstrap 5 CSS + Icons + Fonts -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- AOS CSS (Animate on Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts: Elegant serif & sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* ----- RESET & BASE ----- */
+        /* =========================
+           RESET & BASE
+        ========================= */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: #FAFAFA;
@@ -39,6 +40,7 @@
             scroll-behavior: smooth;
             overflow-x: hidden;
         }
+
         h1,
         h2,
         h3,
@@ -50,7 +52,9 @@
             letter-spacing: 0.02em;
         }
 
-        /* ----- COLOR VARIABLES ----- */
+        /* =========================
+           COLOR VARIABLES
+        ========================= */
         :root {
             --gold: #C9A34E;
             --gold-light: #E6D2A2;
@@ -58,9 +62,15 @@
             --soft-white: #FAFAFA;
             --warm-ivory: #F8F5EF;
             --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --hero-height-desktop: 82vh;
+            --hero-height-tablet: 70vh;
+            --hero-height-mobile: 60vh;
+            --hero-height-small-mobile: 50vh;
         }
 
-        /* ----- CUSTOM SCROLLBAR ----- */
+        /* =========================
+           CUSTOM SCROLLBAR
+        ========================= */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -72,23 +82,29 @@
             border-radius: 10px;
         }
 
-        /* ----- GLASSMORPHISM NAVBAR ----- */
+        /* =========================
+           GLASSMORPHISM NAVBAR
+        ========================= */
         .navbar {
             background: transparent;
             transition: all 0.3s ease;
             padding: 1.2rem 0;
+            z-index: 1050;
         }
+
         .navbar.scrolled {
             background: rgba(17, 17, 17, 0.85);
             backdrop-filter: blur(12px);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             padding: 0.7rem 0;
         }
+
         .navbar-brand img {
             filter: brightness(0) invert(1);
             width: 40px;
             height: auto;
         }
+
         .nav-link {
             color: white !important;
             font-weight: 500;
@@ -96,14 +112,16 @@
             margin: 0 0.5rem;
             position: relative;
             transition: var(--transition);
-            font-size: 0.95rem;
         }
+
         .navbar.scrolled .nav-link {
             color: #FAFAFA !important;
         }
+
         .nav-link:hover {
             color: var(--gold) !important;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -114,164 +132,211 @@
             background: var(--gold);
             transition: 0.3s;
         }
+
         .nav-link:hover::after {
             width: 100%;
         }
 
-        /* ----- HERO ----- */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(107deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%),
-                url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format') center/cover no-repeat;
-            display: flex;
-            align-items: center;
+        /* =========================
+           HERO SLIDER SECTION
+           ========================= */
+        .hero-slider-wrapper {
+            position: relative;
+            width: 100%;
+            height: var(--hero-height-desktop);
+            min-height: 400px;
+            overflow: hidden;
+            background: #111;
+        }
+
+        /* Each slide is a full-height container */
+        .hero-slider-wrapper .carousel-item {
+            height: var(--hero-height-desktop);
+            min-height: 400px;
             position: relative;
         }
-        .hero-content {
-            padding: 0 5%;
-            max-width: 800px;
-            animation: fadeUp 1s ease-out;
-        }
-        @keyframes fadeUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .btn-luxury {
-            background: transparent;
-            border: 2px solid var(--gold);
-            color: white;
-            padding: 12px 36px;
-            font-weight: 600;
-            border-radius: 40px;
-            transition: var(--transition);
-            backdrop-filter: blur(4px);
-        }
-        .btn-luxury:hover {
-            background: var(--gold);
-            color: #111;
-            border-color: var(--gold);
-            box-shadow: 0 10px 25px rgba(201, 163, 78, 0.3);
-            transform: translateY(-3px);
-        }
 
-        /* ----- PRODUCT CARDS ----- */
-        .product-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid rgba(201, 163, 78, 0.2);
+        /* ============================================================
+           BANNER IMAGES GRID — each slide holds 3 images in a row
+           ============================================================ */
+        .banner-images-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.2);
-            border-color: var(--gold);
-            border-width: 1.5px;
-        }
-        .card-img-top {
-            height: 260px;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        .product-card:hover .card-img-top {
-            transform: scale(1.03);
-        }
-        .category-badge {
-            background: var(--warm-ivory);
-            color: var(--gold);
-            font-size: 0.7rem;
-            padding: 5px 12px;
-            border-radius: 40px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-        .price {
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: var(--gold);
-            font-family: 'Inter', sans-serif;
-        }
-        .btn-details,
-        .btn-quick {
-            border-radius: 30px;
-            font-size: 0.8rem;
-            padding: 6px 16px;
-            transition: 0.2s;
-        }
-        .btn-details {
-            background: var(--black);
-            color: white;
-            border: none;
-        }
-        .btn-details:hover {
-            background: var(--gold);
-            color: black;
+            gap: 0;
+            overflow: hidden;
         }
 
-        /* ----- FULLSCREEN MODAL ----- */
-        .fullscreen-modal {
-            position: fixed;
+        .banner-images-grid .banner-img-wrap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner-images-grid .banner-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .banner-images-grid .banner-img-wrap:hover img {
+            transform: scale(1.04);
+        }
+
+        /* =========================
+           TEXT OVERLAY ON BANNER
+        ========================= */
+        .banner-text-overlay {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(17, 17, 17, 0.96);
-            backdrop-filter: blur(8px);
-            z-index: 2000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            overflow-y: auto;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-        .fullscreen-modal.active {
             display: flex;
-            opacity: 1;
-        }
-        .modal-content-lux {
-            background: var(--warm-ivory);
-            max-width: 1300px;
-            width: 90%;
-            border-radius: 32px;
-            overflow: hidden;
-            position: relative;
-            animation: modalZoom 0.5s;
-        }
-        @keyframes modalZoom {
-            from {
-                transform: scale(0.95);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 2rem;
-            cursor: pointer;
-            color: #111;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 5% 8%;
             z-index: 10;
-            transition: 0.2s;
-        }
-        .close-modal:hover {
-            color: var(--gold);
+            pointer-events: none;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.05) 70%, rgba(0, 0, 0, 0.15) 100%);
         }
 
-        /* ----- SCROLL PROGRESS & BACK TO TOP ----- */
+        .banner-text-overlay .eyebrow {
+            font-size: 0.8rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            display: inline-block;
+            backdrop-filter: blur(4px);
+        }
+
+        .banner-text-overlay h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.8rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+            line-height: 1.1;
+            max-width: 70%;
+            margin-bottom: 0.5rem;
+        }
+
+        .banner-text-overlay p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 50%;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 300;
+        }
+
+        .banner-text-overlay .btn-luxury-hero {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: #fff;
+            padding: 12px 38px;
+            font-weight: 600;
+            border-radius: 40px;
+            transition: var(--transition);
+            backdrop-filter: blur(4px);
+            pointer-events: auto;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .banner-text-overlay .btn-luxury-hero:hover {
+            background: var(--gold);
+            color: #111;
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(201, 163, 78, 0.35);
+            transform: translateY(-3px);
+        }
+
+        /* =========================
+           CAROUSEL CONTROLS (custom)
+        ========================= */
+        .hero-slider-wrapper .carousel-control-prev,
+        .hero-slider-wrapper .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            z-index: 20;
+        }
+
+        .hero-slider-wrapper .carousel-control-prev {
+            left: 20px;
+        }
+
+        .hero-slider-wrapper .carousel-control-next {
+            right: 20px;
+        }
+
+        .hero-slider-wrapper .carousel-control-prev:hover,
+        .hero-slider-wrapper .carousel-control-next:hover {
+            opacity: 1;
+            background: rgba(201, 163, 78, 0.25);
+            border-color: var(--gold);
+        }
+
+        .hero-slider-wrapper .carousel-control-prev-icon,
+        .hero-slider-wrapper .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+            filter: invert(1) brightness(2);
+            background-size: 60% 60%;
+        }
+
+        /* indicators / dots */
+        .hero-slider-wrapper .carousel-indicators {
+            bottom: 20px;
+            z-index: 25;
+            gap: 8px;
+        }
+
+        .hero-slider-wrapper .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.35);
+            transition: all 0.4s ease;
+            margin: 0 4px;
+            padding: 0;
+        }
+
+        .hero-slider-wrapper .carousel-indicators button.active {
+            background: var(--gold);
+            transform: scale(1.3);
+            box-shadow: 0 0 20px rgba(201, 163, 78, 0.4);
+        }
+
+        .hero-slider-wrapper .carousel-indicators button:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        /* =========================
+           SCROLL PROGRESS & BACK TO TOP
+        ========================= */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -282,6 +347,7 @@
             z-index: 9999;
             transition: width 0.05s linear;
         }
+
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -301,13 +367,22 @@
             transition: 0.3s;
             z-index: 99;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: none;
         }
+
         .back-to-top.show {
             opacity: 1;
             visibility: visible;
         }
 
-        /* ----- WHATSAPP FLOAT ----- */
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            background: #b8933a;
+        }
+
+        /* =========================
+           FLOATING WHATSAPP
+        ========================= */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -324,13 +399,149 @@
             z-index: 99;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: 0.2s;
+            text-decoration: none;
+            border: none;
         }
+
         .whatsapp-float:hover {
             transform: scale(1.05);
             background: #128C7E;
+            color: #fff;
         }
 
-        /* ----- QUICK PREVIEW ----- */
+        /* =========================
+           PRODUCT CARDS
+        ========================= */
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(201, 163, 78, 0.2);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.2);
+            border-color: var(--gold);
+            border-width: 1.5px;
+        }
+
+        .card-img-top {
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .card-img-top {
+            transform: scale(1.03);
+        }
+
+        .category-badge {
+            background: var(--warm-ivory);
+            color: var(--gold);
+            font-size: 0.7rem;
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--gold);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-details,
+        .btn-quick {
+            border-radius: 30px;
+            font-size: 0.8rem;
+            padding: 6px 16px;
+            transition: 0.2s;
+        }
+
+        .btn-details {
+            background: var(--black);
+            color: white;
+            border: none;
+        }
+
+        .btn-details:hover {
+            background: var(--gold);
+            color: black;
+        }
+
+        /* =========================
+           FULLSCREEN MODAL
+        ========================= */
+        .fullscreen-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(17, 17, 17, 0.96);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .fullscreen-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content-lux {
+            background: var(--warm-ivory);
+            max-width: 1300px;
+            width: 90%;
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+            animation: modalZoom 0.5s;
+        }
+
+        @keyframes modalZoom {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #111;
+            z-index: 10;
+            transition: 0.2s;
+            background: none;
+            border: none;
+        }
+
+        .close-modal:hover {
+            color: var(--gold);
+        }
+
+        /* =========================
+           QUICK PREVIEW
+        ========================= */
         .quick-preview-card {
             position: fixed;
             background: white;
@@ -343,7 +554,9 @@
             display: none;
         }
 
-        /* ----- SECTION TITLE ----- */
+        /* =========================
+           SECTION TITLE
+        ========================= */
         .section-title {
             font-size: 2.4rem;
             font-weight: 600;
@@ -351,6 +564,7 @@
             position: relative;
             display: inline-block;
         }
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -361,556 +575,801 @@
             background: var(--gold);
         }
 
-        /* ----- FOOTER ----- */
-        footer {
-            background: #111;
-            color: #ccc;
-        }
-        footer a {
-            text-decoration: none;
-            color: #ccc;
-            transition: 0.2s;
-        }
-        footer a:hover {
-            color: var(--gold);
-        }
-
-        /* ----- FILTERS ----- */
+        /* =========================
+           FILTER BUTTONS
+        ========================= */
         .filter-active {
             background: var(--gold) !important;
             color: black !important;
             border-color: var(--gold) !important;
         }
 
-        /* ----- NEWSLETTER ----- */
+        .category-filter-btn {
+            transition: var(--transition);
+            border-color: #ccc;
+            color: #333;
+        }
+
+        .category-filter-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .category-filter-btn.active-filter {
+            background: var(--gold);
+            color: #111;
+            border-color: var(--gold);
+        }
+
+        /* =========================
+           NEWSLETTER
+        ========================= */
         .newsletter {
             background: var(--black);
             color: white;
         }
 
-        /* ================================================================
-                   RESPONSIVE TWEAKS
-                   ================================================================ */
-
-        /* --- Large screens (desktop) --- */
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1320px;
-            }
-            .hero-content h1 {
-                font-size: 4.8rem;
-            }
+        .newsletter .btn-outline-light {
+            border-color: var(--gold);
+            color: var(--gold);
         }
 
-        /* --- Laptop / small desktop --- */
-        @media (max-width: 1199px) {
-            .hero-content h1 {
-                font-size: 3.8rem;
-            }
-            .card-img-top {
-                height: 220px;
-            }
+        .newsletter .btn-outline-light:hover {
+            background: var(--gold);
+            color: #111;
+            border-color: var(--gold);
         }
 
-        /* --- Tablet --- */
-        @media (max-width: 991px) {
-            .navbar {
-                padding: 0.8rem 0;
-            }
-            .navbar .container {
-                padding-left: 1.2rem;
-                padding-right: 1.2rem;
-            }
-            .hero-content h1 {
+        /* =========================
+           FOOTER
+        ========================= */
+        footer {
+            background: #111;
+            color: #ccc;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ccc;
+            transition: 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        /* =========================
+           RESPONSIVE STYLES
+           ========================= */
+
+        /* --- Laptops / small desktops (1366px - 1600px) --- */
+        @media (max-width: 1600px) {
+            .banner-text-overlay h2 {
                 font-size: 3.2rem;
             }
-            .hero-content p {
-                font-size: 1.1rem;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
-            .card-img-top {
-                height: 200px;
-            }
-            .modal-content-lux .row {
-                flex-direction: column;
-            }
-            .modal-content-lux .col-lg-6 {
-                width: 100%;
-            }
-            #modalImage {
-                min-height: 280px !important;
-                max-height: 400px;
-            }
-            .modal-content-lux .p-5 {
-                padding: 2rem !important;
-            }
-            /* quick preview on tablet: hide or reposition */
-            .quick-preview-card {
-                width: 240px;
+            .banner-text-overlay p {
+                font-size: 1rem;
+                max-width: 55%;
             }
         }
 
-        /* --- Mobile (phones) --- */
-        @media (max-width: 767px) {
-            .navbar-brand .fs-3 {
-                font-size: 1.5rem !important;
+        @media (max-width: 1366px) {
+            .banner-text-overlay h2 {
+                font-size: 2.8rem;
             }
-            .hero {
-                min-height: 80vh;
-                background-position: 60% center;
-            }
-            .hero-content {
-                padding: 0 1.5rem;
-            }
-            .hero-content h1 {
-                font-size: 2.4rem;
-                line-height: 1.2;
-            }
-            .hero-content p {
-                font-size: 1rem;
-            }
-            .btn-luxury {
-                padding: 10px 24px;
+            .banner-text-overlay p {
+                max-width: 60%;
                 font-size: 0.95rem;
             }
-            .section-title {
-                font-size: 1.7rem;
-            }
-            .section-title:after {
-                width: 40px;
-                bottom: -8px;
-            }
-            .card-img-top {
-                height: 180px;
-            }
-            .product-card .card-body {
-                padding: 1rem;
-            }
-            .price {
-                font-size: 1.2rem;
-            }
-            .btn-details,
-            .btn-quick {
+            .banner-text-overlay .eyebrow {
                 font-size: 0.7rem;
-                padding: 4px 12px;
-            }
-            .quick-preview-card {
-                width: 200px;
-                padding: 0.7rem;
-                font-size: 0.85rem;
-            }
-            .quick-preview-card img {
-                width: 60px !important;
-                height: 60px !important;
-            }
-            .whatsapp-float {
-                width: 44px;
-                height: 44px;
-                font-size: 22px;
-                bottom: 20px;
-                left: 20px;
-            }
-            .back-to-top {
-                width: 38px;
-                height: 38px;
-                font-size: 1.2rem;
-                bottom: 20px;
-                right: 20px;
-            }
-            .fullscreen-modal .modal-content-lux {
-                width: 95%;
-                border-radius: 20px;
-            }
-            .close-modal {
-                top: 12px;
-                right: 18px;
-                font-size: 1.6rem;
-            }
-            #modalImage {
-                min-height: 200px !important;
-                max-height: 280px;
-            }
-            .modal-content-lux .p-5 {
-                padding: 1.5rem !important;
-            }
-            .modal-content-lux h2 {
-                font-size: 1.5rem !important;
-            }
-            .newsletter h2 {
-                font-size: 1.5rem !important;
-            }
-            .newsletter .d-flex {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .newsletter .d-flex input {
-                width: 100% !important;
-                margin-bottom: 0.5rem;
-            }
-            .newsletter .d-flex button {
-                width: 100% !important;
-            }
-            .filter-category-link {
-                font-size: 0.85rem;
-            }
-            .category-filter-btn {
-                font-size: 0.75rem;
-                padding: 4px 14px;
-            }
-            footer .row {
-                text-align: center;
-            }
-            footer .col-md-4 {
-                margin-bottom: 1.5rem;
-            }
-            /* adjust search bar */
-            .input-group .form-control {
-                font-size: 0.9rem;
+                padding: 0.2rem 1rem;
             }
         }
 
-        /* --- Small mobile (<= 400px) --- */
-        @media (max-width: 400px) {
-            .hero-content h1 {
-                font-size: 1.9rem;
+        /* --- Tablets (768px - 1024px) --- */
+        @media (max-width: 1024px) {
+            .hero-slider-wrapper,
+            .hero-slider-wrapper .carousel-item {
+                height: var(--hero-height-tablet);
+                min-height: 350px;
             }
-            .hero-content p {
+
+            .banner-text-overlay {
+                padding: 4% 6%;
+            }
+
+            .banner-text-overlay h2 {
+                font-size: 2.4rem;
+                max-width: 80%;
+            }
+
+            .banner-text-overlay p {
+                max-width: 70%;
                 font-size: 0.9rem;
             }
-            .btn-luxury {
-                padding: 8px 18px;
+
+            .banner-text-overlay .btn-luxury-hero {
+                padding: 10px 30px;
                 font-size: 0.85rem;
             }
-            .section-title {
-                font-size: 1.4rem;
+
+            .hero-slider-wrapper .carousel-control-prev,
+            .hero-slider-wrapper .carousel-control-next {
+                width: 40px;
+                height: 40px;
             }
-            .card-img-top {
-                height: 150px;
+
+            .hero-slider-wrapper .carousel-control-prev {
+                left: 12px;
             }
-            .product-card .card-body {
-                padding: 0.8rem;
+            .hero-slider-wrapper .carousel-control-next {
+                right: 12px;
             }
-            .price {
-                font-size: 1rem;
+
+            .banner-images-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
-            .category-badge {
+        }
+
+        /* --- Mobile (600px - 768px) --- */
+        @media (max-width: 768px) {
+            .hero-slider-wrapper,
+            .hero-slider-wrapper .carousel-item {
+                height: var(--hero-height-mobile);
+                min-height: 300px;
+            }
+
+            .banner-text-overlay {
+                padding: 3% 5%;
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.2) 100%);
+            }
+
+            .banner-text-overlay h2 {
+                font-size: 1.8rem;
+                max-width: 90%;
+            }
+
+            .banner-text-overlay p {
+                max-width: 85%;
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+            }
+
+            .banner-text-overlay .eyebrow {
                 font-size: 0.6rem;
-                padding: 3px 8px;
+                padding: 0.15rem 0.8rem;
+                letter-spacing: 3px;
             }
-            .btn-details,
-            .btn-quick {
-                font-size: 0.65rem;
-                padding: 3px 10px;
+
+            .banner-text-overlay .btn-luxury-hero {
+                padding: 8px 24px;
+                font-size: 0.8rem;
             }
-            .navbar-brand .fs-3 {
-                font-size: 1.3rem !important;
-            }
-            .nav-link {
-                font-size: 0.85rem;
-                margin: 0 0.2rem;
-            }
-            .fullscreen-modal .modal-content-lux {
-                border-radius: 14px;
-            }
-            #modalImage {
-                min-height: 160px !important;
-                max-height: 220px;
-            }
-            .modal-content-lux .p-5 {
-                padding: 1rem !important;
-            }
-            .modal-content-lux h2 {
-                font-size: 1.2rem !important;
-            }
-            .modal-content-lux .price {
-                font-size: 1.1rem;
-            }
-            .whatsapp-float {
-                width: 38px;
-                height: 38px;
-                font-size: 18px;
-                bottom: 14px;
-                left: 14px;
-            }
-            .back-to-top {
+
+            .hero-slider-wrapper .carousel-control-prev,
+            .hero-slider-wrapper .carousel-control-next {
                 width: 34px;
                 height: 34px;
-                font-size: 1rem;
-                bottom: 14px;
-                right: 14px;
             }
-            .quick-preview-card {
-                width: 170px;
-                padding: 0.5rem;
+
+            .hero-slider-wrapper .carousel-control-prev {
+                left: 8px;
+            }
+            .hero-slider-wrapper .carousel-control-next {
+                right: 8px;
+            }
+
+            .hero-slider-wrapper .carousel-control-prev-icon,
+            .hero-slider-wrapper .carousel-control-next-icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            .hero-slider-wrapper .carousel-indicators {
+                bottom: 12px;
+                gap: 6px;
+            }
+
+            .hero-slider-wrapper .carousel-indicators button {
+                width: 8px;
+                height: 8px;
+            }
+
+            .banner-images-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .banner-images-grid .banner-img-wrap:hover img {
+                transform: none;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* --- Small mobile (320px - 600px) --- */
+        @media (max-width: 600px) {
+            .hero-slider-wrapper,
+            .hero-slider-wrapper .carousel-item {
+                height: var(--hero-height-small-mobile);
+                min-height: 260px;
+            }
+
+            .banner-text-overlay h2 {
+                font-size: 1.4rem;
+                max-width: 95%;
+            }
+
+            .banner-text-overlay p {
+                max-width: 95%;
                 font-size: 0.75rem;
+                margin-bottom: 0.8rem;
             }
-            .quick-preview-card img {
-                width: 50px !important;
-                height: 50px !important;
+
+            .banner-text-overlay .eyebrow {
+                font-size: 0.5rem;
+                padding: 0.1rem 0.6rem;
+                letter-spacing: 2px;
+                margin-bottom: 0.3rem;
             }
-            .quick-preview-card .price {
-                font-size: 0.9rem !important;
+
+            .banner-text-overlay .btn-luxury-hero {
+                padding: 6px 18px;
+                font-size: 0.7rem;
+                border-width: 1.5px;
             }
+
+            .hero-slider-wrapper .carousel-control-prev,
+            .hero-slider-wrapper .carousel-control-next {
+                width: 28px;
+                height: 28px;
+            }
+
+            .hero-slider-wrapper .carousel-control-prev {
+                left: 4px;
+            }
+            .hero-slider-wrapper .carousel-control-next {
+                right: 4px;
+            }
+
+            .hero-slider-wrapper .carousel-control-prev-icon,
+            .hero-slider-wrapper .carousel-control-next-icon {
+                width: 12px;
+                height: 12px;
+            }
+
+            .hero-slider-wrapper .carousel-indicators {
+                bottom: 8px;
+                gap: 4px;
+            }
+
+            .hero-slider-wrapper .carousel-indicators button {
+                width: 6px;
+                height: 6px;
+            }
+
+            .banner-images-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .banner-text-overlay {
+                padding: 2% 4%;
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.3) 100%);
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .whatsapp-float {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                bottom: 16px;
+                left: 16px;
+            }
+
+            .back-to-top {
+                width: 36px;
+                height: 36px;
+                font-size: 1.2rem;
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+
+        /* --- Extra small (320px) --- */
+        @media (max-width: 375px) {
+            .hero-slider-wrapper,
+            .hero-slider-wrapper .carousel-item {
+                height: var(--hero-height-small-mobile);
+                min-height: 220px;
+            }
+
+            .banner-text-overlay h2 {
+                font-size: 1.2rem;
+            }
+
+            .banner-text-overlay p {
+                font-size: 0.65rem;
+            }
+
+            .banner-text-overlay .btn-luxury-hero {
+                padding: 5px 14px;
+                font-size: 0.6rem;
+            }
+
+            .banner-images-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* --- Ensure no horizontal scroll --- */
+        .container,
+        .container-fluid {
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* =========================
+           AOS OVERRIDE for hero
+        ========================= */
+        [data-aos] {
+            pointer-events: none;
+        }
+        [data-aos].aos-animate {
+            pointer-events: auto;
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== SCROLL PROGRESS & BACK TO TOP ===== -->
+    <!-- =========================
+    SCROLL PROGRESS & BACK TO TOP
+    ========================= -->
     <div class="scroll-progress" id="scrollProgress"></div>
-    <div class="back-to-top" id="backToTop"><i class="bi bi-arrow-up-short"></i></div>
-    <div class="whatsapp-float" id="whatsappFloat"><i class="bi bi-whatsapp"></i></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <span class="fs-3 fw-bold text-white luxury-font" style="letter-spacing:2px;">Tahira</span>
-            </a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Fashion" href="#">Fashion</a></li>
-                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Beauty" href="#">Beauty</a></li>
-                    <li class="nav-item"><a class="nav-link filter-category-link" data-category="Home Decor" href="#">Home Decor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products-grid">Featured Products</a></li>
+    <!-- =========================
+    FLOATING WHATSAPP
+    ========================= -->
+    <a href="https://wa.me/1234567890?text=Hello%20Tahira%20luxury%20collection" target="_blank"
+    class="whatsapp-float" id="whatsappFloat" aria-label="Contact us on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- =========================
+NAVBAR START
+========================= -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="fs-3 fw-bold text-white luxury-font" style="letter-spacing:2px;">Tahira</span>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link filter-category-link" data-category="Fashion" href="#">Fashion</a></li>
+            <li class="nav-item"><a class="nav-link filter-category-link" data-category="Beauty" href="#">Beauty</a></li>
+            <li class="nav-item"><a class="nav-link filter-category-link" data-category="Home Decor" href="#">Home Decor</a></li>
+            <li class="nav-item"><a class="nav-link" href="#featured-products">Featured</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- =========================
+NAVBAR END
+========================= -->
+
+
+<!-- =========================
+HERO SLIDER START
+========================= -->
+<section id="home" class="hero-slider-wrapper">
+
+    <!-- Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: New Collection"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2: Bridal Luxe"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3: Home & Living"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <!-- ==========================================================
+            BANNER 1 — "New Collection"
+            ========================================================== -->
+            <div class="carousel-item active">
+                <!--
+                ============================================================
+                BANNER 1 IMAGES
+                Replace these 3 images with your own.
+                Store images in: /images/banners/
+                Recommended filenames: banner1-1.jpg, banner1-2.jpg, banner1-3.jpg
+                ============================================================
+                -->
+                <div class="banner-images-grid">
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&auto=format&fit=crop"
+                        alt="Luxury fashion model in gold silk dress"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&auto=format&fit=crop"
+                        alt="Elegant evening wear collection"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=800&auto=format&fit=crop"
+                        alt="Luxury fashion accessories"
+                        loading="lazy">
+                    </div>
+                </div>
+                <!-- Text overlay -->
+                <div class="banner-text-overlay">
+                    <span class="eyebrow">New Collection</span>
+                    <h2>The Essence of Pakistani Elegance</h2>
+                    <p>Discover our latest luxury fashion, crafted for the modern connoisseur.</p>
+                    <a href="#products-grid" class="btn-luxury-hero">Shop Now <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+
+            <!-- ==========================================================
+            BANNER 2 — "Bridal Luxe"
+            ========================================================== -->
+            <div class="carousel-item">
+                <!--
+                ============================================================
+                BANNER 2 IMAGES
+                Replace these 3 images with your own.
+                Store images in: /images/banners/
+                Recommended filenames: banner2-1.jpg, banner2-2.jpg, banner2-3.jpg
+                ============================================================
+                -->
+                <div class="banner-images-grid">
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop"
+                        alt="Bridal fashion collection"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800&auto=format&fit=crop"
+                        alt="Luxury bridal jewelry"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?w=800&auto=format&fit=crop"
+                        alt="Wedding elegance"
+                        loading="lazy">
+                    </div>
+                </div>
+                <!-- Text overlay -->
+                <div class="banner-text-overlay">
+                    <span class="eyebrow">Bridal Luxe</span>
+                    <h2>Timeless Grace for Your Special Day</h2>
+                    <p>Exquisite bridal wear and accessories that celebrate heritage and romance.</p>
+                    <a href="#products-grid" class="btn-luxury-hero">Explore Bridal <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+
+            <!-- ==========================================================
+            BANNER 3 — "Home & Living"
+            ========================================================== -->
+            <div class="carousel-item">
+                <!--
+                ============================================================
+                BANNER 3 IMAGES
+                Replace these 3 images with your own.
+                Store images in: /images/banners/
+                Recommended filenames: banner3-1.jpg, banner3-2.jpg, banner3-3.jpg
+                ============================================================
+                -->
+                <div class="banner-images-grid">
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=800&auto=format&fit=crop"
+                        alt="Luxury home decor interior"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=800&auto=format&fit=crop"
+                        alt="Elegant home accessories"
+                        loading="lazy">
+                    </div>
+                    <div class="banner-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&auto=format&fit=crop"
+                        alt="Artisan home décor"
+                        loading="lazy">
+                    </div>
+                </div>
+                <!-- Text overlay -->
+                <div class="banner-text-overlay">
+                    <span class="eyebrow">Home &amp; Living</span>
+                    <h2>Curated Spaces, Artisan Soul</h2>
+                    <p>Handpicked home décor that brings warmth, beauty, and distinction to every room.</p>
+                    <a href="#products-grid" class="btn-luxury-hero">Discover Home <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+
+        </div><!-- /.carousel-inner -->
+
+        <!-- Controls: Previous / Next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+    </div><!-- /#heroCarousel -->
+
+</section>
+<!-- =========================
+HERO SLIDER END
+========================= -->
+
+
+<!-- =========================
+SEARCH + FILTER BAR
+========================= -->
+<div class="container mt-5 pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-10">
+            <div class="input-group shadow-sm border-0">
+                <span class="input-group-text bg-white border-0"><i class="bi bi-search text-gold" style="color:var(--gold);"></i></span>
+                <input type="text" id="searchInput" class="form-control border-0 py-2" placeholder="Search by product name or category..." aria-label="Search products" style="background:#fff;">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-auto">
+            <button class="btn btn-outline-dark rounded-pill category-filter-btn active-filter" data-filter="all" aria-pressed="true">All</button>
+            <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Fashion" aria-pressed="false">Fashion</button>
+            <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Beauty" aria-pressed="false">Beauty</button>
+            <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Home Decor" aria-pressed="false">Home Decor</button>
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+PRODUCTS GRID
+========================= -->
+<div class="container my-5" id="products-grid">
+    <div class="section-title mb-4" data-aos="fade-right">Curated Selections</div>
+    <div class="row g-4" id="productContainer"></div>
+</div>
+
+<!-- =========================
+TOP PICKS + TRENDING + EDITOR'S CHOICE
+========================= -->
+<div class="container my-5" id="featured-products">
+    <div class="row">
+        <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Top Picks</div></div>
+        <div class="row g-4" id="topPicksContainer"></div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Trending Products</div></div>
+        <div class="row g-4" id="trendingContainer"></div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Editor's Choice</div></div>
+        <div class="row g-4" id="editorsChoiceContainer"></div>
+    </div>
+</div>
+
+<!-- =========================
+NEWSLETTER
+========================= -->
+<div class="newsletter py-5 my-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="display-6 fw-light luxury-font">Stay Updated With Luxury Finds</h2>
+        <p class="mb-4">Be the first to discover exclusive collections and insider access.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex gap-2 flex-wrap flex-sm-nowrap">
+                <input type="email" id="newsEmail" class="form-control rounded-pill" placeholder="Your email address" aria-label="Email address for newsletter">
+                <button class="btn btn-outline-light rounded-pill px-4" id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+        <div id="newsMsg" class="mt-2 small text-gold"></div>
+    </div>
+</div>
+
+<!-- =========================
+ABOUT SECTION
+========================= -->
+<div class="container my-5 py-4" data-aos="fade-up">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <span class="text-gold small tracking-wide">HERITAGE</span>
+            <h2 class="display-5 luxury-font fw-semibold">The Tahira Edit</h2>
+            <p class="mt-3 lead">Tahira is born from a passion for timeless elegance and curated excellence. We bridge discerning individuals with the world's most luxurious fashion, clean beauty, and artisan home décor. Every product reflects a commitment to quality, sustainability, and extraordinary design. Elevate your everyday with pieces that tell a story of craftsmanship.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format" class="img-fluid rounded-4 shadow-lg" alt="Luxury interior with elegant decor" loading="lazy">
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+FOOTER
+========================= -->
+<footer class="pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3 class="luxury-font text-gold">Tahira</h3>
+                <p class="small mt-2">Curated luxury for the modern connoisseur.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products-grid">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Categories</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="filter-category-link" data-category="Fashion">Fashion</a></li>
+                    <li><a href="#" class="filter-category-link" data-category="Beauty">Beauty</a></li>
+                    <li><a href="#" class="filter-category-link" data-category="Home Decor">Home Decor</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+        <hr class="bg-secondary">
+        <div class="text-center small">© 2025 Tahira — All rights reserved. As an Amazon Associate we earn from qualifying purchases.</div>
+    </div>
+</footer>
 
-    <!-- ===== HERO ===== -->
-    <section id="home" class="hero">
-        <div class="container hero-content" data-aos="fade-up">
-            <h1 class="display-2 fw-bold text-white luxury-font">Luxury Finds For Your Lifestyle</h1>
-            <p class="fs-4 text-white mt-3 opacity-75">Discover carefully selected fashion, beauty, and home décor products.</p>
-            <a href="#products-grid" class="btn btn-luxury mt-4 shop-now-btn">Shop Now <i class="bi bi-arrow-right-short"></i></a>
-        </div>
-    </section>
-
-    <!-- ===== SEARCH + FILTER BAR ===== -->
-    <div class="container mt-5 pt-4">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-10">
-                <div class="input-group shadow-sm border-0">
-                    <span class="input-group-text bg-white border-0"><i class="bi bi-search text-gold" style="color:var(--gold);"></i></span>
-                    <input type="text" id="searchInput" class="form-control border-0 py-2" placeholder="Search by product name or category..." style="background:#fff;" />
-                </div>
+<!-- =========================
+FULLSCREEN MODAL
+========================= -->
+<div id="fullscreenModal" class="fullscreen-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content-lux">
+        <button class="close-modal" aria-label="Close product details">&times;</button>
+        <div class="row g-0">
+            <div class="col-lg-6 p-0">
+                <img id="modalImage" src="" alt="Product" style="width:100%; height:100%; object-fit:cover; min-height:400px;">
             </div>
-        </div>
-        <div class="row mt-3 justify-content-center">
-            <div class="col-auto">
-                <button class="btn btn-outline-dark rounded-pill category-filter-btn active-filter" data-filter="all">All</button>
-                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Fashion">Fashion</button>
-                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Beauty">Beauty</button>
-                <button class="btn btn-outline-dark rounded-pill category-filter-btn" data-filter="Home Decor">Home Decor</button>
+            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+                <span id="modalCategory" class="category-badge w-auto mb-3"></span>
+                <h2 id="modalTitle" class="luxury-font display-6"></h2>
+                <p id="modalDesc" class="mt-3"></p>
+                <div id="modalPrice" class="price mb-4"></div>
+                <a id="modalAffiliateLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-3 w-100">View On Amazon <i class="bi bi-box-arrow-up-right"></i></a>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- ===== PRODUCTS GRID ===== -->
-    <div class="container my-5" id="products-grid">
-        <div class="section-title mb-4" data-aos="fade-right">Curated Selections</div>
-        <div class="row g-4" id="productContainer"></div>
-    </div>
-
-    <!-- ===== TOP PICKS + TRENDING + EDITOR'S CHOICE ===== -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Top Picks</div></div>
-            <div class="row g-4" id="topPicksContainer"></div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Trending Products</div></div>
-            <div class="row g-4" id="trendingContainer"></div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 mb-4"><div class="section-title" data-aos="fade-right">Editor's Choice</div></div>
-            <div class="row g-4" id="editorsChoiceContainer"></div>
-        </div>
-    </div>
-
-    <!-- ===== NEWSLETTER ===== -->
-    <div class="newsletter py-5 my-5" data-aos="fade-up">
-        <div class="container text-center">
-            <h2 class="display-6 fw-light luxury-font">Stay Updated With Luxury Finds</h2>
-            <p class="mb-4">Be the first to discover exclusive collections and insider access.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6 d-flex gap-2 flex-wrap flex-sm-nowrap">
-                    <input type="email" id="newsEmail" class="form-control rounded-pill" placeholder="Your email address" />
-                    <button class="btn btn-outline-light rounded-pill px-4" id="subscribeBtn">Subscribe</button>
-                </div>
-            </div>
-            <div id="newsMsg" class="mt-2 small text-gold"></div>
-        </div>
-    </div>
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <div class="container my-5 py-4" data-aos="fade-up">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <span class="text-gold small tracking-wide">HERITAGE</span>
-                <h2 class="display-5 luxury-font fw-semibold">The Tahira Edit</h2>
-                <p class="mt-3 lead">Tahira is born from a passion for timeless elegance and curated excellence. We bridge discerning individuals with the world's most luxurious fashion, clean beauty, and artisan home décor. Every product reflects a commitment to quality, sustainability, and extraordinary design. Elevate your everyday with pieces that tell a story of craftsmanship.</p>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&auto=format" class="img-fluid rounded-4 shadow-lg" alt="Luxury interior" loading="lazy" />
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="pt-5 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h3 class="luxury-font text-gold" style="color:var(--gold);">Tahira</h3>
-                    <p class="small mt-2">Curated luxury for the modern connoisseur.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products-grid">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Categories</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="filter-category-link" data-category="Fashion">Fashion</a></li>
-                        <li><a href="#" class="filter-category-link" data-category="Beauty">Beauty</a></li>
-                        <li><a href="#" class="filter-category-link" data-category="Home Decor">Home Decor</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="bg-secondary" />
-            <div class="text-center small">© 2025 Tahira — All rights reserved. As an Amazon Associate we earn from qualifying purchases.</div>
-        </div>
-    </footer>
-
-    <!-- ===== FULLSCREEN MODAL ===== -->
-    <div id="fullscreenModal" class="fullscreen-modal">
-        <div class="modal-content-lux">
-            <div class="close-modal">&times;</div>
-            <div class="row g-0">
-                <div class="col-lg-6 p-0">
-                    <img id="modalImage" src="" alt="Product" style="width:100%; height:100%; object-fit:cover; min-height:400px;" />
-                </div>
-                <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
-                    <span id="modalCategory" class="category-badge w-auto mb-3"></span>
-                    <h2 id="modalTitle" class="luxury-font display-6"></h2>
-                    <p id="modalDesc" class="mt-3"></p>
-                    <div id="modalPrice" class="price mb-4"></div>
-                    <a id="modalAffiliateLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-3 w-100">View On Amazon <i class="bi bi-box-arrow-up-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== QUICK PREVIEW POPUP ===== -->
-    <div id="quickPreviewContainer" class="quick-preview-card"></div>
+<!-- =========================
+QUICK PREVIEW POPUP
+========================= -->
+<div id="quickPreviewContainer" class="quick-preview-card" role="tooltip"></div>
 
 
-    <!-- ============================================================== -->
-    <!-- ===== JAVASCRIPT ===== -->
-    <!-- ============================================================== -->
+<!-- =========================
+JAVASCRIPT — All logic
+========================= -->
+<script>
+    /**
+     * ============================================================
+     * PRODUCT DATA
+     * Edit this array to add / remove / modify products.
+     * Each product needs: id, title, category, price, image, affiliateLink, description
+     * ============================================================
+     */
+    const products = [{
+        id: 1,
+        title: "Gold Silk Pleated Dress",
+        category: "Fashion",
+        price: "$459",
+        image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/affiliate-dress?tag=tahira-20",
+        description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
+    }, {
+        id: 2,
+        title: "Radiant Rose Serum",
+        category: "Beauty",
+        price: "$128",
+        image: "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/serum?tag=tahira-20",
+        description: "24K gold-infused face serum, brightening + firming luxury elixir."
+    }, {
+        id: 3,
+        title: "Marble Gold Candle",
+        category: "Home Decor",
+        price: "$89",
+        image: "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/candle?tag=tahira-20",
+        description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
+    }, {
+        id: 4,
+        title: "Cashmere Wrap Coat",
+        category: "Fashion",
+        price: "$689",
+        image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/cashmere?tag=tahira-20",
+        description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
+    }, {
+        id: 5,
+        title: "Gold Leaf Highlighter",
+        category: "Beauty",
+        price: "$49",
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/highlighter?tag=tahira-20",
+        description: "Luminous glow baked highlighter with reflective pearl pigments."
+    }, {
+        id: 6,
+        title: "Geometric Vase Set",
+        category: "Home Decor",
+        price: "$149",
+        image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/vase?tag=tahira-20",
+        description: "Brass & glass, modern sculptural centerpiece."
+    }, {
+        id: 7,
+        title: "Velvet Blazer",
+        category: "Fashion",
+        price: "$329",
+        image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/blazer?tag=tahira-20",
+        description: "Deep burgundy velvet, satin lapels, tailored elegance."
+    }, {
+        id: 8,
+        title: "Diamond Infused Moisturizer",
+        category: "Beauty",
+        price: "$199",
+        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format&fit=crop",
+        affiliateLink: "https://amazon.com/demo/moisturizer?tag=tahira-20",
+        description: "Luxurious peptide cream with crushed diamond dust."
+    }];
 
-    <script>
-        // ================================================================
-        //  PRODUCT DATA  (edit this array to add/remove/change products)
-        // ================================================================
-        const products = [{
-            id: 1,
-            title: "Gold Silk Pleated Dress",
-            category: "Fashion",
-            price: "$459",
-            image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/affiliate-dress?tag=tahira-20",
-            description: "Flowing silk charmeuse with gold hardware. Effortless evening elegance."
-        }, {
-            id: 2,
-            title: "Radiant Rose Serum",
-            category: "Beauty",
-            price: "$128",
-            image: "https://images.unsplash.com/photo-1571781418606-2c70f0ca2c8a?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/serum?tag=tahira-20",
-            description: "24K gold-infused face serum, brightening + firming luxury elixir."
-        }, {
-            id: 3,
-            title: "Marble Gold Candle",
-            category: "Home Decor",
-            price: "$89",
-            image: "https://images.unsplash.com/photo-1602874801007-bd36f8c8fcb2?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/candle?tag=tahira-20",
-            description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
-        }, {
-            id: 4,
-            title: "Cashmere Wrap Coat",
-            category: "Fashion",
-            price: "$689",
-            image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/cashmere?tag=tahira-20",
-            description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
-        }, {
-            id: 5,
-            title: "Gold Leaf Highlighter",
-            category: "Beauty",
-            price: "$49",
-            image: "https://images.unsplash.com/photo-1596462502278-27bfdc9e2f70?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/highlighter?tag=tahira-20",
-            description: "Luminous glow baked highlighter with reflective pearl pigments."
-        }, {
-            id: 6,
-            title: "Geometric Vase Set",
-            category: "Home Decor",
-            price: "$149",
-            image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/vase?tag=tahira-20",
-            description: "Brass & glass, modern sculptural centerpiece."
-        }, {
-            id: 7,
-            title: "Velvet Blazer",
-            category: "Fashion",
-            price: "$329",
-            image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/blazer?tag=tahira-20",
-            description: "Deep burgundy velvet, satin lapels, tailored elegance."
-        }, {
-            id: 8,
-            title: "Diamond Infused Moisturizer",
-            category: "Beauty",
-            price: "$199",
-            image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format",
-            affiliateLink: "https://amazon.com/demo/moisturizer?tag=tahira-20",
-            description: "Luxurious peptide cream with crushed diamond dust."
-        }];
-        // ================================================================
+    /* =========================
+       STATE
+    ========================= */
+    let currentFilter = "all";
+    let currentSearch = "";
 
-
-        // ----- state -----
-        let currentFilter = "all";
-        let currentSearch = "";
-
-
-        // ----- render product cards into a container -----
-        function renderProductCards(productsArray, containerId) {
-            const container = document.getElementById(containerId);
-            if (!container) return;
-            if (productsArray.length === 0) {
-                container.innerHTML =
-                    `<div class="col-12 text-center py-5"><p class="text-muted">No luxury items found</p></div>`;
-                return;
-            }
-            container.innerHTML = productsArray.map(p => `
+    /* =========================
+       RENDER PRODUCT CARDS
+    ========================= */
+    function renderProductCards(productsArray, containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        if (productsArray.length === 0) {
+            container.innerHTML =
+                `<div class="col-12 text-center py-5">No luxury items found</div>`;
+            return;
+        }
+        container.innerHTML = productsArray.map(p => `
                 <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
                     <div class="product-card h-100">
-                        <img src="${p.image}" class="card-img-top" alt="${p.title}" loading="lazy" />
+                        <img src="${p.image}" class="card-img-top" alt="${p.title}" loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="category-badge">${p.category}</span>
@@ -919,91 +1378,93 @@
                             <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
                             <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
                             <div class="mt-auto d-flex justify-content-between gap-2">
-                                <button class="btn btn-details view-details" data-id="${p.id}">View Details</button>
-                                <button class="btn btn-outline-secondary rounded-pill quick-preview-btn" data-id="${p.id}">Quick Preview</button>
+                                <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
+                                <button class="btn btn-outline-secondary rounded-pill quick-preview-btn" data-id="${p.id}" aria-label="Quick preview of ${p.title}">Quick Preview</button>
                             </div>
                         </div>
                     </div>
                 </div>
             `).join('');
+    }
+
+    /* =========================
+       FILTER PRODUCTS
+    ========================= */
+    function filterProducts() {
+        let filtered = products.filter(p => {
+            const matchCat = currentFilter === "all" || p.category === currentFilter;
+            const matchSearch = currentSearch === "" ||
+                p.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                p.category.toLowerCase().includes(currentSearch.toLowerCase());
+            return matchCat && matchSearch;
+        });
+        renderProductCards(filtered, "productContainer");
+    }
+
+    /* =========================
+       SPECIAL SECTIONS (Top Picks, Trending, Editor's Choice)
+    ========================= */
+    function renderSpecialSections() {
+        const topPicks = products.filter(p => [1, 2, 3].includes(p.id));
+        const trending = products.filter(p => [4, 5, 6].includes(p.id));
+        const editors = products.filter(p => [7, 8].includes(p.id));
+        renderProductCards(topPicks, "topPicksContainer");
+        renderProductCards(trending, "trendingContainer");
+        renderProductCards(editors, "editorsChoiceContainer");
+    }
+
+    /* =========================
+       FULLSCREEN MODAL
+    ========================= */
+    const modalEl = document.getElementById("fullscreenModal");
+
+    function openProductModal(productId) {
+        const prod = products.find(p => p.id == productId);
+        if (!prod) return;
+        document.getElementById("modalImage").src = prod.image;
+        document.getElementById("modalImage").alt = prod.title;
+        document.getElementById("modalCategory").innerText = prod.category;
+        document.getElementById("modalTitle").innerText = prod.title;
+        document.getElementById("modalDesc").innerText = prod.description;
+        document.getElementById("modalPrice").innerText = prod.price;
+        const linkBtn = document.getElementById("modalAffiliateLink");
+        linkBtn.href = prod.affiliateLink;
+        modalEl.classList.add("active");
+        document.body.style.overflow = "hidden";
+        history.pushState(null, null, `#product-${prod.id}`);
+    }
+
+    function closeModal() {
+        modalEl.classList.remove("active");
+        document.body.style.overflow = "";
+        if (window.location.hash.startsWith("#product-")) {
+            history.pushState(null, null, " ");
         }
+    }
 
-
-        // ----- filter products -----
-        function filterProducts() {
-            let filtered = products.filter(p => {
-                const matchCat = currentFilter === "all" || p.category === currentFilter;
-                const matchSearch = currentSearch === "" ||
-                    p.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
-                    p.category.toLowerCase().includes(currentSearch.toLowerCase());
-                return matchCat && matchSearch;
-            });
-            renderProductCards(filtered, "productContainer");
+    // Handle hash on load / change
+    function handleHash() {
+        const hash = window.location.hash;
+        if (hash.startsWith("#product-")) {
+            const id = parseInt(hash.split("-")[1]);
+            if (products.find(p => p.id === id)) openProductModal(id);
+        } else {
+            closeModal();
         }
+    }
+    window.addEventListener("hashchange", handleHash);
 
+    /* =========================
+       QUICK PREVIEW
+    ========================= */
+    const previewDiv = document.getElementById("quickPreviewContainer");
 
-        // ----- render special sections (Top Picks, Trending, Editor's Choice) -----
-        function renderSpecialSections() {
-            const topPicks = products.filter(p => [1, 2, 3].includes(p.id));
-            const trending = products.filter(p => [4, 5, 6].includes(p.id));
-            const editors = products.filter(p => [7, 8].includes(p.id));
-            renderProductCards(topPicks, "topPicksContainer");
-            renderProductCards(trending, "trendingContainer");
-            renderProductCards(editors, "editorsChoiceContainer");
-        }
-
-
-        // ================================================================
-        //  FULLSCREEN MODAL
-        // ================================================================
-        const modalEl = document.getElementById("fullscreenModal");
-
-        function openProductModal(productId) {
-            const prod = products.find(p => p.id == productId);
-            if (!prod) return;
-            document.getElementById("modalImage").src = prod.image;
-            document.getElementById("modalCategory").innerText = prod.category;
-            document.getElementById("modalTitle").innerText = prod.title;
-            document.getElementById("modalDesc").innerText = prod.description;
-            document.getElementById("modalPrice").innerText = prod.price;
-            document.getElementById("modalAffiliateLink").href = prod.affiliateLink;
-            modalEl.classList.add("active");
-            document.body.style.overflow = "hidden";
-            history.pushState(null, null, `#product-${prod.id}`);
-        }
-
-        function closeModal() {
-            modalEl.classList.remove("active");
-            document.body.style.overflow = "";
-            if (window.location.hash.startsWith("#product-")) {
-                history.pushState(null, null, " ");
-            }
-        }
-
-        // hash change listener
-        function handleHash() {
-            const hash = window.location.hash;
-            if (hash.startsWith("#product-")) {
-                const id = parseInt(hash.split("-")[1]);
-                if (products.find(p => p.id === id)) openProductModal(id);
-            } else {
-                closeModal();
-            }
-        }
-        window.addEventListener("hashchange", handleHash);
-
-
-        // ================================================================
-        //  QUICK PREVIEW
-        // ================================================================
-        const previewDiv = document.getElementById("quickPreviewContainer");
-
-        function showQuickPreview(productId, event) {
-            const product = products.find(p => p.id == productId);
-            if (!product) return;
-            previewDiv.innerHTML = `
+    function showQuickPreview(productId, event) {
+        const product = products.find(p => p.id == productId);
+        if (!product) return;
+        previewDiv.innerHTML = `
                 <div class="d-flex gap-3">
-                    <img src="${product.image}" style="width:80px; height:80px; object-fit:cover; border-radius:12px;" alt="${product.title}" />
+                    <img src="${product.image}" style="width:80px; height:80px; object-fit:cover; border-radius:12px;" alt="${product.title}">
                     <div>
                         <h6 class="mb-1">${product.title}</h6>
                         <span class="category-badge">${product.category}</span>
@@ -1012,187 +1473,201 @@
                     </div>
                 </div>
             `;
-            const rect = event.target.getBoundingClientRect();
-            // position near the clicked button, but keep it on screen
-            let top = rect.top - 100;
-            let left = rect.left + 20;
-            // clamp to viewport
-            if (top < 10) top = 10;
-            if (left + 280 > window.innerWidth) left = window.innerWidth - 290;
-            if (left < 10) left = 10;
-
-            previewDiv.style.display = "block";
-            previewDiv.style.top = `${top}px`;
-            previewDiv.style.left = `${left}px`;
-
-            // close on click outside
-            setTimeout(() => {
-                document.addEventListener("click", function closePreview(e) {
-                    if (!previewDiv.contains(e.target) && !e.target.classList.contains("quick-preview-btn")) {
-                        previewDiv.style.display = "none";
-                        document.removeEventListener("click", closePreview);
-                    }
-                });
-            }, 0);
-        }
-
-
-        // ================================================================
-        //  EVENT DELEGATION
-        // ================================================================
-        document.addEventListener("click", (e) => {
-            // View Details
-            if (e.target.classList.contains("view-details") || e.target.closest(".view-details")) {
-                const btn = e.target.classList.contains("view-details") ? e.target : e.target.closest(".view-details");
-                const id = parseInt(btn.getAttribute("data-id"));
-                openProductModal(id);
-            }
-            // Quick Preview
-            if (e.target.classList.contains("quick-preview-btn")) {
-                e.stopPropagation();
-                const id = parseInt(e.target.getAttribute("data-id"));
-                showQuickPreview(id, e);
-            }
-            // Close modal
-            if (e.target.closest(".close-modal")) closeModal();
-            if (e.target === modalEl) closeModal();
-        });
-
-
-        // ----- category filter links (navbar & footer) -----
-        document.querySelectorAll(".filter-category-link").forEach(link => {
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const cat = link.getAttribute("data-category");
-                if (cat) {
-                    currentFilter = cat;
-                    currentSearch = "";
-                    document.getElementById("searchInput").value = "";
-                    filterProducts();
-                    document.querySelectorAll(".category-filter-btn").forEach(btn => btn.classList.remove(
-                    "active-filter"));
-                    const activeBtn = Array.from(document.querySelectorAll(".category-filter-btn")).find(b => b
-                        .getAttribute("data-filter") === cat);
-                    if (activeBtn) activeBtn.classList.add("active-filter");
-                    else document.querySelector(".category-filter-btn[data-filter='all']").classList.add(
-                    "active-filter");
-                    // close mobile nav
-                    const navCollapse = document.getElementById("navbarNav");
-                    if (navCollapse.classList.contains("show")) {
-                        const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
-                        if (bsCollapse) bsCollapse.hide();
-                    }
+        const rect = event.target.getBoundingClientRect();
+        previewDiv.style.display = "block";
+        // Position above the button
+        let top = rect.top - 120;
+        if (top < 10) top = 10;
+        previewDiv.style.top = `${top}px`;
+        let left = rect.left + 20;
+        if (left + 280 > window.innerWidth) left = window.innerWidth - 290;
+        previewDiv.style.left = `${left}px`;
+        // Close on outside click
+        setTimeout(() => {
+            document.addEventListener("click", function closePreview(e) {
+                if (!previewDiv.contains(e.target) && !e.target.classList.contains(
+                        "quick-preview-btn")) {
+                    previewDiv.style.display = "none";
+                    document.removeEventListener("click", closePreview);
                 }
             });
-        });
+        }, 0);
+    }
 
-        // ----- category filter buttons -----
-        document.querySelectorAll(".category-filter-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
-                currentFilter = btn.getAttribute("data-filter");
-                currentSearch = document.getElementById("searchInput").value;
-                filterProducts();
-                document.querySelectorAll(".category-filter-btn").forEach(b => b.classList.remove("active-filter"));
-                btn.classList.add("active-filter");
-            });
-        });
-
-        // ----- search input -----
-        document.getElementById("searchInput").addEventListener("input", (e) => {
-            currentSearch = e.target.value;
-            filterProducts();
-        });
-
-        // ----- newsletter -----
-        document.getElementById("subscribeBtn").addEventListener("click", () => {
-            const email = document.getElementById("newsEmail").value;
-            const msg = document.getElementById("newsMsg");
-            if (email) {
-                msg.innerHTML = "✨ Thank you for subscribing. Your luxury journey begins.";
-            } else {
-                msg.innerHTML = "Please enter a valid email.";
-            }
-            setTimeout(() => msg.innerHTML = "", 3000);
-        });
-
-        // ----- Shop Now button scroll -----
-        document.querySelector(".shop-now-btn").addEventListener("click", (e) => {
-            e.preventDefault();
-            document.getElementById("products-grid").scrollIntoView({ behavior: "smooth" });
-        });
-
-
-        // ================================================================
-        //  SCROLL PROGRESS + BACK TO TOP + NAVBAR GLASS
-        // ================================================================
-        window.addEventListener("scroll", () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById("scrollProgress").style.width = scrolled + "%";
-
-            const backBtn = document.getElementById("backToTop");
-            if (winScroll > 300) backBtn.classList.add("show");
-            else backBtn.classList.remove("show");
-
-            const navbar = document.getElementById("mainNav");
-            if (winScroll > 50) navbar.classList.add("scrolled");
-            else navbar.classList.remove("scrolled");
-        });
-
-        document.getElementById("backToTop").addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        // ----- WhatsApp float -----
-        document.getElementById("whatsappFloat").addEventListener("click", () => {
-            window.open("https://wa.me/1234567890?text=Hello%20Tahira%20luxury%20collection", "_blank");
-        });
-
-
-        // ================================================================
-        //  INITIAL RENDER
-        // ================================================================
-        renderProductCards(products, "productContainer");
-        renderSpecialSections();
-        filterProducts();
-        window.dispatchEvent(new Event("hashchange"));
-
-        // AOS init
-        AOS.init({ duration: 800, once: true, offset: 100 });
-
-        // mark loaded
-        window.addEventListener("load", () => {
-            document.body.classList.add("loaded");
-        });
-
-        // close quick preview on escape
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
-                closeModal();
-                previewDiv.style.display = "none";
-            }
-        });
-    </script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-    </script>
-
-    <!-- ===== SCHEMA MARKUP ===== -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LuxuryBrand",
-            "name": "Tahira",
-            "description": "Curated luxury fashion, beauty and home decor affiliate showcase.",
-            "url": "https://tahira-luxury.com",
-            "logo": "https://placehold.co/400x100/C9A34E/111?text=Tahira"
+    /* =========================
+       EVENT DELEGATION (clicks)
+    ========================= */
+    document.addEventListener("click", (e) => {
+        // View Details
+        if (e.target.classList.contains("view-details") || e.target.closest(".view-details")) {
+            const btn = e.target.classList.contains("view-details") ? e.target : e.target.closest(
+            ".view-details");
+            const id = parseInt(btn.getAttribute("data-id"));
+            openProductModal(id);
         }
-    </script>
+        // Quick Preview
+        if (e.target.classList.contains("quick-preview-btn")) {
+            e.stopPropagation();
+            const id = parseInt(e.target.getAttribute("data-id"));
+            showQuickPreview(id, e);
+        }
+        // Close modal
+        if (e.target.closest(".close-modal")) closeModal();
+        if (e.target === modalEl) closeModal();
+    });
+
+    /* =========================
+       CATEGORY FILTER LINKS (navbar + footer)
+    ========================= */
+    document.querySelectorAll(".filter-category-link").forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const cat = link.getAttribute("data-category");
+            if (cat) {
+                currentFilter = cat;
+                currentSearch = "";
+                document.getElementById("searchInput").value = "";
+                filterProducts();
+                // Update active filter buttons
+                document.querySelectorAll(".category-filter-btn").forEach(btn => btn.classList.remove(
+                "active-filter"));
+                const activeBtn = Array.from(document.querySelectorAll(".category-filter-btn")).find(b => b
+                    .getAttribute("data-filter") === cat);
+                if (activeBtn) activeBtn.classList.add("active-filter");
+                else document.querySelector(".category-filter-btn[data-filter='all']").classList.add(
+                    "active-filter");
+                // Scroll to products
+                document.getElementById("products-grid").scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+
+    /* =========================
+       CATEGORY FILTER BUTTONS
+    ========================= */
+    document.querySelectorAll(".category-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            currentFilter = btn.getAttribute("data-filter");
+            currentSearch = document.getElementById("searchInput").value;
+            filterProducts();
+            document.querySelectorAll(".category-filter-btn").forEach(b => b.classList.remove(
+            "active-filter"));
+            btn.classList.add("active-filter");
+            // update aria-pressed
+            document.querySelectorAll(".category-filter-btn").forEach(b => b.setAttribute("aria-pressed",
+                "false"));
+            btn.setAttribute("aria-pressed", "true");
+        });
+    });
+
+    /* =========================
+       SEARCH INPUT
+    ========================= */
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+        currentSearch = e.target.value;
+        filterProducts();
+    });
+
+    /* =========================
+       NEWSLETTER
+    ========================= */
+    document.getElementById("subscribeBtn").addEventListener("click", () => {
+        const email = document.getElementById("newsEmail").value;
+        const msg = document.getElementById("newsMsg");
+        if (email && email.includes('@')) {
+            msg.innerHTML = "✨ Thank you for subscribing. Your luxury journey begins.";
+        } else {
+            msg.innerHTML = "Please enter a valid email address.";
+        }
+        setTimeout(() => msg.innerHTML = "", 3500);
+    });
+
+    /* =========================
+       SHOP NOW BUTTON (scroll to products)
+    ========================= */
+    document.querySelector(".shop-now-btn")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("products-grid").scrollIntoView({ behavior: "smooth" });
+    });
+
+    /* =========================
+       SCROLL PROGRESS + NAVBAR GLASS + BACK TO TOP
+    ========================= */
+    window.addEventListener("scroll", () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollProgress").style.width = scrolled + "%";
+
+        // Back to top
+        const backBtn = document.getElementById("backToTop");
+        if (winScroll > 300) backBtn.classList.add("show");
+        else backBtn.classList.remove("show");
+
+        // Navbar glass
+        const navbar = document.getElementById("mainNav");
+        if (winScroll > 50) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
+    });
+
+    document.getElementById("backToTop").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    /* =========================
+       WHATSAPP FLOAT
+    ========================= */
+    document.getElementById("whatsappFloat").addEventListener("click", (e) => {
+        // href handles the navigation
+    });
+
+    /* =========================
+       INITIAL RENDER
+    ========================= */
+    renderProductCards(products, "productContainer");
+    renderSpecialSections();
+    filterProducts();
+    window.dispatchEvent(new Event("hashchange"));
+
+    /* =========================
+       AOS INIT
+    ========================= */
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+    });
+
+    /* =========================
+       BOOTSTRAP CAROUSEL FADE CONFIG
+       The carousel-fade class is already applied.
+       We ensure data-bs-interval = 6000ms (6s) and transition is smooth.
+    ========================= */
+    // The carousel is configured via data attributes.
+    // data-bs-interval="6000" and carousel-fade class handle the fade.
+    console.log('Tahira — Luxury Finds loaded.');
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+<!-- =========================
+SCHEMA MARKUP (SEO)
+========================= -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LuxuryBrand",
+        "name": "Tahira",
+        "description": "Curated luxury fashion, beauty and home decor affiliate showcase.",
+        "url": "https://tahira-luxury.com",
+        "logo": "https://placehold.co/400x100/C9A34E/111?text=Tahira"
+    }
+</script>
 
 </body>
 </html>
