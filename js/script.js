@@ -372,38 +372,7 @@ function formatDescription(text) {
     return html;
 }
 
-/* =========================
-   RENDER PRODUCT CARDS
-   function renderProductCards(productsArray, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    if (productsArray.length === 0) {
-        container.innerHTML = `<div class="col-12 text-center py-5">No luxury items found</div>`;
-        return;
-    }
-    container.innerHTML = productsArray.map(p => `
-        <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
-            <div class="product-card h-100">
-                <img src="${p.images[0]}" class="card-img-top" alt="${p.title}" loading="lazy">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="category-badge">${p.category}</span>
-                        <span class="price">${p.price}</span>
-                    </div>
-                    <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
-                    <div class="product-code small text-muted">${p.code || ''}</div>
-                    
-                    <p class="card-text small text-secondary mt-2">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
-                    <div class="mt-auto d-flex justify-content-between gap-2 p-2">
-                        <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
-                        <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `).join('');
-}
-========================= */
+
 /* =========================
    CARD DESCRIPTION - CLEAN PREVIEW (Reusable)
    ========================= */
@@ -462,7 +431,7 @@ function renderProductCards(productsArray, containerId) {
                     <p class="card-text small text-secondary mt-2">${getCardDescription(p.description, 80)}</p>
                     
                     <!-- Action Buttons -->
-                    <div class="mt-auto d-flex justify-content-between gap-2 pt-2">
+                    <div class="mt-auto d-flex justify-content-between gap-2 p-2">
                         <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">
                             View Details
                         </button>
