@@ -192,7 +192,7 @@ function openProductModal(productId) {
     // Build carousel slides
     let slidesHtml = prod.images.map((img, idx) => `
         <div class="carousel-item ${idx === 0 ? 'active' : ''}">
-            <img src="${img}" class="d-block w-100" style="height:100%; object-fit:cover;" alt="${prod.title} - image ${idx+1}">
+            <img src="${img}" class="d-block w-100" style="height:100%; object-fit:contain;" alt="${prod.title} - image ${idx+1}">
         </div>
     `).join('');
 
