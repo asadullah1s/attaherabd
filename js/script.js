@@ -393,33 +393,8 @@ function renderProductCards(productsArray, containerId) {
                     </div>
                     <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
                     <div class="product-code small text-muted">${p.code || ''}</div>
-
-
-                     /* =========================
-   CARD DESCRIPTION - CLEAN PREVIEW (Reusable)
-   ========================= */
-function getCardDescription(text, limit = 80) {
-    if (!text) return '';
-
-    let clean = text
-        .replace(/\* /g, '• ')      // Asterisk ko bullet mein convert
-        .replace(/\n/g, ' ')         // Newline ko space mein
-        .replace(/\s+/g, ' ')        // Extra spaces hatao
-        .trim();
-
-    // Word cut hone se bachao
-    if (clean.length > limit) {
-        let cut = clean.substring(0, limit);
-        let lastSpace = cut.lastIndexOf(' ');
-        if (lastSpace > 0) cut = cut.substring(0, lastSpace);
-        clean = cut + '...';
-    }
-
-    return clean;
-}
-
                     
-                    <p class="card-text small text-secondary mt-2">${getCardDescription(p.description, 80)}${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
+                    <p class="card-text small text-secondary mt-2">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
                     <div class="mt-auto d-flex justify-content-between gap-2 p-2">
                         <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
                         <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">Buy Now</button>
