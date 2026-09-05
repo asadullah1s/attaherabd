@@ -1,9 +1,10 @@
 /* =========================
-   PRODUCT DATA (with 4 images each)
+   PRODUCT DATA (CLEAN & PROFESSIONAL)
    ========================= */
 const products = [{
     id: 1,
-    title: "Unstitched Embroidered Lawn 3 Piece, Code: U4672SU-3PC-329",
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U4672SU-3PC-329",
     category: "Fashion",
     price: "৳8000",
     images: [
@@ -15,44 +16,42 @@ const products = [{
         "images/products/product-6.jpeg"
     ],
     description: `Shirt
-* Dyed Lawn Shirt – 3m
-* Embroidered Front Center – 1pc
-* Embroidered Side Panels – 2pc
-* Embroidered Sleeves – 1pc
-* Fabric: Lawn
-* Colour: Mint
+• Dyed Lawn Shirt – 3m
+• Embroidered Front Center – 1pc
+• Embroidered Side Panels – 2pc
+• Embroidered Sleeves – 1pc
+• Fabric: Lawn
+• Colour: Mint
 
 Dupatta
-* Embroidered Chiffon Dupatta – 2.5m
-* Fabric: Chiffon
-* Colour: Mint
+• Embroidered Chiffon Dupatta – 2.5m
+• Fabric: Chiffon
+• Colour: Mint
 
 Trouser
-* Embroidered Cambric Trouser – 1.8m
-* Fabric: Cambric
-* Colour: Mint
+• Embroidered Cambric Trouser – 1.8m
+• Fabric: Cambric
+• Colour: Mint
 
 Product Highlights
-A beautifully embroidered lawn outfit crafted on breathable fabric, offering comfort with an elegant finish. Perfect for summer wear, daytime events, and festive occasions where a fresh look stands out.
+A beautifully embroidered lawn outfit crafted on breathable fabric, offering comfort with an elegant finish. Perfect for summer wear, daytime events, and festive occasions.
 
 Size: Standard (Suitable up to XL)
 
-Care Instructions:
-Wash light and bright colors separately.
-Do not use bleach.
-Avoid twisting or squeezing embellished fabric.
-Iron on low heat (avoid direct heat on embroidery).
-Dry in shade for best results.
+Care Instructions
+• Wash light and bright colors separately.
+• Do not use bleach.
+• Avoid twisting or squeezing embellished fabric.
+• Iron on low heat (avoid direct heat on embroidery).
+• Dry in shade for best results.
 
-Disclaimer:
+Disclaimer
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 },
-   /* =========================
-   ID 2
-   ========================= */ 
-   {
+{
     id: 2,
-    title: "Unstitched Embroidered Lawn 3 Piece, Code: OTL-20865/U CORAL",
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "OTL-20865/U CORAL",
     category: "Fashion",
     price: "৳7900",
     images: [
@@ -62,38 +61,36 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-10.jpeg"
     ],
     description: `Shirt
-* Embroidered Lawn Shirt
-* Fabric: Lawn
-* Colour: Coral
+• Embroidered Lawn Shirt
+• Fabric: Lawn
+• Colour: Coral
 
 Dupatta
-* Printed Lawn Dupatta
-* Fabric: Lawn
-* Colour: Coral
+• Printed Lawn Dupatta
+• Fabric: Lawn
+• Colour: Coral
 
 Trouser
-* Dyed Cambric Trouser
-* Fabric: Cambric
-* Colour: Coral
+• Dyed Cambric Trouser
+• Fabric: Cambric
+• Colour: Coral
 
- Product Highlights
-A beautifully embroidered lawn outfit paired with a soft printed dupatta, offering a perfect balance of comfort and style. Lightweight and breathable, making it ideal for summer wear, casual gatherings, and festive occasions.
+Product Highlights
+A beautifully embroidered lawn outfit paired with a soft printed dupatta, offering a perfect balance of comfort and style. Lightweight and breathable, ideal for summer wear and casual gatherings.
 
 Size: Standard (Model is wearing Medium)
 
-Care Instructions:
-Machine wash recommended.
-Steam iron for best results.
+Care Instructions
+• Machine wash recommended.
+• Steam iron for best results.
 
-Disclaimer:
+Disclaimer
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.`
 },
-   /* =========================
-   ID 3
-   ========================= */ 
-   {
+{
     id: 3,
-    title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched), Code: U4666SU-3PC-633",
+    title: "3 Piece Premium Pakistani Lawn Suit (Unstitched)",
+    code: "U4666SU-3PC-633",
     category: "Fashion",
     price: "৳7000",
     images: [
@@ -104,36 +101,34 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-15.jpeg"
     ],
     description: `Shirt
-* Printed with Embroidery – 1.91m
-* Fabric: Lawn
+• Printed with Embroidery – 1.91m
+• Fabric: Lawn
 
 Dupatta
-* Printed – 2.5m
-* Fabric: Monar Slub
+• Printed – 2.5m
+• Fabric: Monar Slub
 
 Bottom
-* Dyed – 1.8m
-* Fabric: Cambric
+• Dyed – 1.8m
+• Fabric: Cambric
 
-Color: Lilac
-
-All fabric lengths are approximate.
+Colour: Lilac
+(All fabric lengths are approximate.)
 
 Care Instructions
-* Wash light and bright colors separately
-* Do not use bleach
-* Do not twist or squeeze embellished fabric
-* Iron on low heat (avoid embellished areas)
-* Dry in shade
+• Wash light and bright colors separately.
+• Do not use bleach.
+• Do not twist or squeeze embellished fabric.
+• Iron on low heat (avoid embellished areas).
+• Dry in shade.
 
-Disclaimer: Colors may slightly vary due to screen settings and lighting.`
+Disclaimer
+Colors may slightly vary due to screen settings and lighting.`
 },
-   /* =========================
-   ID 4
-   ========================= */ 
-   {
+{
     id: 4,
-    title: "Unstitched Embroidered Lawn 3 Piece, Code: U5094SU-3PC-014",
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U5094SU-3PC-014",
     category: "Fashion",
     price: "৳8000",
     images: [
@@ -144,8 +139,8 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-20.jpeg",
         "images/products/product-21.jpeg"
     ],
-    description: `Embrace soft sophistication with this elegant beige lawn ensemble — designed for a minimal, graceful, and timeless look 🤍
-🔸 Unstitched 3-Piece Suit
+    description: `Embrace soft sophistication with this elegant beige lawn ensemble — designed for a minimal, graceful, and timeless look.
+
 Shirt
 • Dyed Lawn Shirt – 2.65m
 • Embroidered Front Center Panel – 1pc
@@ -153,34 +148,36 @@ Shirt
 • Embroidered Sleeves – 1pc
 • Fabric: Lawn
 • Colour: Beige
+
 Dupatta
 • Printed Silk Dupatta – 2.5m
 • Fabric: Silk
 • Colour: Beige
+
 Trouser
 • Dyed Trouser – 1pc
 • Fabric: Cambric
 • Colour: Beige
-✨ Product Highlights
+
+Product Highlights
 A beautifully embroidered lawn outfit paired with a soft silk dupatta, offering a luxurious yet lightweight feel. Perfect for summer wear, daytime events, and elegant festive styling.
+
 Size: Standard
-Care Instructions:
-Wash light and bright colors separately.
-Do not use bleach.
-Avoid twisting or squeezing embellished fabric.
-Iron on low heat (avoid direct heat on embroidery).
-Dry in shade for best results.
-Disclaimer:
-Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.
-100% Original Pakistani Suit
-📍 Available in Bangladesh on Pre-Order Only`
+
+Care Instructions
+• Wash light and bright colors separately.
+• Do not use bleach.
+• Avoid twisting or squeezing embellished fabric.
+• Iron on low heat (avoid direct heat on embroidery).
+• Dry in shade for best results.
+
+Disclaimer
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 },
-   /* =========================
-   ID 5
-   ========================= */ 
-   {
+{
     id: 5,
-    title: "3 Piece – Embroidered Dobby Suit (Unstitched), Code: 3PEJQS26V411",
+    title: "3 Piece – Embroidered Dobby Suit (Unstitched)",
+    code: "3PEJQS26V411",
     category: "Beauty",
     price: "৳7999",
     images: [
@@ -189,31 +186,29 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-24.jpeg",
         "images/products/product-25.jpeg"
     ],
-    description: `Unstitched 3-Piece Suit
-Shirt
+    description: `Shirt
 • Embroidered Dobby Shirt Front – 1.15m
 • Dyed Dobby Sleeves & Back – 1.85m
 • Embroidered Neckline & Borders – 3pc
 • Fabric: Dobby
 • Colour: Blue
+
 Dupatta
 • Dyed Extra Weft Jacquard Dupatta – 2.5m
 • Fabric: Extra Weft Jacquard
 • Colour: Blue
+
 Trouser
 • Dyed Cotton Trouser – 2.5m
 • Fabric: Cotton
 • Colour: Blue
-Note: Actual product color may vary slightly from the image.
-100% Original Pakistani Suit
-📍 Available in Bangladesh on Pre-Order Only`
+
+Note: Actual product color may vary slightly from the image.`
 },
-   /* =========================
-   ID 6
-   ========================= */ 
-   {
+{
     id: 6,
-    title: "Unstitched Embroidered Lawn 3 Piece, Code: OTL-20066/U BLACK",
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "OTL-20066/U BLACK",
     category: "Home Decor",
     price: "৳7689",
     images: [
@@ -221,36 +216,37 @@ Note: Actual product color may vary slightly from the image.
         "images/products/product-27.jpeg",
         "images/products/product-28.jpeg"
     ],
-    description: `Unstitched 3-Piece Suit
-Shirt
+    description: `Shirt
 • Embroidered Lawn Shirt
 • Fabric: Lawn
 • Colour: Black
+
 Dupatta
 • Printed Chiffon Dupatta
 • Fabric: Chiffon
 • Colour: Black
+
 Trouser
 • Dyed Cambric Trouser
 • Fabric: Cambric
 • Colour: Black
-✨ Product Highlights
-A classic embroidered lawn outfit paired with a lightweight chiffon dupatta, offering a refined and graceful look. Perfect for evening wear, casual gatherings, and festive occasions where elegance stands out.
+
+Product Highlights
+A classic embroidered lawn outfit paired with a lightweight chiffon dupatta, offering a refined and graceful look. Perfect for evening wear, casual gatherings, and festive occasions.
+
 Size: Standard (Model is wearing Medium)
-Care Instructions:
-Machine wash recommended.
-Steam iron for best results.
-Disclaimer:
-Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.
-100% Original Pakistani Suit
-📍 Available in Bangladesh on Pre-Order Only`
+
+Care Instructions
+• Machine wash recommended.
+• Steam iron for best results.
+
+Disclaimer
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.`
 },
-   /* =========================
-   ID 7
-   ========================= */ 
-   {
+{
     id: 7,
-    title: "3 Piece – Embroidered Jacquard Suit (Unstitched), Code: U3FE-LXS26V4-2",
+    title: "3 Piece – Embroidered Jacquard Suit (Unstitched)",
+    code: "U3FE-LXS26V4-2",
     category: "Fashion",
     price: "৳7980",
     images: [
@@ -260,30 +256,28 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-32.jpeg",
         "images/products/product-33.jpeg"
     ],
-    description: `Unstitched 3-Piece Suit
-Shirt
+    description: `Shirt
 • Dyed Extra Weft Jacquard Shirt – 3.7m
 • Embroidered Neckline & Hem Border – 2pc
 • Fabric: Extra Weft Jacquard
 • Colour: Pistachio
+
 Dupatta
 • Embroidered Blended Chiffon Dupatta – 2.5m
 • Fabric: Blended Chiffon
 • Colour: Pistachio
+
 Trouser
 • Dyed Cotton Trouser – 2.5m
 • Fabric: Cotton
 • Colour: Pistachio
-Note: Actual product color may vary slightly from the image.
-100% Original Pakistani Suit
-📍 Available in Bangladesh on Pre-Order Only`
+
+Note: Actual product color may vary slightly from the image.`
 },
-   /* =========================
-   ID 8
-   ========================= */ 
-   {
+{
     id: 8,
-    title: "Unstitched Embroidered Lawn 3 Piece, Code: U5077SU-3PC-049",
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U5077SU-3PC-049",
     category: "Beauty",
     price: "৳8000",
     images: [
@@ -293,34 +287,37 @@ Note: Actual product color may vary slightly from the image.
         "images/products/product-37.jpeg",
         "images/products/product-38.jpeg"
     ],
-    description: ` Unstitched 3-Piece Suit
-Shirt
+    description: `Shirt
 • Dyed Lawn Shirt – 1.81m
 • Embroidered Neck Patti – 1pc
 • Embroidered Cuff Patti – 1pc
 • Fabric: Lawn
 • Colour: Grey
+
 Dupatta
 • Printed Chiffon Dupatta – 2.5m
 • Fabric: Chiffon
 • Colour: Grey
+
 Trouser
 • Embroidered Cambric Trouser – 1.8m
 • Fabric: Cambric
 • Colour: Grey
-✨ Product Highlights
-A perfect blend of minimal embroidery and soft fabric, giving you a clean and elegant look. Lightweight and breathable, making it ideal for daily wear, casual gatherings, and understated festive styling.
+
+Product Highlights
+A perfect blend of minimal embroidery and soft fabric, giving you a clean and elegant look. Lightweight and breathable, ideal for daily wear, casual gatherings, and understated festive styling.
+
 Size: Standard
-Care Instructions:
-Wash light and bright colors separately.
-Do not use bleach.
-Avoid twisting or squeezing embellished fabric.
-Iron on low heat (avoid direct heat on embroidery).
-Dry in shade for best results.
-Disclaimer:
-Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.
-100% Original Pakistani Suit
-📍 Available in Bangladesh on Pre-Order Only`
+
+Care Instructions
+• Wash light and bright colors separately.
+• Do not use bleach.
+• Avoid twisting or squeezing embellished fabric.
+• Iron on low heat (avoid direct heat on embroidery).
+• Dry in shade for best results.
+
+Disclaimer
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 }];
 
 /* =========================
@@ -328,6 +325,31 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
    ========================= */
 let currentFilter = "all";
 let currentSearch = "";
+
+/* =========================
+   FORMAT DESCRIPTION (Professional styling)
+   ========================= */
+function formatDescription(text) {
+    const lines = text.split('\n');
+    let html = '';
+    lines.forEach(line => {
+        let trimmed = line.trim();
+        if (trimmed === '') {
+            html += '<br>';
+            return;
+        }
+        // Section Headers ko Bold karein
+        if (/^(Shirt|Dupatta|Trouser|Bottom|Product Highlights|Size|Care Instructions|Disclaimer|Note|Colour|All fabric lengths)/i.test(trimmed)) {
+            html += `<span class="desc-header">${trimmed}</span>`;
+        } else if (trimmed.startsWith('•')) {
+            // Bullet points
+            html += `<span class="desc-bullet">${trimmed}</span>`;
+        } else {
+            html += `${trimmed}<br>`;
+        }
+    });
+    return html;
+}
 
 /* =========================
    RENDER PRODUCT CARDS
@@ -339,7 +361,12 @@ function renderProductCards(productsArray, containerId) {
         container.innerHTML = `<div class="col-12 text-center py-5">No luxury items found</div>`;
         return;
     }
-    container.innerHTML = productsArray.map(p => `
+    container.innerHTML = productsArray.map(p => {
+        // Title aur Code ko alag karein
+        let mainTitle = p.title;
+        let code = p.code || '';
+        
+        return `
         <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
             <div class="product-card h-100">
                 <img src="${p.images[0]}" class="card-img-top" alt="${p.title}" loading="lazy">
@@ -348,16 +375,17 @@ function renderProductCards(productsArray, containerId) {
                         <span class="category-badge">${p.category}</span>
                         <span class="price">${p.price}</span>
                     </div>
-                    <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
-                    <p class="card-text small text-secondary">${p.description.substring(0,70)}${p.description.length>70?'...':''}</p>
-                    <div class="mt-auto d-flex justify-content-between gap-2 p-3">
+                    <h5 class="card-title mt-2 fw-bold">${mainTitle}</h5>
+                    ${code ? `<span class="product-code">${code}</span>` : ''}
+                    <p class="card-text small text-secondary mt-2">${p.description.substring(0,80)}${p.description.length>80?'...':''}</p>
+                    <div class="mt-auto d-flex justify-content-between gap-2 pt-2">
                         <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">View Details</button>
                         <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">Buy Now</button>
                     </div>
                 </div>
             </div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 /* =========================
@@ -368,14 +396,15 @@ function filterProducts() {
         const matchCat = currentFilter === "all" || p.category === currentFilter;
         const matchSearch = currentSearch === "" ||
             p.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
-            p.category.toLowerCase().includes(currentSearch.toLowerCase());
+            p.category.toLowerCase().includes(currentSearch.toLowerCase()) ||
+            (p.code && p.code.toLowerCase().includes(currentSearch.toLowerCase()));
         return matchCat && matchSearch;
     });
     renderProductCards(filtered, "productContainer");
 }
 
 /* =========================
-   SPECIAL SECTIONS (Top Picks, Trending, Editor's Choice)
+   SPECIAL SECTIONS
    ========================= */
 function renderSpecialSections() {
     const topPicks = products.filter(p => [1, 2, 3].includes(p.id));
@@ -390,8 +419,8 @@ function renderSpecialSections() {
    WHATSAPP HELPER
    ========================= */
 function getWhatsAppLink(product) {
-    const phone = "+8801632787882"; // change to your number
-    const message = `Hello Tahira, I'm interested in:\n*${product.title}*\n${product.description}\nPrice: ${product.price}`;
+    const phone = "1234567890"; // Apna number yahan daalein
+    const message = `Hello Tahira, I'm interested in:\n*${product.title}*\nCode: ${product.code || 'N/A'}\n${product.description.substring(0, 150)}...\nPrice: ${product.price}`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
@@ -424,7 +453,8 @@ function openProductModal(productId) {
     // Set details
     document.getElementById("modalCategory").innerText = prod.category;
     document.getElementById("modalTitle").innerText = prod.title;
-    document.getElementById("modalDesc").innerText = prod.description;
+    // Formatted description
+    document.getElementById("modalDesc").innerHTML = formatDescription(prod.description);
     document.getElementById("modalPrice").innerText = prod.price;
 
     // Set Buy Now button
@@ -463,7 +493,7 @@ function closeModal() {
 }
 
 /* =========================
-   HANDLE HASH ON LOAD / CHANGE
+   HANDLE HASH
    ========================= */
 function handleHash() {
     const hash = window.location.hash;
@@ -477,7 +507,7 @@ function handleHash() {
 window.addEventListener("hashchange", handleHash);
 
 /* =========================
-   EVENT DELEGATION (clicks)
+   EVENT DELEGATION
    ========================= */
 document.addEventListener("click", (e) => {
     // View Details
@@ -503,7 +533,7 @@ document.addEventListener("click", (e) => {
 });
 
 /* =========================
-   CATEGORY FILTER LINKS (navbar + footer)
+   CATEGORY FILTER LINKS
    ========================= */
 document.querySelectorAll(".filter-category-link").forEach(link => {
     link.addEventListener("click", (e) => {
@@ -599,4 +629,4 @@ AOS.init({
     offset: 100
 });
 
-console.log('Tahira — Luxury Finds loaded.');
+console.log('Tahira — Luxury Finds loaded with professional styling.');
