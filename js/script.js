@@ -48,8 +48,8 @@ Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 }, {
     id: 2,
-    title: "Radiant Rose Serum",
-    category: "Beauty",
+    title: "Unstitched Embroidered Lawn 3 Piece, OTL-20865/U CORAL",
+    category: "Fashion",
     price: "$128",
     images: [
         "images/products/product-7.jpeg",
@@ -57,11 +57,36 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-9.jpeg",
         "images/products/product-10.jpeg"
     ],
-    description: "24K gold-infused face serum, brightening + firming luxury elixir."
+    description: `Shirt
+* Embroidered Lawn Shirt
+* Fabric: Lawn
+* Colour: Coral
+
+Dupatta
+* Printed Lawn Dupatta
+* Fabric: Lawn
+* Colour: Coral
+
+Trouser
+* Dyed Cambric Trouser
+* Fabric: Cambric
+* Colour: Coral
+
+ Product Highlights
+A beautifully embroidered lawn outfit paired with a soft printed dupatta, offering a perfect balance of comfort and style. Lightweight and breathable, making it ideal for summer wear, casual gatherings, and festive occasions.
+
+Size: Standard (Model is wearing Medium)
+
+Care Instructions:
+Machine wash recommended.
+Steam iron for best results.
+
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.`
 }, {
     id: 3,
-    title: "Marble Gold Candle",
-    category: "Home Decor",
+    title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched), U4666SU-3PC-633",
+    category: "Fashion",
     price: "$89",
     images: [
         "images/products/product-11.jpeg",
@@ -70,7 +95,30 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
         "images/products/product-14.jpeg",
         "images/products/product-15.jpeg"
     ],
-    description: "Sandalwood & amber with 24k gold leaf. 60-hour burn time."
+    description: `Shirt
+* Printed with Embroidery – 1.91m
+* Fabric: Lawn
+
+Dupatta
+* Printed – 2.5m
+* Fabric: Monar Slub
+
+Bottom
+* Dyed – 1.8m
+* Fabric: Cambric
+
+Color: Lilac
+
+All fabric lengths are approximate.
+
+Care Instructions
+* Wash light and bright colors separately
+* Do not use bleach
+* Do not twist or squeeze embellished fabric
+* Iron on low heat (avoid embellished areas)
+* Dry in shade
+
+Disclaimer: Colors may slightly vary due to screen settings and lighting.`
 }, {
     id: 4,
     title: "Cashmere Wrap Coat",
