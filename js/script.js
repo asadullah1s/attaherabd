@@ -121,7 +121,7 @@ Care Instructions
 Disclaimer: Colors may slightly vary due to screen settings and lighting.`
 }, {
     id: 4,
-    title: "Cashmere Wrap Coat",
+    title: "Unstitched Embroidered Lawn 3 Piece, U5094SU-3PC-014",
     category: "Fashion",
     price: "$689",
     images: [
@@ -132,10 +132,39 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-20.jpeg",
         "images/products/product-21.jpeg"
     ],
-    description: "Pure Mongolian cashmere, dual-face design, oversized silhouette."
+    description: `Embrace soft sophistication with this elegant beige lawn ensemble — designed for a minimal, graceful, and timeless look 🤍
+🔸 Unstitched 3-Piece Suit
+Shirt
+• Dyed Lawn Shirt – 2.65m
+• Embroidered Front Center Panel – 1pc
+• Embroidered Side Panels – 2pc
+• Embroidered Sleeves – 1pc
+• Fabric: Lawn
+• Colour: Beige
+Dupatta
+• Printed Silk Dupatta – 2.5m
+• Fabric: Silk
+• Colour: Beige
+Trouser
+• Dyed Trouser – 1pc
+• Fabric: Cambric
+• Colour: Beige
+✨ Product Highlights
+A beautifully embroidered lawn outfit paired with a soft silk dupatta, offering a luxurious yet lightweight feel. Perfect for summer wear, daytime events, and elegant festive styling.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.
+100% Original Pakistani Suit
+📍 Available in Bangladesh on Pre-Order Only`
 }, {
     id: 5,
-    title: "Gold Leaf Highlighter",
+    title: "3 Piece – Embroidered Dobby Suit (Unstitched), 3PEJQS26V411",
     category: "Beauty",
     price: "$49",
     images: [
@@ -144,10 +173,27 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-24.jpeg",
         "images/products/product-25.jpeg"
     ],
-    description: "Luminous glow baked highlighter with reflective pearl pigments."
+    description: `Unstitched 3-Piece Suit
+Shirt
+• Embroidered Dobby Shirt Front – 1.15m
+• Dyed Dobby Sleeves & Back – 1.85m
+• Embroidered Neckline & Borders – 3pc
+• Fabric: Dobby
+• Colour: Blue
+Dupatta
+• Dyed Extra Weft Jacquard Dupatta – 2.5m
+• Fabric: Extra Weft Jacquard
+• Colour: Blue
+Trouser
+• Dyed Cotton Trouser – 2.5m
+• Fabric: Cotton
+• Colour: Blue
+Note: Actual product color may vary slightly from the image.
+100% Original Pakistani Suit
+📍 Available in Bangladesh on Pre-Order Only`
 }, {
     id: 6,
-    title: "Geometric Vase Set",
+    title: "Unstitched Embroidered Lawn 3 Piece, OTL-20066/U BLACK",
     category: "Home Decor",
     price: "$149",
     images: [
@@ -155,10 +201,32 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-27.jpeg",
         "images/products/product-28.jpeg"
     ],
-    description: "Brass & glass, modern sculptural centerpiece."
+    description: `Unstitched 3-Piece Suit
+Shirt
+• Embroidered Lawn Shirt
+• Fabric: Lawn
+• Colour: Black
+Dupatta
+• Printed Chiffon Dupatta
+• Fabric: Chiffon
+• Colour: Black
+Trouser
+• Dyed Cambric Trouser
+• Fabric: Cambric
+• Colour: Black
+✨ Product Highlights
+A classic embroidered lawn outfit paired with a lightweight chiffon dupatta, offering a refined and graceful look. Perfect for evening wear, casual gatherings, and festive occasions where elegance stands out.
+Size: Standard (Model is wearing Medium)
+Care Instructions:
+Machine wash recommended.
+Steam iron for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.
+100% Original Pakistani Suit
+📍 Available in Bangladesh on Pre-Order Only`
 }, {
     id: 7,
-    title: "Velvet Blazer",
+    title: "3 Piece – Embroidered Jacquard Suit (Unstitched), U3FE-LXS26V4-2",
     category: "Fashion",
     price: "$329",
     images: [
@@ -168,10 +236,26 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-32.jpeg",
         "images/products/product-33.jpeg"
     ],
-    description: "Deep burgundy velvet, satin lapels, tailored elegance."
+    description: `Unstitched 3-Piece Suit
+Shirt
+• Dyed Extra Weft Jacquard Shirt – 3.7m
+• Embroidered Neckline & Hem Border – 2pc
+• Fabric: Extra Weft Jacquard
+• Colour: Pistachio
+Dupatta
+• Embroidered Blended Chiffon Dupatta – 2.5m
+• Fabric: Blended Chiffon
+• Colour: Pistachio
+Trouser
+• Dyed Cotton Trouser – 2.5m
+• Fabric: Cotton
+• Colour: Pistachio
+Note: Actual product color may vary slightly from the image.
+100% Original Pakistani Suit
+📍 Available in Bangladesh on Pre-Order Only`
 }, {
     id: 8,
-    title: "Diamond Infused Moisturizer",
+    title: "Unstitched Embroidered Lawn 3 Piece, U5077SU-3PC-049",
     category: "Beauty",
     price: "$199",
     images: [
@@ -181,7 +265,34 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
         "images/products/product-37.jpeg",
         "images/products/product-38.jpeg"
     ],
-    description: "Luxurious peptide cream with crushed diamond dust."
+    description: ` Unstitched 3-Piece Suit
+Shirt
+• Dyed Lawn Shirt – 1.81m
+• Embroidered Neck Patti – 1pc
+• Embroidered Cuff Patti – 1pc
+• Fabric: Lawn
+• Colour: Grey
+Dupatta
+• Printed Chiffon Dupatta – 2.5m
+• Fabric: Chiffon
+• Colour: Grey
+Trouser
+• Embroidered Cambric Trouser – 1.8m
+• Fabric: Cambric
+• Colour: Grey
+✨ Product Highlights
+A perfect blend of minimal embroidery and soft fabric, giving you a clean and elegant look. Lightweight and breathable, making it ideal for daily wear, casual gatherings, and understated festive styling.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.
+100% Original Pakistani Suit
+📍 Available in Bangladesh on Pre-Order Only`
 }];
 
 /* =========================
