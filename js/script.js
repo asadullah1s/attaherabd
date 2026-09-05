@@ -5,7 +5,7 @@ const products = [{
     id: 1,
     title: "Unstitched Embroidered Lawn 3 Piece, U4672SU-3PC-329",
     category: "Fashion",
-    price: "$459",
+    price: "৳8000",
     images: [
         "images/products/product-1.jpeg",
         "images/products/product-2.jpeg",
@@ -50,7 +50,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 2,
     title: "Unstitched Embroidered Lawn 3 Piece, OTL-20865/U CORAL",
     category: "Fashion",
-    price: "$128",
+    price: "৳8000",
     images: [
         "images/products/product-7.jpeg",
         "images/products/product-8.jpeg",
@@ -87,7 +87,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 3,
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched), U4666SU-3PC-633",
     category: "Fashion",
-    price: "$89",
+    price: "৳7000",
     images: [
         "images/products/product-11.jpeg",
         "images/products/product-12.jpeg",
