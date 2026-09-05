@@ -14,7 +14,7 @@ const products = [{
         "images/products/product-5.jpeg",
         "images/products/product-6.jpeg"
     ],
-    description: 'Shirt
+    description: `Shirt
 * Dyed Lawn Shirt – 3m
 * Embroidered Front Center – 1pc
 * Embroidered Side Panels – 2pc
@@ -45,7 +45,7 @@ Iron on low heat (avoid direct heat on embroidery).
 Dry in shade for best results.
 
 Disclaimer:
-Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.'
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 }, {
     id: 2,
     title: "Radiant Rose Serum",
