@@ -46,11 +46,15 @@ Dry in shade for best results.
 
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
-}, {
+},
+   /* =========================
+   ID 2
+   ========================= */ 
+   {
     id: 2,
     title: "Unstitched Embroidered Lawn 3 Piece, OTL-20865/U CORAL",
     category: "Fashion",
-    price: "৳8000",
+    price: "৳7900",
     images: [
         "images/products/product-7.jpeg",
         "images/products/product-8.jpeg",
@@ -83,7 +87,11 @@ Steam iron for best results.
 
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.`
-}, {
+},
+   /* =========================
+   ID 3
+   ========================= */ 
+   {
     id: 3,
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched), U4666SU-3PC-633",
     category: "Fashion",
@@ -119,11 +127,15 @@ Care Instructions
 * Dry in shade
 
 Disclaimer: Colors may slightly vary due to screen settings and lighting.`
-}, {
+},
+   /* =========================
+   ID 4
+   ========================= */ 
+   {
     id: 4,
     title: "Unstitched Embroidered Lawn 3 Piece, U5094SU-3PC-014",
     category: "Fashion",
-    price: "$689",
+    price: "৳8000",
     images: [
         "images/products/product-16.jpeg",
         "images/products/product-17.jpeg",
@@ -162,11 +174,15 @@ Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.
 100% Original Pakistani Suit
 📍 Available in Bangladesh on Pre-Order Only`
-}, {
+},
+   /* =========================
+   ID 5
+   ========================= */ 
+   {
     id: 5,
     title: "3 Piece – Embroidered Dobby Suit (Unstitched), 3PEJQS26V411",
     category: "Beauty",
-    price: "$49",
+    price: "৳7999",
     images: [
         "images/products/product-22.jpeg",
         "images/products/product-23.jpeg",
@@ -191,11 +207,15 @@ Trouser
 Note: Actual product color may vary slightly from the image.
 100% Original Pakistani Suit
 📍 Available in Bangladesh on Pre-Order Only`
-}, {
+},
+   /* =========================
+   ID 6
+   ========================= */ 
+   {
     id: 6,
     title: "Unstitched Embroidered Lawn 3 Piece, OTL-20066/U BLACK",
     category: "Home Decor",
-    price: "$149",
+    price: "৳7689",
     images: [
         "images/products/product-26.jpeg",
         "images/products/product-27.jpeg",
@@ -224,11 +244,15 @@ Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting conditions.
 100% Original Pakistani Suit
 📍 Available in Bangladesh on Pre-Order Only`
-}, {
+},
+   /* =========================
+   ID 7
+   ========================= */ 
+   {
     id: 7,
     title: "3 Piece – Embroidered Jacquard Suit (Unstitched), U3FE-LXS26V4-2",
     category: "Fashion",
-    price: "$329",
+    price: "৳7980",
     images: [
         "images/products/product-29.jpeg",
         "images/products/product-30.jpeg",
@@ -253,11 +277,15 @@ Trouser
 Note: Actual product color may vary slightly from the image.
 100% Original Pakistani Suit
 📍 Available in Bangladesh on Pre-Order Only`
-}, {
+},
+   /* =========================
+   ID 8
+   ========================= */ 
+   {
     id: 8,
     title: "Unstitched Embroidered Lawn 3 Piece, U5077SU-3PC-049",
     category: "Beauty",
-    price: "$199",
+    price: "৳8000",
     images: [
         "images/products/product-34.jpeg",
         "images/products/product-35.jpeg",
