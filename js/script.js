@@ -3,7 +3,7 @@
    ========================= */
 const products = [{
     id: 1,
-    title: "Unstitched Embroidered Lawn 3 Piece Code: U4672SU-3PC-329",
+    title: "Unstitched Embroidered Lawn 3 Piece, U4672SU-3PC-329",
     category: "Fashion",
     price: "$459",
     images: [
@@ -14,7 +14,38 @@ const products = [{
         "images/products/product-5.jpeg",
         "images/products/product-6.jpeg"
     ],
-    description: ""
+    description: "Shirt
+* Dyed Lawn Shirt – 3m
+* Embroidered Front Center – 1pc
+* Embroidered Side Panels – 2pc
+* Embroidered Sleeves – 1pc
+* Fabric: Lawn
+* Colour: Mint
+
+Dupatta
+* Embroidered Chiffon Dupatta – 2.5m
+* Fabric: Chiffon
+* Colour: Mint
+
+Trouser
+* Embroidered Cambric Trouser – 1.8m
+* Fabric: Cambric
+* Colour: Mint
+
+Product Highlights
+A beautifully embroidered lawn outfit crafted on breathable fabric, offering comfort with an elegant finish. Perfect for summer wear, daytime events, and festive occasions where a fresh look stands out.
+
+Size: Standard (Suitable up to XL)
+
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings."
 }, {
     id: 2,
     title: "Radiant Rose Serum",
