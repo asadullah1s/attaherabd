@@ -615,7 +615,7 @@ footer a:hover {
     .hero-slider-wrapper .carousel-item {
         height: var(--hero-height-small-mobile);
         min-height: 260px;
-        margin-top: 60px;
+        
     }
     .banner-text-overlay h2 { font-size: 1.4rem; max-width: 95%; }
     .banner-text-overlay p { max-width: 95%; font-size: 0.75rem; margin-bottom: 0.8rem; }
