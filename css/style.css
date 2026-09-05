@@ -423,18 +423,18 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     top: 0;
     left: 0;
     width: 100%;
-    
-    background: rgba(17,17,17,0.96);
+    height: 100%;
+    background: rgba(17, 17, 17, 0.96);
     backdrop-filter: blur(8px);
     z-index: 2000;
     display: none;
-    align-items: center;
+    align-items: flex-start; 
     justify-content: center;
     overflow-y: auto;
+    padding: 40px 20px;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
-
 .fullscreen-modal.active {
     display: flex;
     opacity: 1;
