@@ -53,7 +53,20 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     padding: 0.8rem 0;
     transition: box-shadow 0.3s;
 }
+/* =========================
+   NAVBAR LOGO
+   ========================= */
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
 
+/* Mobile par logo chhota ho jaye */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 38px;
+    }
+}
 .navbar.scrolled {
     box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
