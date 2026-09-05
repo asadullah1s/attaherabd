@@ -396,6 +396,7 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     padding: 2px 14px;
     border-radius: 30px;
     font-weight: 500;
+    margin-inline-end: auto;
 }
 
 /* =========================
