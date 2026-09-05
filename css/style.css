@@ -363,6 +363,29 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
 }
 .card-text{
    padding: 0 0 6px 5px;
+    line-height: 1.6;
+    color: #555 !important;
+    font-size: 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 45px;
+    margin-bottom: 8px;
+}
+/* Product Code styling */
+.product-code {
+    font-size: 0.7rem;
+    color: #999;
+    letter-spacing: 0.3px;
+    font-family: 'Inter', sans-serif;
+    background: #f5f3ef;
+    display: inline-block;
+    padding: 1px 12px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: 2px;
 }
 .product-card:hover .card-img-top {
     transform: scale(1.03);
