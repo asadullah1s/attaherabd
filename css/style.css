@@ -444,12 +444,10 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     background: var(--warm-ivory);
     max-width: 1300px;
     width: 100%;
-    
     border-radius: 32px;
     overflow: hidden;
     position: relative;
     animation: modalZoom 0.5s;
-    object-fit: contain;
 }
 
 @keyframes modalZoom {
