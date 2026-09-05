@@ -383,57 +383,72 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
     font-size: 1.4rem;
     color: var(--gold);
     font-family: 'Inter', sans-serif;
-}
-/* =========================
-   MODAL DESCRIPTION - PROFESSIONAL STYLING
-   ========================= */
-#modalDesc {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    white-space: pre-wrap;
-    word-break: break-word;
-    max-height: 450px;
-    overflow-y: auto;
-    padding-right: 10px;
-    color: #222;
-}
-/* =========================
-   PRODUCT CODE BADGE
+}/* =========================
+   PRODUCT CODE STYLING
    ========================= */
 .product-code {
-    font-size: 0.7rem;
-    color: #666;
-    background: #f0f0f0;
-    padding: 2px 12px;
-    border-radius: 20px;
-    display: inline-block;
-    font-family: 'Inter', monospace;
-    letter-spacing: 0.3px;
-    border: 1px solid #e0e0e0;
-    margin-top: 2px;
-}
-/* Description ke andar bullets */
-#modalDesc .desc-bullet {
-    display: list-item;
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Description ke andar section headers */
-#modalDesc .desc-header {
-    font-weight: 700;
-    font-size: 1rem;
-    color: #111;
-    margin-top: 6px;
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    color: #888;
     letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+    background: #f0ede7;
+    display: inline-block;
+    padding: 2px 14px;
+    border-radius: 30px;
+    font-weight: 500;
 }
 
-/* Mobile par height kam */
+/* =========================
+   MODAL DESCRIPTION - PROFESSIONAL FORMATTING
+   ========================= */
+#modalDesc {
+    white-space: pre-wrap;
+    line-height: 1.9;
+    font-size: 0.95rem;
+    color: #2c2c2c;
+    max-height: 380px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+#modalDesc strong {
+    font-weight: 700;
+    color: #111;
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+#modalDesc br {
+    display: block;
+    content: "";
+    margin: 4px 0;
+}
+
+/* Bullet points ko clean karein */
+#modalDesc .bullet-item {
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+#modalDesc .bullet-item::before {
+    content: "•";
+    color: var(--gold);
+    font-weight: bold;
+    position: absolute;
+    left: 4px;
+}
+
+/* Mobile par height adjust */
 @media (max-width: 768px) {
     #modalDesc {
-        max-height: 280px;
+        max-height: 220px;
         font-size: 0.85rem;
     }
 }
