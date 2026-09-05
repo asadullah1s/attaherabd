@@ -374,8 +374,7 @@ function formatDescription(text) {
 
 /* =========================
    RENDER PRODUCT CARDS
-   ========================= */
-function renderProductCards(productsArray, containerId) {
+   function renderProductCards(productsArray, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
     if (productsArray.length === 0) {
@@ -404,7 +403,78 @@ function renderProductCards(productsArray, containerId) {
         </div>
     `).join('');
 }
+========================= */
+/* =========================
+   CARD DESCRIPTION - CLEAN PREVIEW (Reusable)
+   ========================= */
+function getCardDescription(text, limit = 80) {
+    if (!text) return '';
 
+    let clean = text
+        .replace(/\* /g, '• ')      // Asterisk ko bullet mein convert
+        .replace(/\n/g, ' ')         // Newline ko space mein
+        .replace(/\s+/g, ' ')        // Extra spaces hatao
+        .trim();
+
+    // Word cut hone se bachao
+    if (clean.length > limit) {
+        let cut = clean.substring(0, limit);
+        let lastSpace = cut.lastIndexOf(' ');
+        if (lastSpace > 0) cut = cut.substring(0, lastSpace);
+        clean = cut + '...';
+    }
+
+    return clean;
+}
+/* =========================
+   RENDER PRODUCT CARDS (Complete)
+   ========================= */
+function renderProductCards(productsArray, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    if (productsArray.length === 0) {
+        container.innerHTML = `<div class="col-12 text-center py-5">No luxury items found</div>`;
+        return;
+    }
+    
+    container.innerHTML = productsArray.map(p => `
+        <div class="col-lg-3 col-md-6 col-12 mb-4 product-card-item" data-product-id="${p.id}">
+            <div class="product-card h-100">
+                <!-- Product Image -->
+                <img src="${p.images[0]}" class="card-img-top" alt="${p.title}" loading="lazy">
+                
+                <!-- Card Body -->
+                <div class="card-body d-flex flex-column">
+                    <!-- Category & Price -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="category-badge">${p.category}</span>
+                        <span class="price">${p.price}</span>
+                    </div>
+                    
+                    <!-- Product Title -->
+                    <h5 class="card-title mt-2 fw-bold">${p.title}</h5>
+                    
+                    <!-- Product Code (if exists) -->
+                    ${p.code ? `<div class="product-code small text-muted">${p.code}</div>` : ''}
+                    
+                    <!-- Card Description: Clean preview with bullet & 80 chars limit -->
+                    <p class="card-text small text-secondary mt-2">${getCardDescription(p.description, 80)}</p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="mt-auto d-flex justify-content-between gap-2 pt-2">
+                        <button class="btn btn-details view-details" data-id="${p.id}" aria-label="View details for ${p.title}">
+                            View Details
+                        </button>
+                        <button class="btn btn-buy-now buy-now-btn" data-id="${p.id}" aria-label="Buy now on WhatsApp">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
 /* =========================
    FILTER PRODUCTS
    ========================= */
