@@ -646,6 +646,36 @@ h1, h2, h3, h4, .logo-text, .luxury-font {
 /* =========================
    FOOTER
    ========================= */
+/* =========================
+   FOOTER LOGO
+   ========================= */
+.footer-logo {
+    max-height: 50px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.8;
+}
+
+.footer-brand {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Mobile par logo chhota ho jaye */
+@media (max-width: 768px) {
+    .footer-logo {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        max-height: 35px;
+    }
+}
 footer {
     background: #111;
     color: #ccc;
