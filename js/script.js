@@ -373,7 +373,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
 },
 
 {
-    id: 9,
+    id: 10,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4704SU-3PC-360",
     category: "Jacquard",
@@ -381,7 +381,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     images: [
         "images/products/product-42.jpg",
         "images/products/product-43.jpg",
-        "images/products/product-44.jpg"
+        "images/products/product-44.jpg",
+        "images/products/product-45.jpg"
     ],
     description: `Unstitched 3-Piece Suit
 Shirt
