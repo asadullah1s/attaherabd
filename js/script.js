@@ -5,7 +5,7 @@ const products = [{
     id: 1,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4672SU-3PC-329",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳8000",
     images: [
         "images/products/product-1.jpeg",
@@ -52,7 +52,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 2,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20865/U CORAL",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳7900",
     images: [
         "images/products/product-7.jpeg",
@@ -91,7 +91,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 3,
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched)",
     code: "U4666SU-3PC-633",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳7000",
     images: [
         "images/products/product-11.jpeg",
@@ -129,7 +129,7 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
     id: 4,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5094SU-3PC-014",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳8000",
     images: [
         "images/products/product-16.jpeg",
@@ -181,7 +181,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 5,
     title: "3 Piece – Embroidered Dobby Suit (Unstitched)",
     code: "3PEJQS26V411",
-    category: "Fashion",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
+    category: "Jacquard",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
     price: "৳7999",
     images: [
         "images/products/product-22.jpeg",
@@ -215,7 +215,7 @@ Note: Actual product color may vary slightly from the image.
     id: 6,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20066/U BLACK",
-    category: "Fashion", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
+    category: "Jacquard", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
     price: "৳7689",
     images: [
         "images/products/product-26.jpeg",
@@ -256,7 +256,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 7,
     title: "3 Piece – Embroidered Jacquard Suit (Unstitched)",
     code: "U3FE-LXS26V4-2",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳7980",
     images: [
         "images/products/product-29.jpeg",
@@ -290,7 +290,7 @@ Note: Actual product color may vary slightly from the image.
     id: 8,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-049",
-    category: "Fashion",
+    category: "Jacquard",
     price: "৳8000",
     images: [
         "images/products/product-34.jpeg",
