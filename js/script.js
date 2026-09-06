@@ -333,7 +333,48 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
 
 100% Original Pakistani Suit
 📍 Available in Bangladesh on Pre-Order Only`
-}];
+},
+
+{
+    id: 9,
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U4399SU-3PC-489",
+    category: "Jacquard",
+    price: "৳8000",
+    images: [
+        "images/products/product-34.jpeg",
+        "images/products/product-35.jpeg",
+        "images/products/product-36.jpeg",
+        "images/products/product-37.jpeg",
+        "images/products/product-38.jpeg"
+    ],
+    description: ` Unstitched 3-Piece Suit
+Shirt
+* Embroidered Lawn Shirt – 1.91m
+* Fabric: Lawn
+* Colour: Pink (with Blue Gradient)
+Dupatta
+* Printed Chiffon Dupatta – 2.5m
+* Fabric: Chiffon
+* Colour: Pink (with Blue Gradient)
+Trouser
+* Dyed Trouser – 1.8m
+* Fabric: Cambric
+* Colour: Pink (with Blue Gradient)
+✨ Product Highlights
+A unique blend of soft embroidery and a beautiful gradient color palette, giving this outfit a modern yet elegant appeal. Lightweight and breathable, perfect for summer wear, casual gatherings, and festive occasions.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
+}
+                 
+];
 
 /* =========================
    STATE
