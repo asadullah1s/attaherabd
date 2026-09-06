@@ -452,7 +452,39 @@ Iron on low heat (avoid direct heat on embroidery).
 Dry in shade for best results.
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
-}
+},
+
+{
+    id: 12,
+    title: "Unstitched Jacquard Cotton 3 Piece",
+    code: "135383",
+    category: "Jacquard",
+    price: "৳8000",
+    images: [
+        "images/products/product-51.jpg",
+        "images/products/product-52.jpg",
+        "images/products/product-53.jpg",
+        "images/products/product-54.jpg"
+    ],
+    description: ` Unstitched 3-Piece Suit
+Shirt
+* Premium Dyed Jacquard Shirt (Wider Width) – 1.75m
+* Fabric: Cotton Jacquard
+* Colour: Black
+Dupatta
+* Premium Dyed Jacquard Dupatta – 2.5m
+* Fabric: Jacquard
+* Colour: Black
+Trouser
+* Premium Dyed Cambric Trouser – 1.75m
+* Fabric: Cambric
+* Colour: Black
+✨ Product Highlights
+A beautifully woven jacquard design on premium breathable fabric, offering a luxurious texture and elegant fall after stitching. Perfect for weddings, Eid, and formal occasions — where tradition meets modern sophistication.
+Size: Standard
+Disclaimer:
+Designs shown are for shoot/styling purposes (no embroidery unless mentioned). Actual product color may vary slightly.`
+},
                  
 ];
 
