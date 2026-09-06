@@ -411,7 +411,7 @@ Iron on low heat (avoid direct heat on embroidery).
 Dry in shade for best results.
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
-}
+},
 
 {
     id: 11,
