@@ -373,6 +373,47 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
 },
 
 {
+    id: 10,
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U4704SU-3PC-360",
+    category: "Jacquard",
+    price: "৳8000",
+    images: [
+        "images/products/product-42.jpg",
+        "images/products/product-43.jpg",
+        "images/products/product-44.jpg",
+        "images/products/product-45.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Lawn Shirt – 2.65m
+* Embroidered Front – 1pc
+* Embroidered Sleeves – 1pc
+* Embroidered Front Patti – 1pc
+* Fabric: Lawn
+* Colour: Olive
+Dupatta
+* Printed Chiffon Dupatta – 2.5m
+* Fabric: Chiffon
+* Colour: Olive
+Trouser
+* Embroidered Cambric Trouser – 1.8m
+* Fabric: Cambric
+* Colour: Olive
+✨ Product Highlights
+A beautifully embroidered lawn outfit paired with a lightweight chiffon dupatta, offering comfort with a polished and stylish look. Ideal for daily wear, casual meetups, and subtle festive occasions.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
+}
+
+{
     id: 11,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-014",
