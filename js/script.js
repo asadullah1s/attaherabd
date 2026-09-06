@@ -342,9 +342,9 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     category: "Jacquard",
     price: "৳8000",
     images: [
-        "images/products/product-39.jpeg",
-        "images/products/product-40.jpeg",
-        "images/products/product-41.jpeg"
+        "images/products/product-39.jpg",
+        "images/products/product-40.jpg",
+        "images/products/product-41.jpg"
     ],
     description: ` Unstitched 3-Piece Suit
 Shirt
