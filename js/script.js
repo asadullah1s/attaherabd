@@ -629,7 +629,7 @@ function renderSpecialSections() {
    ========================= */
 function getWhatsAppLink(product) {
     const phone = "+8801632787882"; // Change to your WhatsApp number
-    const message = `Hello Tahira, I'm interested in:\n*${product.title}*\nCode: ${product.code}\nPrice: ${product.price}`;
+    const message = `Hello Tahera, I'm interested in:\n*${product.title}*\nCode: ${product.code}\nPrice: ${product.price}`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
@@ -830,6 +830,49 @@ filterProducts();
 window.dispatchEvent(new Event("hashchange"));
 
 /* =========================
+   PRODUCT STRUCTURED DATA (SEO)
+   Injects an ItemList/Product JSON-LD so Google can read
+   product names, images, categories & prices for rich results.
+   ========================= */
+function injectProductSchema(productsArray) {
+    const siteUrl = "https://attahera.com/";
+    const itemListElement = productsArray.map((p, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+            "@type": "Product",
+            "name": p.title,
+            "image": (p.images && p.images[0]) ? siteUrl + p.images[0] : undefined,
+            "sku": p.code,
+            "category": p.category,
+            "description": (p.description || "").split("\n")[0],
+            "url": siteUrl + "#product-" + p.id,
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "BDT",
+                "price": String(p.price).replace(/[^\d.]/g, ""),
+                "availability": "https://schema.org/InStock",
+                "url": siteUrl + "#product-" + p.id
+            }
+        }
+    }));
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Tahera Pakistani Clothes Collection",
+        "itemListElement": itemListElement
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "product-schema";
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
+injectProductSchema(products);
+
+/* =========================
    AOS INIT
    ========================= */
 AOS.init({
@@ -838,4 +881,4 @@ AOS.init({
     offset: 100
 });
 
-console.log('Tahira — Luxury Finds loaded (Professional Edition)');
+console.log('Tahera — Luxury Finds loaded (Professional Edition)');
