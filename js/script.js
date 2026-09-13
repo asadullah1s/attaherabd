@@ -6,7 +6,7 @@ const products = [{
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4672SU-3PC-329",
     category: "Lawn",
-    price: "৳6950",
+    price: "৳6399",
     oldPrice: "৳8000",
     images: [
         "images/products/product-1.jpeg",
@@ -54,8 +54,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20865/U CORAL",
     category: "Lawn",
-    price: "৳7100",
-    oldPrice: "৳7900",
+    price: "৳4400",
+    oldPrice: "৳5900",
     images: [
         "images/products/product-7.jpeg",
         "images/products/product-8.jpeg",
@@ -94,8 +94,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched)",
     code: "U4666SU-3PC-633",
     category: "Lawn",
-    price: "৳5750",
-    oldPrice: "৳7000",
+    price: "৳4500",
+    oldPrice: "৳3599",
     images: [
         "images/products/product-11.jpeg",
         "images/products/product-12.jpeg",
@@ -133,8 +133,8 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5094SU-3PC-014",
     category: "Lawn",
-    price: "৳6650",
-    oldPrice: "৳8000",
+    price: "৳5999",
+    oldPrice: "৳7500",
     images: [
         "images/products/product-16.jpeg",
         "images/products/product-17.jpeg",
@@ -185,7 +185,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 5,
     title: "3 Piece – Embroidered Dobby Suit (Unstitched)",
     code: "3PEJQS26V411",
-    category: "Collection",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
+    category: "Collection",
     price: "৳6650",
     oldPrice: "৳7999",
     images: [
@@ -221,8 +221,8 @@ Note: Actual product color may vary slightly from the image.
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20066/U BLACK",
     category: "Lawn", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
-    price: "৳6600",
-    oldPrice: "৳7689",
+    price: "৳4400",
+    oldPrice: "৳5500",
     images: [
         "images/products/product-26.jpeg",
         "images/products/product-27.jpeg",
@@ -263,8 +263,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "3 Piece – Embroidered Jacquard Suit (Unstitched)",
     code: "U3FE-LXS26V4-2",
     category: "Jacquard",
-    price: "৳6950",
-    oldPrice: "৳7980",
+    price: "৳6399",
+    oldPrice: "৳8600",
     images: [
         "images/products/product-29.jpeg",
         "images/products/product-30.jpeg",
@@ -298,8 +298,8 @@ Note: Actual product color may vary slightly from the image.
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-049",
     category: "Lawn",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳3999",
+    oldPrice: "৳5000",
     images: [
         "images/products/product-34.jpeg",
         "images/products/product-35.jpeg",
@@ -348,8 +348,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4399SU-3PC-489",
     category: "Lawn",
-    price: "৳6150",
-    oldPrice: "৳8000",
+    price: "৳3599",
+    oldPrice: "৳4500",
     images: [
         "images/products/product-39.jpg",
         "images/products/product-40.jpg",
@@ -386,8 +386,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4704SU-3PC-360",
     category: "Lawn",
-    price: "৳7100",
-    oldPrice: "৳8000",
+    price: "৳5199",
+    oldPrice: "৳6500",
     images: [
         "images/products/product-42.jpg",
         "images/products/product-43.jpg",
@@ -428,8 +428,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-014",
     category: "Lawn",
-    price: "৳7200",
-    oldPrice: "৳8000",
+    price: "৳3999",
+    oldPrice: "৳5000",
     images: [
         "images/products/product-46.jpg",
         "images/products/product-47.jpg",
@@ -503,8 +503,8 @@ Designs shown are for shoot/styling purposes (no embroidery unless mentioned). A
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5094SU-3PC-633",
     category: "Lawn",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳5999",
+    oldPrice: "৳7500",
     images: [
         "images/products/product-55.jpg",
         "images/products/product-56.jpg",
@@ -546,8 +546,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4666SU-3PC-002",
     category: "Lawn",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳3599",
+    oldPrice: "৳4500",
     images: [
         "images/products/product-60.jpg",
         "images/products/product-61.jpg",
@@ -586,7 +586,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4672SU-3PC-143",
     category: "Lawn",
-    price: "৳7050",
+    price: "৳6399",
     oldPrice: "৳8000",
     images: [
         "images/products/product-65.jpg",
@@ -698,7 +698,7 @@ Designs shown are for shoot/styling only (no embroidery unless mentioned). Actua
     title: "Unstitched Embroidered Jacquard 3 Piece",
     code: "U3FE-LXS26V4-2",
     category: "Jacquard",
-    price: "৳7050",
+    price: "৳6399",
     oldPrice: "৳8000",
     images: [
         "images/products/product-79.jpg",
@@ -728,8 +728,8 @@ Note: Actual product color may vary slightly from the image.`
     title: "Unstitched Embroidered Jacquard 3 Piece",
     code: "U3PEJQS26V45",
     category: "Jacquard",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳5599",
+    oldPrice: "৳7000",
     images: [
         "images/products/product-83.jpg",
         "images/products/product-84.jpg",
@@ -760,8 +760,8 @@ Note: Actual product color may vary slightly from the image.`
     title: "Unstitched Embroidered Jacquard 3 Piece",
     code: "U3PE-JQS26V4-6",
     category: "Jacquard",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳5599",
+    oldPrice: "৳7000",
     images: [
         "images/products/product-88.jpg",
         "images/products/product-89.jpg",
@@ -792,8 +792,8 @@ Note: Actual product color may vary slightly from the image.`
     title: "3 Piece - Embroidered Premium Jacquard Suit",
     code: "SKU: U3PEJQS26V47",
     category: "Jacquard",
-    price: "৳7050",
-    oldPrice: "৳8000",
+    price: "৳5599",
+    oldPrice: "৳7000",
     images: [
         "images/products/product-93.jpg",
         "images/products/product-94.jpg",
