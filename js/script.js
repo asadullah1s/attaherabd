@@ -497,7 +497,7 @@ Size: Standard
 Disclaimer:
 Designs shown are for shoot/styling purposes (no embroidery unless mentioned). Actual product color may vary slightly.`
 },
-
+                  
 {
     id: 13,
     title: "Unstitched Embroidered Lawn 3 Piece",
