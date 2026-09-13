@@ -540,6 +540,90 @@ Dry in shade for best results.
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings. `
 },
+                  
+{
+    id: 14,
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U4666SU-3PC-002",
+    category: "Lawn",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-60.jpg",
+        "images/products/product-61.jpg",
+        "images/products/product-62.jpg",
+        "images/products/product-63.jpg",
+        "images/products/product-64.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Printed Lawn Shirt with Embroidery – 1.91m
+* Fabric: Lawn
+* Colour: Off White
+Dupatta
+* Printed Dupatta – 2.5m
+* Fabric: Monar Slub
+* Colour: Off White
+Trouser
+* Dyed Trouser – 1.8m
+* Fabric: Cambric
+* Colour: Off White
+✨ Product Highlights
+A beautifully balanced combination of print and subtle embroidery on breathable lawn fabric. Lightweight, elegant, and perfect for everyday wear, summer outings, and minimal festive styling.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
+},
+                  
+{
+    id: 15,
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U4672SU-3PC-143",
+    category: "Lawn",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-65.jpg",
+        "images/products/product-66.jpg",
+        "images/products/product-67.jpg",
+        "images/products/product-68.jpg",
+        "images/products/product-69.jpg",
+        "images/products/product-70.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Lawn Shirt – 3m
+* Embroidered Front Center – 1pc
+* Embroidered Side Panels – 2pc
+* Embroidered Sleeves – 1pc
+* Fabric: Lawn
+* Colour: Blue
+Dupatta
+* Embroidered Chiffon Dupatta – 2.5m
+* Fabric: Chiffon
+* Colour: Blue
+Trouser
+* Embroidered Cambric Trouser – 1.8m
+* Fabric: Cambric
+* Colour: Blue
+✨ Product Highlights
+A beautifully embroidered lawn outfit crafted on breathable fabric, perfect for summer wear. Light, comfortable, and stylish — ideal for casual gatherings, daytime events, and festive occasions.
+Size: Standard (Suitable up to XL)
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
+},
                  
 ];
 
