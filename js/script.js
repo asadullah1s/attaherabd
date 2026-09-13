@@ -786,10 +786,11 @@ Trouser
 * Colour: Light Brown
 Note: Actual product color may vary slightly from the image.`
 },                  
+                  
 {
     id: 21,
-    title: "Unstitched Embroidered Jacquard 3 Piece",
-    code: "",
+    title: "3 Piece - Embroidered Premium Jacquard Suit",
+    code: "SKU: U3PEJQS26V47",
     category: "Jacquard",
     price: "৳7050",
     oldPrice: "৳8000",
@@ -799,7 +800,54 @@ Note: Actual product color may vary slightly from the image.`
         "images/products/product-95.jpg",
         "images/products/product-96.jpg"
     ],
-    description: ``
+    description: `Shirt
+Dyed Extra Weft Jacquard Shirt 3.7m
+Embroidered Hem Border 1pc
+Embroidered Neckline & Sleeve Motifs 3pc
+Fabric: Extra Weft Jacquard
+Colour: Ice Blue
+Dupatta
+Printed Bemberg Tissue Dupatta 2.5m
+Fabric: Bemberg Tissue
+Colour: Ice Blue
+Trouser
+Dyed Cotton Trouser 2.5m
+Fabric: Cotton
+Colour: Ice Blue
+Note: Actual product color may vary slightly from the image.`
+},
+
+
+{
+    id: 22,
+    title: "3 Piece - Embroidered Pakistani Lawn Suit",
+    code: "SKU: U3PEJQS26V48",
+    category: "Lawn",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-97.jpg",
+        "images/products/product-98.jpg",
+        "images/products/product-99.jpg",
+        "images/products/product-100.jpg",
+        "images/products/product-101.jpg",
+    ],
+    description: `Unstitched 3-Piece
+Shirt
+Embroidered Neckline 1pc
+Printed Lawn Shirt 3m
+Embroidered Hem Border & Front Motifs 3pc
+Fabric: Lawn
+Colour: Parrot Green
+Dupatta
+Embroidered Manaar Dupatta 2.5m
+Fabric: Manaar
+Colour: Parrot Green
+Trouser
+Dyed Cotton Trouser 2.5m
+Fabric: Cotton
+Colour: Parrot Green
+Note: Actual product color may vary slightly from the image`
 },
                  
 ];
