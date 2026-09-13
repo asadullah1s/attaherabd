@@ -5,7 +5,7 @@ const products = [{
     id: 1,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4672SU-3PC-329",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳6950",
     oldPrice: "৳8000",
     images: [
@@ -53,7 +53,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 2,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20865/U CORAL",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳7100",
     oldPrice: "৳7900",
     images: [
@@ -93,7 +93,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 3,
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched)",
     code: "U4666SU-3PC-633",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳5750",
     oldPrice: "৳7000",
     images: [
@@ -132,7 +132,7 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
     id: 4,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5094SU-3PC-014",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳6650",
     oldPrice: "৳8000",
     images: [
@@ -185,7 +185,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 5,
     title: "3 Piece – Embroidered Dobby Suit (Unstitched)",
     code: "3PEJQS26V411",
-    category: "Jacquard",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
+    category: "Collection",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
     price: "৳6650",
     oldPrice: "৳7999",
     images: [
@@ -220,7 +220,7 @@ Note: Actual product color may vary slightly from the image.
     id: 6,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20066/U BLACK",
-    category: "Jacquard", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
+    category: "Lawn", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
     price: "৳6600",
     oldPrice: "৳7689",
     images: [
@@ -297,7 +297,7 @@ Note: Actual product color may vary slightly from the image.
     id: 8,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-049",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳7050",
     oldPrice: "৳8000",
     images: [
@@ -347,7 +347,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 9,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4399SU-3PC-489",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳6150",
     oldPrice: "৳8000",
     images: [
@@ -385,7 +385,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 10,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4704SU-3PC-360",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳7100",
     oldPrice: "৳8000",
     images: [
@@ -427,7 +427,7 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     id: 11,
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-014",
-    category: "Jacquard",
+    category: "Lawn",
     price: "৳7200",
     oldPrice: "৳8000",
     images: [
@@ -496,6 +496,48 @@ A beautifully woven jacquard design on premium breathable fabric, offering a lux
 Size: Standard
 Disclaimer:
 Designs shown are for shoot/styling purposes (no embroidery unless mentioned). Actual product color may vary slightly.`
+},
+
+{
+    id: 13,
+    title: "Unstitched Embroidered Lawn 3 Piece",
+    code: "U5094SU-3PC-633",
+    category: "Lawn",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-55.jpg",
+        "images/products/product-56.jpg",
+        "images/products/product-57.jpg",
+        "images/products/product-58.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Lawn Shirt – 2.65m
+* Embroidered Front Center Panel – 1pc
+* Embroidered Side Panels – 2pc
+* Embroidered Sleeves – 1pc
+* Fabric: Lawn
+* Colour: Lilac
+Dupatta
+* Printed Silk Dupatta – 2.5m
+* Fabric: Silk
+* Colour: Lilac
+Trouser
+* Dyed Trouser – 1pc
+* Fabric: Cambric
+* Colour: Lilac
+✨ Product Highlights
+A beautifully detailed embroidered lawn outfit paired with a soft silk dupatta, giving a luxurious yet lightweight feel. Perfect for summer gatherings, festive wear, and elegant day looks.
+Size: Standard
+Care Instructions:
+Wash light and bright colors separately.
+Do not use bleach.
+Avoid twisting or squeezing embellished fabric.
+Iron on low heat (avoid direct heat on embroidery).
+Dry in shade for best results.
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings. `
 },
                  
 ];
