@@ -754,6 +754,53 @@ Trouser
 * Colour: Lilac
 Note: Actual product color may vary slightly from the image.`
 },
+                  
+{
+    id: 20,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "U3PE-JQS26V4-6",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-88.jpg",
+        "images/products/product-89.jpg",
+        "images/products/product-90.jpg",
+        "images/products/product-91.jpg",
+        "images/products/product-92.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Extra Weft Jacquard Shirt – 3.7m
+* Embroidered Neckline – 1pc
+* Embroidered Hem Patch & Sleeves Border – 2pc
+* Fabric: Extra Weft Jacquard
+* Colour: Light Brown
+Dupatta
+* Printed Bemberg Tissue Dupatta – 2.5m
+* Fabric: Bemberg Tissue
+* Colour: Light Brown
+Trouser
+* Dyed Cotton Trouser – 2.5m
+* Fabric: Cotton
+* Colour: Light Brown
+Note: Actual product color may vary slightly from the image.`
+},                  
+{
+    id: 21,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-93.jpg",
+        "images/products/product-94.jpg",
+        "images/products/product-95.jpg",
+        "images/products/product-96.jpg"
+    ],
+    description: ``
+},
                  
 ];
 
