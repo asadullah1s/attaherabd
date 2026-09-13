@@ -624,6 +624,136 @@ Dry in shade for best results.
 Disclaimer:
 Designs shown are for shoot/styling purposes. Actual product color may vary slightly due to lighting and screen settings.`
 },
+                  
+{
+    id: 16,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "3FELXS26V212",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-71.jpg",
+        "images/products/product-72.jpg",
+        "images/products/product-73.jpg",
+        "images/products/product-74.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Extra Weft Jacquard Shirt – 3.7m
+* Embroidered Sleeves Border – 1pc
+* Embroidered Front & Back Border – 2pc
+* Embroidered Neckline & Back Motif – 2pc
+* Fabric: Extra Weft Jacquard
+* Colour: Aqua
+Dupatta
+* Embroidered Blended Chiffon Dupatta – 2.5m
+* Fabric: Blended Chiffon
+* Colour: Aqua
+Trouser
+* Dyed Cotton Trouser – 2.5m
+* Fabric: Cotton
+* Colour: Aqua
+✨ Product Highlights
+Beautifully crafted with intricate embroidery on premium jacquard fabric, this ensemble offers a graceful fall and a luxurious feel after stitching. Perfect for Eid, festive occasions, and formal wear — where elegance meets modern style.
+Size: Standard
+Disclaimer:
+Designs shown are for shoot/styling purposes. Actual product color may vary slightly.`
+},
+                  
+{
+    id: 17,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "113035",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-75.jpg",
+        "images/products/product-76.jpg",
+        "images/products/product-77.jpg",
+        "images/products/product-78.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Premium Dyed Jacquard Shirt (Wider Width) – 1.75m
+* Fabric: Cotton Jacquard
+* Colour: Peach
+Dupatta
+* Premium Dyed Jacquard Dupatta – 2.5m
+* Fabric: Jacquard
+* Colour: Peach
+Trouser
+* Premium Dyed Cambric Trouser – 1.1m
+* Fabric: Cambric
+✨ Product Highlights
+A beautifully woven jacquard design on breathable premium fabric, perfect for custom stitching. Ideal for Eid, weddings, and formal occasions—where tradition meets modern elegance.
+Size: Standard
+Disclaimer:
+Designs shown are for shoot/styling only (no embroidery unless mentioned). Actual colors may vary slightly.`
+},
+                  
+{
+    id: 18,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "U3FE-LXS26V4-2",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-79.jpg",
+        "images/products/product-80.jpg",
+        "images/products/product-81.jpg",
+        "images/products/product-82.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Extra Weft Jacquard Shirt – 3.7m
+* Embroidered Neckline & Hem Border – 2pc
+* Fabric: Extra Weft Jacquard
+* Colour: Pistachio
+Dupatta
+* Embroidered Blended Chiffon Dupatta – 2.5m
+* Fabric: Blended Chiffon
+* Colour: Pistachio
+Trouser
+* Dyed Cotton Trouser – 2.5m
+* Fabric: Cotton
+* Colour: Pistachio
+Note: Actual product color may vary slightly from the image.`
+},
+                  
+{
+    id: 19,
+    title: "Unstitched Embroidered Jacquard 3 Piece",
+    code: "U3PEJQS26V45",
+    category: "Jacquard",
+    price: "৳7050",
+    oldPrice: "৳8000",
+    images: [
+        "images/products/product-83.jpg",
+        "images/products/product-84.jpg",
+        "images/products/product-85.jpg",
+        "images/products/product-86.jpg",
+        "images/products/product-87.jpg"
+    ],
+    description: `Unstitched 3-Piece Suit
+Shirt
+* Dyed Extra Weft Jacquard Shirt – 3.7m
+* Embroidered Sleeves Border – 1pc
+* Embroidered Neckline & Front Patch – 3pc
+* Fabric: Extra Weft Jacquard
+* Colour: Lilac
+Dupatta
+* Printed Bemberg Tissue Dupatta – 2.5m
+* Fabric: Bemberg Tissue
+* Colour: Lilac
+Trouser
+* Dyed Cotton Trouser – 2.5m
+* Fabric: Cotton
+* Colour: Lilac
+Note: Actual product color may vary slightly from the image.`
+},
                  
 ];
 
