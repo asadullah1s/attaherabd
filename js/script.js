@@ -6,7 +6,8 @@ const products = [{
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4672SU-3PC-329",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳6950",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-1.jpeg",
         "images/products/product-2.jpeg",
@@ -53,7 +54,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20865/U CORAL",
     category: "Jacquard",
-    price: "৳7900",
+    price: "৳7100",
+    oldPrice: "৳7900",
     images: [
         "images/products/product-7.jpeg",
         "images/products/product-8.jpeg",
@@ -92,7 +94,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "3 Piece Premium Pakistani Lawn Suit – Embroidered (Unstitched)",
     code: "U4666SU-3PC-633",
     category: "Jacquard",
-    price: "৳7000",
+    price: "৳5750",
+    oldPrice: "৳7000",
     images: [
         "images/products/product-11.jpeg",
         "images/products/product-12.jpeg",
@@ -130,7 +133,8 @@ Disclaimer: Colors may slightly vary due to screen settings and lighting.`
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5094SU-3PC-014",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳6650",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-16.jpeg",
         "images/products/product-17.jpeg",
@@ -182,7 +186,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "3 Piece – Embroidered Dobby Suit (Unstitched)",
     code: "3PEJQS26V411",
     category: "Jacquard",  // Note: User ne Beauty likha tha, but yeh Fashion hai, I corrected it.
-    price: "৳7999",
+    price: "৳6650",
+    oldPrice: "৳7999",
     images: [
         "images/products/product-22.jpeg",
         "images/products/product-23.jpeg",
@@ -216,7 +221,8 @@ Note: Actual product color may vary slightly from the image.
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "OTL-20066/U BLACK",
     category: "Jacquard", // User ne Home Decor likha tha, but yeh Fashion hai, I corrected it.
-    price: "৳7689",
+    price: "৳6600",
+    oldPrice: "৳7689",
     images: [
         "images/products/product-26.jpeg",
         "images/products/product-27.jpeg",
@@ -257,7 +263,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "3 Piece – Embroidered Jacquard Suit (Unstitched)",
     code: "U3FE-LXS26V4-2",
     category: "Jacquard",
-    price: "৳7980",
+    price: "৳6950",
+    oldPrice: "৳7980",
     images: [
         "images/products/product-29.jpeg",
         "images/products/product-30.jpeg",
@@ -291,7 +298,8 @@ Note: Actual product color may vary slightly from the image.
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-049",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳7050",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-34.jpeg",
         "images/products/product-35.jpeg",
@@ -340,7 +348,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4399SU-3PC-489",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳6150",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-39.jpg",
         "images/products/product-40.jpg",
@@ -377,7 +386,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U4704SU-3PC-360",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳7100",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-42.jpg",
         "images/products/product-43.jpg",
@@ -418,7 +428,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Embroidered Lawn 3 Piece",
     code: "U5077SU-3PC-014",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳7200",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-46.jpg",
         "images/products/product-47.jpg",
@@ -459,7 +470,8 @@ Designs shown are for shoot/styling purposes. Actual product color may vary slig
     title: "Unstitched Jacquard Cotton 3 Piece",
     code: "135383",
     category: "Jacquard",
-    price: "৳8000",
+    price: "৳7050",
+    oldPrice: "৳8000",
     images: [
         "images/products/product-51.jpg",
         "images/products/product-52.jpg",
@@ -549,6 +561,33 @@ function getCardDescription(text, limit = 80) {
     return clean;
 }
 /* =========================
+   PRICE / DISCOUNT HELPERS
+   ========================= */
+function getDiscountPercent(product) {
+    if (!product.oldPrice) return 0;
+    const oldNum = parseInt(String(product.oldPrice).replace(/[^\d]/g, ''), 10);
+    const newNum = parseInt(String(product.price).replace(/[^\d]/g, ''), 10);
+    if (!oldNum || !newNum || newNum >= oldNum) return 0;
+    return Math.round(((oldNum - newNum) / oldNum) * 100);
+}
+
+function getPriceBlockHtml(p) {
+    const discount = getDiscountPercent(p);
+    if (p.oldPrice && discount > 0) {
+        return `
+            <div class="price-wrap">
+                <span class="old-price">${p.oldPrice}</span>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="price">${p.price}</span>
+                    <span class="discount-badge">-${discount}%</span>
+                </div>
+            </div>
+        `;
+    }
+    return `<span class="price">${p.price}</span>`;
+}
+
+/* =========================
    RENDER PRODUCT CARDS (Complete)
    ========================= */
 function renderProductCards(productsArray, containerId) {
@@ -571,7 +610,7 @@ function renderProductCards(productsArray, containerId) {
                     <!-- Category & Price -->
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="category-badge">${p.category}</span>
-                        <span class="price">${p.price}</span>
+                        ${getPriceBlockHtml(p)}
                     </div>
                     
                     <!-- Product Title -->
@@ -629,7 +668,7 @@ function renderSpecialSections() {
    ========================= */
 function getWhatsAppLink(product) {
     const phone = "+8801632787882"; // Change to your WhatsApp number
-    const message = `Hello Tahera, I'm interested in:\n*${product.title}*\nCode: ${product.code}\nPrice: ${product.price}`;
+    const message = `Hello Tahera, I'm interested in:\n*${product.title}*\nCode: ${product.code}\nPrice: ${product.price}${product.oldPrice ? ` (was ${product.oldPrice})` : ''}`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
@@ -664,7 +703,7 @@ function openProductModal(productId) {
     document.getElementById("modalTitle").innerText = prod.title;
     document.getElementById("modalCode").innerText = prod.code || '';
     document.getElementById("modalDesc").innerHTML = formatDescription(prod.description);
-    document.getElementById("modalPrice").innerText = prod.price;
+    document.getElementById("modalPrice").innerHTML = getPriceBlockHtml(prod);
 
     // Set Buy Now button
     const buyBtn = document.getElementById("modalBuyNowBtn");
