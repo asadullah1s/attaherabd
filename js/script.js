@@ -509,7 +509,8 @@ Designs shown are for shoot/styling purposes (no embroidery unless mentioned). A
         "images/products/product-55.jpg",
         "images/products/product-56.jpg",
         "images/products/product-57.jpg",
-        "images/products/product-58.jpg"
+        "images/products/product-58.jpg",
+        "images/products/product-59.jpg"
     ],
     description: `Unstitched 3-Piece Suit
 Shirt
