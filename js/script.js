@@ -928,8 +928,9 @@ function getPriceBlockHtml(p) {
     if (p.oldPrice && discount > 0) {
         return `
             <div class="price-wrap">
-                <span class="old-price">${p.oldPrice}</span>
+               
                 <div class="d-flex align-items-center gap-2">
+                    <span class="old-price">${p.oldPrice}</span>
                     <span class="price">${p.price}</span>
                     <span class="discount-badge">-${discount}%</span>
                 </div>
